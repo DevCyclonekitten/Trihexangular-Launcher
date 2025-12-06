@@ -1,0 +1,326 @@
+{
+    "version": 0.95,
+    "packageversion": 0.52,
+    "messages": [
+        {
+            "id": 1,
+            "name": "Castle Loop Has Been released",
+            "content": "Castle loop, my gmtk submission has been added to Trihexangular Launcher.",
+            "flags": 12222222,
+            "images": []
+        }
+    ],
+    "games": [
+        {
+            "name": "Aeronaut Adrenaline",
+            "version": 0.1,
+            "builds": {
+                "main": "https://github.com/DevCyclonekittenTriHex/trihexangulargamesrepo/raw/main/bin/Aeronaut%20Adrenaline_main",
+                "jam": "https://github.com/DevCyclonekittenTriHex/trihexangulargamesrepo/raw/main/bin/Aeronaut%20Adrenaline_jam"
+            },
+            "displayname": "Aeronaut Adrenaline",
+            "displaydescription": "Your mission is to destroy the rocket which is trying to destroy Earth. You will need to conserve jetpack fuel as it has four layers with increasingly harder security. Good luck, all humans leave your fate into you.",
+            "displayimages": [
+                "icon.png",
+                "banner.png"
+            ],
+            "displayvideo": "null",
+            "avaliablebuilds": [
+                "jam"
+            ],
+            "price": 0,
+            "author": "Trihexangular Studios"
+        },
+        {
+            "name": "Castle Loop",
+            "version": 0.1,
+            "builds": {
+                "main": "https://github.com/DevCyclonekittenTriHex/trihexangulargamesrepo/raw/main/bin/Castle%20Loop_main",
+                "jam": "https://github.com/DevCyclonekittenTriHex/trihexangulargamesrepo/raw/main/bin/Castle%20Loop_jam"
+            },
+            "displayname": "Castle Loop",
+            "displaydescription": "A tower defence game based around the theme loop, enemies loop around getting stronger the more times the loop.",
+            "displayimages": [
+                "icon.png",
+                "banner.png",
+                "store1.png",
+                "store2.png",
+                "store3.png"
+            ],
+            "displayvideo": "null",
+            "avaliablebuilds": [
+                "jam"
+            ],
+            "price": 0,
+            "author": "Trihexangular Studios"
+        },
+        {
+            "name": "Fallen Slime",
+            "version": 0.1,
+            "builds": {
+                "main": "https://github.com/DevCyclonekittenTriHex/trihexangulargamesrepo/raw/main/bin/Fallen%20Slime_main",
+                "jam": "https://github.com/DevCyclonekittenTriHex/trihexangulargamesrepo/raw/main/bin/Fallen%20Slime_jam"
+            },
+            "displayname": "Fallen Slime",
+            "displaydescription": "A simple 3 level rougelike where you gain mutations, \nbut beware as they can change as they become more unstable as time progresses.",
+            "displayimages": [
+                "icon.png",
+                "banner.png",
+                "store1.png",
+                "store2.png",
+                "store3.png"
+            ],
+            "displayvideo": "null",
+            "avaliablebuilds": [
+                "jam"
+            ],
+            "price": 0,
+            "author": "Trihexangular Studios"
+        },
+        {
+            "name": "Fallen Through",
+            "version": 0.1,
+            "builds": {
+                "main": "https://github.com/DevCyclonekittenTriHex/trihexangulargamesrepo/raw/main/bin/Fallen%20Through_main",
+                "jam": "https://github.com/DevCyclonekittenTriHex/trihexangulargamesrepo/raw/main/bin/Fallen%20Through_jam"
+            },
+            "displayname": "Fallen Through",
+            "displaydescription": "Yet another rougelike where you are an angel and fight enemies in an arena. \nFalling lower until you fight worse and worse demons.",
+            "displayimages": [
+                "icon.png",
+                "banner.png",
+                "store1.png"
+            ],
+            "displayvideo": "null",
+            "avaliablebuilds": [
+                "jam"
+            ],
+            "price": 0,
+            "author": "Trihexangular Studios"
+        },
+        {
+            "name": "Fire OS",
+            "version": 0.2,
+            "builds": {
+                "main": "https://github.com/DevCyclonekittenTriHex/trihexangulargamesrepo/raw/main/bin/Fire%20OS_main",
+                "jam": "https://github.com/DevCyclonekittenTriHex/trihexangulargamesrepo/raw/main/bin/Fire%20OS_jam"
+            },
+            "displayname": "Fire OS",
+            "displaydescription": "You install an infected operating system, and have to find a way to uninstall it. \nA microgame constisting of puzzles, platforming, and epic bossfights.",
+            "displayimages": [
+                "icon.png",
+                "banner.png",
+                "store1.png",
+                "store2.png",
+                "store3.png"
+            ],
+            "displayvideo": "video1.mp4",
+            "avaliablebuilds": [
+                "jam"
+            ],
+            "price": 0,
+            "author": "Trihexangular Studios"
+        },
+        {
+            "name": "Relic Hunter",
+            "version": 0.1,
+            "builds": {
+                "main": "https://github.com/DevCyclonekittenTriHex/trihexangulargamesrepo/raw/main/bin/Relic%20Hunter_main",
+                "jam": "https://github.com/DevCyclonekittenTriHex/trihexangulargamesrepo/raw/main/bin/Relic%20Hunter_jam"
+            },
+            "displayname": "Relic Hunter",
+            "displaydescription": "You are, you guessed it, a relic hunter. \nGoing through the infected libraries and gathering as many relics and souls as you can.",
+            "displayimages": [
+                "icon.png",
+                "banner.png",
+                "store1.png",
+                "store2.png",
+                "store3.png"
+            ],
+            "displayvideo": "null",
+            "avaliablebuilds": [
+                "jam"
+            ],
+            "price": 0,
+            "author": "Trihexangular Studios"
+        },
+        {
+            "name": "Sanity Drain",
+            "version": 0.1,
+            "builds": {
+                "main": "https://github.com/DevCyclonekittenTriHex/trihexangulargamesrepo/raw/main/bin/Sanity%20Drain_main",
+                "jam": "https://github.com/DevCyclonekittenTriHex/trihexangulargamesrepo/raw/main/bin/Sanity%20Drain_jam"
+            },
+            "displayname": "Sanity Drain",
+            "displaydescription": "A memory game based on the theme deja vu. \nGet lost, or get lost, did I just repeat myself? Where am I?",
+            "displayimages": [
+                "icon.png",
+                "banner.png",
+                "store1.png",
+                "store2.png"
+            ],
+            "displayvideo": "null",
+            "avaliablebuilds": [
+                "jam"
+            ],
+            "price": 0,
+            "author": "Trihexangular Studios"
+        },
+        {
+            "name": "Square Adventure 2",
+            "version": 0.1,
+            "builds": {
+                "main": "https://github.com/DevCyclonekittenTriHex/trihexangulargamesrepo/raw/main/bin/Square%20Adventure%202_main"
+            },
+            "displayname": "Square Adventure 2",
+            "displaydescription": "Lore expansion pack: $0.00",
+            "displayimages": [
+                "icon.png",
+                "banner.png",
+                "store1.png",
+                "store2.png",
+                "store3.png"
+            ],
+            "displayvideo": "null",
+            "avaliablebuilds": [
+                "main"
+            ],
+            "price": 0,
+            "author": "Trihexangular Studios"
+        },
+        {
+            "name": "Square Adventure Reverb",
+            "version": 0.1,
+            "builds": {
+                "main": "https://github.com/DevCyclonekittenTriHex/trihexangulargamesrepo/raw/main/bin/Square%20Adventure%20Reverb_main"
+            },
+            "displayname": "Square Adventure Reverb",
+            "displaydescription": "A game that wasn't heading in the right direction, unfinished but sequel is in the works. #ACMI #RMIT",
+            "displayimages": [
+                "icon.png",
+                "banner.png",
+                "store1.png",
+                "store2.png",
+                "store3.png"
+            ],
+            "displayvideo": "null",
+            "avaliablebuilds": [
+                "main"
+            ],
+            "price": 0,
+            "author": "Trihexangular Studios"
+        },
+        {
+            "name": "Square Adventure World",
+            "version": 0.1,
+            "builds": {
+                "main": "https://github.com/DevCyclonekittenTriHex/trihexangulargamesrepo/raw/main/bin/Square%20Adventure%20World_main"
+            },
+            "displayname": "Square Adventure World",
+            "displaydescription": "Expanding on the square adventure universe.",
+            "displayimages": [
+                "icon.png",
+                "banner.png",
+                "store1.png",
+                "store2.png",
+                "store3.png"
+            ],
+            "displayvideo": "null",
+            "avaliablebuilds": [
+                "main"
+            ],
+            "price": 0,
+            "author": "Trihexangular Studios"
+        },
+        {
+            "name": "Square Adventure",
+            "version": 0.1,
+            "builds": {
+                "main": "https://github.com/DevCyclonekittenTriHex/trihexangulargamesrepo/raw/main/bin/Square%20Adventure_main",
+                "jam": "https://github.com/DevCyclonekittenTriHex/trihexangulargamesrepo/raw/main/bin/Square%20Adventure_jam"
+            },
+            "displayname": "Square Adventure",
+            "displaydescription": "The cube.",
+            "displayimages": [
+                "icon.png",
+                "banner.png",
+                "store1.png",
+                "store2.png",
+                "store3.png"
+            ],
+            "displayvideo": "null",
+            "avaliablebuilds": [
+                "main",
+                "jam"
+            ],
+            "price": 0,
+            "author": "Trihexangular Studios"
+        },
+        {
+            "name": "The Game Of Cat And Mouse",
+            "version": 0.1,
+            "builds": {
+                "main": "https://github.com/DevCyclonekittenTriHex/trihexangulargamesrepo/raw/main/bin/The%20Game%20Of%20Cat%20And%20Mouse_main",
+                "jam": "https://github.com/DevCyclonekittenTriHex/trihexangulargamesrepo/raw/main/bin/The%20Game%20Of%20Cat%20And%20Mouse_jam"
+            },
+            "displayname": "The Game Of Cat And Mouse",
+            "displaydescription": "A game where you are a cat, and you have to kill mice. Avoid police and cars and gain the highest score. My first ever game jam Entry.",
+            "displayimages": [
+                "icon.png",
+                "banner.png",
+                "store1.png",
+                "store2.png"
+            ],
+            "displayvideo": "null",
+            "avaliablebuilds": [
+                "jam"
+            ],
+            "price": 0,
+            "author": "Trihexangular Studios"
+        },
+        {
+            "name": "The Stronghold",
+            "version": 0.1,
+            "builds": {
+                "main": "https://github.com/DevCyclonekittenTriHex/trihexangulargamesrepo/raw/main/bin/The%20Stronghold_main",
+                "jam": "https://github.com/DevCyclonekittenTriHex/trihexangulargamesrepo/raw/main/bin/The%20Stronghold_main"
+            },
+            "displayname": "The Stronghold",
+            "displaydescription": "e",
+            "displayimages": [
+                "icon.png",
+                "banner.png",
+                "store1.png",
+                "store2.png"
+            ],
+            "displayvideo": "null",
+            "avaliablebuilds": [
+                "jam"
+            ],
+            "price": 0,
+            "author": "Trihexangular Studios"
+        },
+        {
+            "name": "Up To Capacitor",
+            "version": 0.1,
+            "builds": {
+                "main": "https://github.com/DevCyclonekittenTriHex/trihexangulargamesrepo/raw/main/bin/Up%20To%20Capacitor_main",
+                "jam": "https://github.com/DevCyclonekittenTriHex/trihexangulargamesrepo/raw/main/bin/Up%20To%20Capacitor_jam"
+            },
+            "displayname": "Up To Capacitor",
+            "displaydescription": "A game about scaling a city to infinity, use nuclear energy and don't recreate Chernobyl.",
+            "displayimages": [
+                "icon.png",
+                "banner.png",
+                "store1.png",
+                "store2.png"
+            ],
+            "displayvideo": "null",
+            "avaliablebuilds": [
+                "jam"
+            ],
+            "price": 0,
+            "author": "Trihexangular Studios"
+        }
+    ]
+}

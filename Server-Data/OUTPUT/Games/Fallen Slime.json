@@ -1,0 +1,23 @@
+{
+    "name": "Fallen Slime",
+    "version": 0.1,
+    "builds": {
+        "main": "https://github.com/DevCyclonekittenTriHex/trihexangulargamesrepo/raw/main/bin/Fallen%20Slime_main",
+        "jam": "https://github.com/DevCyclonekittenTriHex/trihexangulargamesrepo/raw/main/bin/Fallen%20Slime_jam"
+    },
+    "displayname": "Fallen Slime",
+    "displaydescription": "A simple 3 level rougelike where you gain mutations, \nbut beware as they can change as they become more unstable as time progresses.",
+    "displayimages": [
+        "icon.png",
+        "banner.png",
+        "store1.png",
+        "store2.png",
+        "store3.png"
+    ],
+    "displayvideo": "null",
+    "avaliablebuilds": [
+        "jam"
+    ],
+    "price": 0,
+    "author":"Trihexangular Studios"
+}

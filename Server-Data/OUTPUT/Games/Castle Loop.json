@@ -1,0 +1,24 @@
+{
+    "name": "Castle Loop",
+    "version": 0.1,
+    "builds": {
+        "main": "https://github.com/DevCyclonekittenTriHex/trihexangulargamesrepo/raw/main/bin/Castle%20Loop_main",
+        "jam": "https://github.com/DevCyclonekittenTriHex/trihexangulargamesrepo/raw/main/bin/Castle%20Loop_jam"
+    },
+    "displayname": "Castle Loop",
+    "displaydescription": "A tower defence game based around the theme loop, enemies loop around getting stronger the more times the loop.",
+    "displayimages": [
+        "icon.png",
+        "banner.png",
+        "store1.png",
+        "store2.png",
+        "store3.png"
+    ],
+    "displayvideo": "null",
+    "avaliablebuilds": [
+        "main",
+        "jam"
+    ],
+    "price": 0,
+    "author":"Trihexangular Studios"
+}

@@ -1,0 +1,23 @@
+{
+    "name": "Fire OS",
+    "version": 0.2,
+    "builds": {
+        "main": "https://github.com/DevCyclonekittenTriHex/trihexangulargamesrepo/raw/main/bin/Fire%20OS_main",
+        "jam": "https://github.com/DevCyclonekittenTriHex/trihexangulargamesrepo/raw/main/bin/Fire%20OS_jam"
+    },
+    "displayname": "Fire OS",
+    "displaydescription": "You install an infected operating system, and have to find a way to uninstall it. \nA microgame constisting of puzzles, platforming, and epic bossfights.",
+    "displayimages": [
+        "icon.png",
+        "banner.png",
+        "store1.png",
+        "store2.png",
+        "store3.png"
+    ],
+    "displayvideo": "video1.mp4",
+    "avaliablebuilds": [
+        "jam"
+    ],
+    "price": 0,
+    "author":"Trihexangular Studios"
+}

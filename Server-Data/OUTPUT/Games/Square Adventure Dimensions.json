@@ -1,0 +1,18 @@
+{
+    "name": "Square Adventure Dimensions",
+    "version": 0.1,
+    "builds": {
+        "main": "https://github.com/DevCyclonekittenTriHex/trihexangulargamesrepo/raw/main/bin/Square%20Adventure%20Dimensions_main"
+    },
+    "displayname": "Square Adventure Dimensions",
+    "displaydescription": "Temp game for ACMI YCL lab",
+    "displayimages": [
+        ""
+    ],
+    "displayvideo": "",
+    "avaliablebuilds": [
+        "main","jam"    
+    ],
+    "price": 0,
+    "author": "Trihexangular Studios"
+}

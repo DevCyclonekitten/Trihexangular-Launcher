@@ -1,0 +1,23 @@
+{
+    "name": "The Stronghold",
+    "version": 0.1,
+    "builds": {
+        "main": "https://github.com/DevCyclonekittenTriHex/trihexangulargamesrepo/raw/main/bin/The%20Stronghold_main",
+        "jam": "https://github.com/DevCyclonekittenTriHex/trihexangulargamesrepo/raw/main/bin/The%20Stronghold_main"
+    },
+    "displayname": "The Stronghold",
+    "displaydescription": "A rogue like bullet hell game which loops around after you die, very bad adaption of theme, enemies just get harder but are the same looping enemies, there aren't many rooms, so you constantly loop through them. The game jam right after this was GMTK 2025 and had the same theme.",
+    "displayimages": [
+        "icon.png",
+        "banner.png",
+        "store1.png",
+        "store2.png"
+    ],
+    "displayvideo": "null",
+    "avaliablebuilds": [
+        "main",
+        "jam"
+    ],
+    "price": 0,
+    "author":"Trihexangular Studios"
+}

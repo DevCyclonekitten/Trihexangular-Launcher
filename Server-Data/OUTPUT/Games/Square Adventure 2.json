@@ -1,0 +1,22 @@
+{
+    "name": "Square Adventure 2",
+    "version": 0.1,
+    "builds": {
+        "main": "https://github.com/DevCyclonekittenTriHex/trihexangulargamesrepo/raw/main/bin/Square%20Adventure%202_main"
+    },
+    "displayname": "Square Adventure 2",
+    "displaydescription": "Lore expansion pack: $0.00",
+    "displayimages": [
+        "icon.png",
+        "banner.png",
+        "store1.png",
+        "store2.png",
+        "store3.png"
+    ],
+    "displayvideo": "null",
+    "avaliablebuilds": [
+        "main"
+    ],
+    "price": 0,
+    "author":"Trihexangular Studios"
+}

@@ -1,0 +1,22 @@
+{
+    "name": "Sanity Drain",
+    "version": 0.1,
+    "builds": {
+        "main": "https://github.com/DevCyclonekittenTriHex/trihexangulargamesrepo/raw/main/bin/Sanity%20Drain_main",
+        "jam": "https://github.com/DevCyclonekittenTriHex/trihexangulargamesrepo/raw/main/bin/Sanity%20Drain_jam"
+    },
+    "displayname": "Sanity Drain",
+    "displaydescription": "A memory game based on the theme deja vu. \nGet lost, or get lost, did I just repeat myself? Where am I?",
+    "displayimages": [
+        "icon.png",
+        "banner.png",
+        "store1.png",
+        "store2.png"
+    ],
+    "displayvideo": "null",
+    "avaliablebuilds": [
+        "jam"
+    ],
+    "price": 0,
+    "author":"Trihexangular Studios"
+}

@@ -1,0 +1,22 @@
+{
+    "name": "Square Adventure World",
+    "version": 0.1,
+    "builds": {
+        "main": "https://github.com/DevCyclonekittenTriHex/trihexangulargamesrepo/raw/main/bin/Square%20Adventure%20World_main"
+    },
+    "displayname": "Square Adventure World",
+    "displaydescription": "Expanding on the square adventure universe.",
+    "displayimages": [
+        "icon.png",
+        "banner.png",
+        "store1.png",
+        "store2.png",
+        "store3.png"
+    ],
+    "displayvideo": "null",
+    "avaliablebuilds": [
+        "main"
+    ],
+    "price": 0,
+    "author":"Trihexangular Studios"
+}

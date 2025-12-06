@@ -1,0 +1,24 @@
+{
+    "name": "Square Adventure",
+    "version": 0.1,
+    "builds": {
+        "main": "https://github.com/DevCyclonekittenTriHex/trihexangulargamesrepo/raw/main/bin/Square%20Adventure_main",
+        "jam": "https://github.com/DevCyclonekittenTriHex/trihexangulargamesrepo/raw/main/bin/Square%20Adventure_jam"
+    },
+    "displayname": "Square Adventure",
+    "displaydescription": "The cube.",
+    "displayimages": [
+        "icon.png",
+        "banner.png",
+        "store1.png",
+        "store2.png",
+        "store3.png"
+    ],
+    "displayvideo": "null",
+    "avaliablebuilds": [
+        "main",
+        "jam"
+    ],
+    "price": 0,
+    "author":"Trihexangular Studios"
+}

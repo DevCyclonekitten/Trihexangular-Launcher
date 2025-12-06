@@ -1,0 +1,21 @@
+{
+    "name": "Fallen Through",
+    "version": 0.1,
+    "builds": {
+        "main": "https://github.com/DevCyclonekittenTriHex/trihexangulargamesrepo/raw/main/bin/Fallen%20Through_main",
+        "jam": "https://github.com/DevCyclonekittenTriHex/trihexangulargamesrepo/raw/main/bin/Fallen%20Through_jam"
+    },
+    "displayname": "Fallen Through",
+    "displaydescription": "Yet another rougelike where you are an angel and fight enemies in an arena. \nFalling lower until you fight worse and worse demons.",
+    "displayimages": [
+        "icon.png",
+        "banner.png",
+        "store1.png"
+    ],
+    "displayvideo": "null",
+    "avaliablebuilds": [
+        "jam"
+    ],
+    "price": 0,
+    "author":"Trihexangular Studios"
+}

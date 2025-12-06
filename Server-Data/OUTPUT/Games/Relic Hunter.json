@@ -1,0 +1,24 @@
+{
+    "name": "Relic Hunter",
+    "version": 0.1,
+    "builds": {
+        "main": "https://github.com/DevCyclonekittenTriHex/trihexangulargamesrepo/raw/main/bin/Relic%20Hunter_main",
+        "jam": "https://github.com/DevCyclonekittenTriHex/trihexangulargamesrepo/raw/main/bin/Relic%20Hunter_jam"
+    },
+    "displayname": "Relic Hunter",
+    "displaydescription": "You are, you guessed it, a relic hunter. \nGoing through the infected libraries and gathering as many relics and souls as you can.",
+    "displayimages": [
+        "icon.png",
+        "banner.png",
+        "store1.png",
+        "store2.png",
+        "store3.png"
+    ],
+    "displayvideo": "null",
+    "avaliablebuilds": [
+        "main",
+        "jam"
+    ],
+    "price": 0,
+    "author":"Trihexangular Studios"
+}

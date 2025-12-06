@@ -1,0 +1,22 @@
+{
+    "name": "Square Adventure Reverb",
+    "version": 0.1,
+    "builds": {
+        "main": "https://github.com/DevCyclonekittenTriHex/trihexangulargamesrepo/raw/main/bin/Square%20Adventure%20Reverb_main"
+    },
+    "displayname": "Square Adventure Reverb",
+    "displaydescription": "A game that wasn't heading in the right direction, unfinished but sequel is in the works. #ACMI #RMIT",
+    "displayimages": [
+        "icon.png",
+        "banner.png",
+        "store1.png",
+        "store2.png",
+        "store3.png"
+    ],
+    "displayvideo": "null",
+    "avaliablebuilds": [
+        "main"
+    ],
+    "price": 0,
+    "author":"Trihexangular Studios"
+}

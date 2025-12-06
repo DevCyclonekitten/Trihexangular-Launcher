@@ -1,0 +1,22 @@
+{
+    "name": "The Game Of Cat And Mouse",
+    "version": 0.1,
+    "builds": {
+        "main": "https://github.com/DevCyclonekittenTriHex/trihexangulargamesrepo/raw/main/bin/The%20Game%20Of%20Cat%20And%20Mouse_main",
+        "jam": "https://github.com/DevCyclonekittenTriHex/trihexangulargamesrepo/raw/main/bin/The%20Game%20Of%20Cat%20And%20Mouse_jam"
+    },
+    "displayname": "The Game Of Cat And Mouse",
+    "displaydescription": "A game where you are a cat, and you have to kill mice. Avoid police and cars and gain the highest score. My first ever game jam Entry.",
+    "displayimages": [
+        "icon.png",
+        "banner.png",
+        "store1.png",
+        "store2.png"
+    ],
+    "displayvideo": "null",
+    "avaliablebuilds": [
+        "jam"
+    ],
+    "price": 0,
+    "author":"Trihexangular Studios"
+}

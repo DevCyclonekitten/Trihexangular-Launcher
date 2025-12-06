@@ -1,0 +1,22 @@
+{
+    "name": "Up To Capacitor",
+    "version": 0.1,
+    "builds": {
+        "main": "https://github.com/DevCyclonekittenTriHex/trihexangulargamesrepo/raw/main/bin/Up%20To%20Capacitor_main",
+        "jam": "https://github.com/DevCyclonekittenTriHex/trihexangulargamesrepo/raw/main/bin/Up%20To%20Capacitor_jam"
+    },
+    "displayname": "Up To Capacitor",
+    "displaydescription": "A game about scaling a city to infinity, use nuclear energy and don't recreate Chernobyl.",
+    "displayimages": [
+        "icon.png",
+        "banner.png",
+        "store1.png",
+        "store2.png"
+    ],
+    "displayvideo": "null",
+    "avaliablebuilds": [
+        "jam"
+    ],
+    "price": 0,
+    "author":"Trihexangular Studios"
+}
