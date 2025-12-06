@@ -1,0 +1,52 @@
+{
+    "launcher":{
+        "version":0.96
+    },
+    "content":{
+        "messages":{
+            "1":{
+                "name": "Castle Loop Has Been released",
+                "content": "Castle loop, my gmtk submission has been added to Trihexangular Launcher.",
+                "flags": 12222222,
+                "images": []
+            }
+        },
+        "bundles":{
+            "1":{
+                "name": "",
+                "description": "",
+                "games": [],
+                "price": 0.75,
+                "images": []
+            }
+        },
+        "games":{
+            "1":{
+                "name": "Square Adventure Dimensions",
+                "programmingname": "Square Adventure Dimensions",
+                "builds":{
+                    "windows": [],
+                    "mac": [],
+                    "linux":["0.1"]
+                },
+                "content":{
+                    "general":{
+                        "iconimages":[],
+                        "displayimages":[],
+                        "displayvideo":[]
+                    },
+                    "store":{
+                        "storedescription":[
+                            {"type":"text","content":["hello world"]}
+                        ]
+                    }
+                },
+                "purchasing":{
+                    "price":0
+                },
+                "author": ["Trihexangular Studios"]
+
+            }
+        }
+    }
+}
