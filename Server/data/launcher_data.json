@@ -10,7 +10,17 @@
                     "images": [],
                     "interactions":[
                         {"name": "Go","type":"url","content":"https://www.example.com"},
-                        {"name": "Ok","type":"accept"}
+                        {"name": "Ok","type":"accept"},
+                        {"name": "More","type":"messagebuilder","content":{
+                            "name":"Hello",
+                            "content": "hi"
+                            "icon":"e",
+                            "buttons":["hi","no"],
+                            "interactions":[
+                                {"name": "Go","type":"url","content":"https://www.example.com"},
+                                {"name": "Ok","type":"accept"}
+                            ]
+                        }
                     ]
                 }
             }
