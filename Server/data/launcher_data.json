@@ -20,6 +20,7 @@
                                 {"name": "Go","type":"url","content":"https://www.example.com"},
                                 {"name": "Ok","type":"accept"}
                             ]
+                            }
                         }
                     ]
                 }
