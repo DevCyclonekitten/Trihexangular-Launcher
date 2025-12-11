@@ -1,6 +1,16 @@
 {
     "launcher":{
-        "version":0.96
+        "version":0.96,
+        "maintainer":{
+            "messages":{
+                "1":{
+                    "name": "Update the launcher",
+                    "content": "You need to manually update the launcher due to me being stupid",
+                    "flags": 12222222,
+                    "images": []
+                }
+            }
+        }
     },
     "content":{
         "messages":{
