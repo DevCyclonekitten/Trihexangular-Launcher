@@ -24,7 +24,7 @@
                                     "images": [],
                                     "interactions":[
                                         {"name": "Go","type":"url","content":"https://www.example.com"},
-                                        {"name": "Ok","type":"accept"},
+                                        {"name": "Ok","type":"accept"}
                                     ]}}
                             ]}}
                     ]
