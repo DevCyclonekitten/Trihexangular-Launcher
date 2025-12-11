@@ -6,8 +6,12 @@
                 "1":{
                     "name": "Update the launcher",
                     "content": "You need to manually update the launcher due to me being stupid",
-                    "flags": "31",
-                    "images": []
+                    "flags": "312",
+                    "images": [],
+                    "interactions":[
+                        {"name": "Go","type":"url","content":"https://www.example.com"},
+                        {"name": "Ok","type":"accept"}
+                    ]
                 }
             }
         }
