@@ -393,3 +393,69 @@
 2026-01-14 18:05:45,845 - DEBUG - MESSAGES - message {1} is permanent
 2026-01-14 18:05:45,946 - DEBUG - MESSAGES - message {1} has flag 2 at state 1 (exit)
 2026-01-14 18:05:45,946 - DEBUG - EXIT
+2026-01-14 20:27:17,343 - DEBUG - ############################################
+2026-01-14 20:27:17,344 - DEBUG - loading auto-detected-system 'Windows'
+2026-01-14 20:27:17,361 - DEBUG - SYSTEM - detected completed launcher install
+2026-01-14 20:27:17,361 - ERROR - ERROR-DETECT - eula is set to false. running eula configuring
+2026-01-14 20:27:23,640 - DEBUG - EULA - user agreed to eula
+2026-01-14 20:27:23,640 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/launcher_data.json'
+2026-01-14 20:27:24,812 - DEBUG - NETWORK - successfully downloaded launcher data 'https://github.com/DevCyclonekitten/Trihexangular-Launcher'
+2026-01-14 20:27:24,812 - DEBUG - MESSAGES - checking messages
+2026-01-14 20:27:24,827 - DEBUG - MESSAGES - running message {1}
+2026-01-14 20:27:24,827 - DEBUG - MESSAGES - message {1} modifying json propery 'ni' to 'False
+2026-01-14 20:29:02,921 - DEBUG - ############################################
+2026-01-14 20:29:02,922 - DEBUG - loading auto-detected-system 'Windows'
+2026-01-14 20:29:02,939 - DEBUG - SYSTEM - detected completed launcher install
+2026-01-14 20:29:02,939 - ERROR - ERROR-DETECT - eula is set to false. running eula configuring
+2026-01-14 20:29:02,940 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/launcher_data.json'
+2026-01-14 20:29:03,371 - DEBUG - NETWORK - successfully downloaded launcher data 'https://github.com/DevCyclonekitten/Trihexangular-Launcher'
+2026-01-14 20:29:03,372 - DEBUG - MESSAGES - checking messages
+2026-01-14 20:29:03,372 - DEBUG - MESSAGES - running message {1}
+2026-01-14 20:29:03,372 - DEBUG - MESSAGES - message {1} modifying json propery 'ni' to 'False
+2026-01-14 20:29:21,333 - DEBUG - MESSAGES - message builder started
+2026-01-14 20:29:21,334 - DEBUG - MESSAGES - running message {-1}
+2026-01-14 20:29:21,340 - DEBUG - MESSAGES - message {1} is permanent
+2026-01-14 20:29:21,441 - DEBUG - MESSAGES - message {1} has flag 2 at state 1 (exit)
+2026-01-14 20:29:21,441 - DEBUG - EXIT
+2026-01-14 20:30:31,351 - DEBUG - ############################################
+2026-01-14 20:30:31,351 - DEBUG - loading auto-detected-system 'Windows'
+2026-01-14 20:30:31,353 - DEBUG - SYSTEM - detected completed launcher install
+2026-01-14 20:30:31,354 - ERROR - ERROR-DETECT - eula is set to false. running eula configuring
+2026-01-14 20:30:31,354 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/launcher_data.json'
+2026-01-14 20:30:32,101 - DEBUG - NETWORK - successfully downloaded launcher data 'https://github.com/DevCyclonekitten/Trihexangular-Launcher'
+2026-01-14 20:30:32,101 - DEBUG - MESSAGES - checking messages
+2026-01-14 20:30:32,102 - DEBUG - MESSAGES - running message {1}
+2026-01-14 20:30:32,102 - DEBUG - MESSAGES - message {1} modifying json propery 'ni' to 'False
+2026-01-14 20:30:33,763 - DEBUG - MESSAGES - message builder started
+2026-01-14 20:30:33,794 - DEBUG - MESSAGES - running message {-1}
+2026-01-14 20:30:33,800 - DEBUG - MESSAGES - message {1} is permanent
+2026-01-14 20:30:33,901 - DEBUG - MESSAGES - message {1} has flag 2 at state 1 (exit)
+2026-01-14 20:30:33,901 - DEBUG - EXIT
+2026-01-14 20:30:44,721 - DEBUG - ############################################
+2026-01-14 20:30:44,722 - DEBUG - loading auto-detected-system 'Windows'
+2026-01-14 20:30:44,724 - DEBUG - SYSTEM - detected completed launcher install
+2026-01-14 20:30:44,724 - ERROR - ERROR-DETECT - eula is set to false. running eula configuring
+2026-01-14 20:30:44,724 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/launcher_data.json'
+2026-01-14 20:30:45,172 - DEBUG - NETWORK - successfully downloaded launcher data 'https://github.com/DevCyclonekitten/Trihexangular-Launcher'
+2026-01-14 20:30:45,172 - DEBUG - MESSAGES - checking messages
+2026-01-14 20:30:45,173 - DEBUG - MESSAGES - running message {1}
+2026-01-14 20:30:45,174 - DEBUG - MESSAGES - message {1} modifying json propery 'ni' to 'False
+2026-01-14 20:30:47,290 - DEBUG - MESSAGES - message builder started
+2026-01-14 20:30:47,329 - DEBUG - MESSAGES - running message {-1}
+2026-01-14 20:30:47,333 - DEBUG - MESSAGES - message {1} is permanent
+2026-01-14 20:30:47,437 - DEBUG - MESSAGES - message {1} has flag 2 at state 1 (exit)
+2026-01-14 20:30:47,438 - DEBUG - EXIT
+2026-01-14 20:31:06,129 - DEBUG - ############################################
+2026-01-14 20:31:06,129 - DEBUG - loading auto-detected-system 'Windows'
+2026-01-14 20:31:06,131 - DEBUG - SYSTEM - detected completed launcher install
+2026-01-14 20:31:06,131 - ERROR - ERROR-DETECT - eula is set to false. running eula configuring
+2026-01-14 20:31:06,132 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/launcher_data.json'
+2026-01-14 20:31:06,554 - DEBUG - NETWORK - successfully downloaded launcher data 'https://github.com/DevCyclonekitten/Trihexangular-Launcher'
+2026-01-14 20:31:06,555 - DEBUG - MESSAGES - checking messages
+2026-01-14 20:31:06,555 - DEBUG - MESSAGES - running message {1}
+2026-01-14 20:31:06,557 - DEBUG - MESSAGES - message {1} modifying json propery 'ni' to 'False
+2026-01-14 20:31:08,804 - DEBUG - MESSAGES - message builder started
+2026-01-14 20:31:08,805 - DEBUG - MESSAGES - running message {-1}
+2026-01-14 20:31:08,850 - DEBUG - MESSAGES - message {1} is permanent
+2026-01-14 20:31:08,951 - DEBUG - MESSAGES - message {1} has flag 2 at state 1 (exit)
+2026-01-14 20:31:08,952 - DEBUG - EXIT

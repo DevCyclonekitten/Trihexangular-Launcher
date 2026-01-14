@@ -125,7 +125,7 @@ class GUI():
     def ConfirmEULA(self):
         i = self.Message("End User Licence Agreement", ("Have you read and do you agree to the END USER LICENCE AGREEMENT (EULA)."),"question",["View Eula","Agree","Disagree"])
         if(i==0):
-            webbrowser.open_new('https://www.example.com')
+            webbrowser.open_new('https://devcyclonekitten.github.io/Trihexangular-Launcher/eula.html')
             self.ConfirmEULA()
         if(i==1):
             self.FinishEULA()
@@ -196,19 +196,21 @@ class GUI():
         
 
     def RunMessage(self,message,ID):
+        print(ID)
         logging.debug("MESSAGES - running message {" + str(ID) + "}")
         flags = self.GetMessageFlags(message)
+        print(flags)
         self.system.GetPackages()
         if(flags[3]==1):
             return
-
+        print(34)
         if(message.get("json-modify") != None):
             
             for key in message["json-modify"].keys():
                 logging.debug("MESSAGES - message {"+str(ID)+"}"+f" modifying json propery '{key}' to '{message["json-modify"][key]}")
                 self.system.packages[key]=message["json-modify"][key]
             self.system.SetPackages()
-
+        print(67)
         i = self.Message(message["name"],message["content"],flags[0],flags[4])
 
         interactor = message["interactions"][i]
