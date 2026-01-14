@@ -68,7 +68,7 @@ class GUI():
         self.GetOS()
 
         try:
-            if(self.system.packages.get("repository") is None):
+            if(self.system.packages.get("repository") == "None"):
                 logging.debug("SYSTEM - loading fresh install")
 
                 self.PollEULA()
@@ -92,8 +92,13 @@ class GUI():
     def ConfirmEverythingIsGood(self):
         self.system.GetPackages()
         if(self.system.packages.get("repository") == "None"):
-            logging.debug("ERROR-DETECT repository is none. running repository configuring")
+            logging.error("ERROR-DETECT repository is none. running repository configuring")
             self.GetRepository()
+        
+        if(self.system.packages.get("eula") != True):
+            logging.error("ERROR-DETECT - eula is set to false. running eula configuring")
+            self.PollEULA()
+
     def GetOS(self):
         self.system.SetupLauncherDirectory()
         self.system.GetPackages()
@@ -191,28 +196,39 @@ class GUI():
         
 
     def RunMessage(self,message,ID):
-        logging.debug("MESSAGES - running message {" + ID + "}")
+        logging.debug("MESSAGES - running message {" + str(ID) + "}")
         flags = self.GetMessageFlags(message)
-
+        self.system.GetPackages()
         if(flags[3]==1):
             return
+
+        if(message.get("json-modify") != None):
+            
+            for key in message["json-modify"].keys():
+                logging.debug("MESSAGES - message {"+str(ID)+"}"+f" modifying json propery '{key}' to '{message["json-modify"][key]}")
+                self.system.packages[key]=message["json-modify"][key]
+            self.system.SetPackages()
 
         i = self.Message(message["name"],message["content"],flags[0],flags[4])
 
         interactor = message["interactions"][i]
 
-        if(message.get("json-modify") is not None):
-            if(message["json-modify"]!={}):
-                for key in message["json-modify"].keys():
-                    logging.debug("MESSAGES - message {"+ID+"}"+f" modifying json propery '{key}' to '{message["json-modify"][key]}")
-                    self.system.packages[key]=message["json-modify"][key]
+        
+        
+        
         if(interactor["type"]=="accept"):
             pass
 
         elif(interactor["type"]=="url"):
             webbrowser.open_new(interactor["content"])
         elif(interactor["type"]=="messagebuilder"):
+            print("MB")
+            logging.debug("MESSAGES - message builder started")
+            print(interactor["content"])
+            
             self.RunMessage(interactor["content"],-1)
+            
+            print("MB ended")
         
         if(not flags[2]==1):
             if(not ID ==-1):

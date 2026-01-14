@@ -90,7 +90,13 @@ class Windows():
 
         logging.debug(f"LAUNCH - starting '{path}'")
         
-        subprocess.Popen([path])
+        try:
+            l = subprocess.Popen([path])
+        except Exception as e:
+            logging.error(f"LAUNCH - error {e}")
+            exit()
+        
+        exit()
     def InstallLauncher(self):
         self.GetLauncherData()
         self.GetPackages()
