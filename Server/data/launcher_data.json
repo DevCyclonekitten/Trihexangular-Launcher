@@ -10,7 +10,7 @@
                     "flags": "3110",
                     "images": [],
                     "json-modify":{
-                        "eula":"false"
+                        "ni":false
                     },
                     "interactions":[
                         {"name": "Go","type":"url","content":"https://www.example.com"},
