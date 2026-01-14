@@ -7,8 +7,11 @@
                 "1":{
                     "name": "Update the launcher",
                     "content": "You need to manually update the launcher due to me being stupid",
-                    "flags": "312",
+                    "flags": "3110",
                     "images": [],
+                    "json-modify":{
+                        "skibidi":"1"
+                    },
                     "interactions":[
                         {"name": "Go","type":"url","content":"https://www.example.com"},
                         {"name": "Ok","type":"accept"},

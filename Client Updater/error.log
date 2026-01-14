@@ -1,0 +1,37 @@
+2026-01-14 17:23:26,998 - DEBUG - ############################################
+2026-01-14 17:23:26,999 - DEBUG - loading auto-detected-system 'Windows'
+2026-01-14 17:23:27,001 - DEBUG - SYSTEM - detected completed launcher install
+2026-01-14 17:23:27,001 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/launcher_data.json'
+2026-01-14 17:23:27,427 - DEBUG - NETWORK - successfully downloaded launcher data 'https://github.com/DevCyclonekitten/Trihexangular-Launcher'
+2026-01-14 17:23:27,427 - DEBUG - MESSAGES - checking messages
+2026-01-14 17:23:27,428 - DEBUG - LAUNCH - starting 'C:\Users\Administrator/AppData/roaming/trihexangular-launcher\bin\launcher\Trihexangular Launcher.exe'
+2026-01-14 17:23:35,252 - DEBUG - ############################################
+2026-01-14 17:23:35,252 - DEBUG - loading auto-detected-system 'Windows'
+2026-01-14 17:23:35,256 - DEBUG - SYSTEM - detected completed launcher install
+2026-01-14 17:23:35,256 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/launcher_data.json'
+2026-01-14 17:23:35,655 - DEBUG - NETWORK - successfully downloaded launcher data 'https://github.com/DevCyclonekitten/Trihexangular-Launcher'
+2026-01-14 17:23:35,655 - DEBUG - MESSAGES - checking messages
+2026-01-14 17:23:35,655 - DEBUG - LAUNCH - starting 'C:\Users\Administrator/AppData/roaming/trihexangular-launcher\bin\launcher\Trihexangular Launcher.exe'
+2026-01-14 17:24:50,194 - DEBUG - ############################################
+2026-01-14 17:24:50,194 - DEBUG - loading auto-detected-system 'Windows'
+2026-01-14 17:24:50,198 - DEBUG - SYSTEM - detected completed launcher install
+2026-01-14 17:24:50,198 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/launcher_data.json'
+2026-01-14 17:24:50,868 - DEBUG - NETWORK - successfully downloaded launcher data 'https://github.com/DevCyclonekitten/Trihexangular-Launcher'
+2026-01-14 17:24:50,869 - DEBUG - MESSAGES - checking messages
+2026-01-14 17:24:50,869 - DEBUG - MESSAGES - running message {1}
+2026-01-14 17:24:56,518 - DEBUG - MESSAGES - message {1} cleared
+2026-01-14 17:26:02,105 - DEBUG - ############################################
+2026-01-14 17:26:02,106 - DEBUG - loading auto-detected-system 'Windows'
+2026-01-14 17:26:02,122 - DEBUG - SYSTEM - detected completed launcher install
+2026-01-14 17:26:02,122 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/launcher_data.json'
+2026-01-14 17:26:02,830 - DEBUG - NETWORK - successfully downloaded launcher data 'https://github.com/DevCyclonekitten/Trihexangular-Launcher'
+2026-01-14 17:26:02,831 - DEBUG - MESSAGES - checking messages
+2026-01-14 17:26:02,831 - DEBUG - MESSAGES - running message {1}
+2026-01-14 17:26:04,344 - DEBUG - MESSAGES - message {1} cleared
+2026-01-14 17:30:04,237 - DEBUG - ############################################
+2026-01-14 17:30:04,237 - DEBUG - loading auto-detected-system 'Windows'
+2026-01-14 17:30:04,239 - DEBUG - SYSTEM - detected completed launcher install
+2026-01-14 17:30:04,239 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/launcher_data.json'
+2026-01-14 17:30:05,226 - DEBUG - NETWORK - successfully downloaded launcher data 'https://github.com/DevCyclonekitten/Trihexangular-Launcher'
+2026-01-14 17:30:05,226 - DEBUG - MESSAGES - checking messages
+2026-01-14 17:30:05,227 - DEBUG - LAUNCH - starting 'C:\Users\Administrator/AppData/roaming/trihexangular-launcher\bin\launcher\Trihexangular Launcher.exe'

@@ -3,12 +3,15 @@ import urllib.request
 import zipfile
 import shutil
 
+import logging
+logging.basicConfig(filename='error.log', format='%(asctime)s - %(levelname)s - %(message)s', level=logging.DEBUG)
 
 class NetworkManager():
     def __init__(self):
         self.tempfolder = ""
 
     def InstallFile(self,url,download_path,path,filename):
+        logging.debug(f"NETWORK - downloading file '{url}'")
         try:
 
             os.makedirs(download_path, exist_ok=True)
@@ -26,6 +29,7 @@ class NetworkManager():
             return False
         return True
     def InstallZip(self,url,download_path,extract_path):
+        logging.debug(f"NETWORK - downloading zip '{url}'")
         try:
  
 
@@ -38,6 +42,7 @@ class NetworkManager():
                 urllib.request.urlretrieve(url, download_path)
             except Exception as e:
                 self.ErrorMessageBox(f" 146: Download Error: {e}")
+                self.ErrorMessageBox(f" {url}")
                 return False
             try:
                 with zipfile.ZipFile(download_path, 'r') as zip_ref:
@@ -58,5 +63,5 @@ class NetworkManager():
             self.ErrorMessageBox(f"163: An unexpected error occurred: {e}")
             return False
     def ErrorMessageBox(self,string):
-        print(string)
+        logging.error(string)
     
