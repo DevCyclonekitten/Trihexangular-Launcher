@@ -41,26 +41,25 @@ class NetworkManager():
             try:
                 urllib.request.urlretrieve(url, download_path)
             except Exception as e:
-                self.ErrorMessageBox(f" 146: Download Error: {e}")
-                self.ErrorMessageBox(f" {url}")
+                self.ErrorMessageBox(f"ERROR - download error: {e} {url}")
                 return False
             try:
                 with zipfile.ZipFile(download_path, 'r') as zip_ref:
                     zip_ref.extractall(extract_path)
 
             except zipfile.BadZipFile as e:
-                self.ErrorMessageBox(f"152: Extraction failed: Invalid zip file - {e}")
+                self.ErrorMessageBox(f"ERROR - extraction failed due to bad zip file - {e}")
                 return False
             except Exception as e:
-                self.ErrorMessageBox(f"155: Extraction failed with an unexpected error: {e}")
+                self.ErrorMessageBox(f"ERROR - extraction failed due to {e}")
                 return False
             try:
                 os.remove(download_path)
             except Exception as e:
-                self.ErrorMessageBox(f"160: Error deleting zip after extraction: {e}")
+                self.ErrorMessageBox(f"ERROR - failed to delete zip after use {e}")
                 return True
         except Exception as e:
-            self.ErrorMessageBox(f"163: An unexpected error occurred: {e}")
+            self.ErrorMessageBox(f"ERROR - an unexpected error occured {e}")
             return False
     def ErrorMessageBox(self,string):
         logging.error(string)

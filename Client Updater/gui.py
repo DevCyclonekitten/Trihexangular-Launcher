@@ -6,7 +6,7 @@ import time
 
 runn = True
 
-import logging
+import logging,os
 logging.basicConfig(filename='error.log', format='%(asctime)s - %(levelname)s - %(message)s', level=logging.DEBUG)
 
 
@@ -14,6 +14,7 @@ logging.getLogger('PIL').setLevel(logging.WARNING)
 
 class GUI():
     def __init__(self,system):
+        #os.remove(r"C:\Users\Administrator\AppData\Roaming\trihexangular-launcher")
         logging.debug("############################################")
         if(system==False):
             
@@ -70,18 +71,16 @@ class GUI():
         try:
             if(self.system.packages.get("repository") == "None"):
                 logging.debug("SYSTEM - loading fresh install")
-
                 self.PollEULA()
                 self.FreshInstall()
-                self.GetLauncherData()
-                self.RemoveAllMessages()
-                self.CheckMessages()
                 
             else:
                 logging.debug("SYSTEM - detected completed launcher install")
                 self.ConfirmEverythingIsGood()
                 self.system.GetLauncherData()
+                
                 self.CheckMessages()
+                self.system.CheckForUpdates()
                 self.StartLauncher()
 
         except Exception as e:
@@ -90,19 +89,26 @@ class GUI():
             self.system.SetPackages()
             #self.TryFreshInstall()
     def ConfirmEverythingIsGood(self):
+        g = True
         self.system.GetPackages()
         if(self.system.packages.get("repository") == "None"):
             logging.error("ERROR-DETECT repository is none. running repository configuring")
             self.GetRepository()
-        
-        if(self.system.packages.get("eula") != True):
+            g=False
+        if(self.system.packages.get("eula") != "true"):
             logging.error("ERROR-DETECT - eula is set to false. running eula configuring")
             self.PollEULA()
+            g=False
+        if(g):
+            logging.debug("DETECT - system detects no abnormalities")
+        
+        
 
     def GetOS(self):
         self.system.SetupLauncherDirectory()
+        
         self.system.GetPackages()
-
+        
         if(self.system.ISActiveUser()==True):
             return
         else:
@@ -170,7 +176,14 @@ class GUI():
 
     def FreshInstall(self):
         self.GetRepository()
-        self.system.InstallLauncher()
+        self.system.GetLauncherData()
+        self.RemoveAllMessages()
+        self.CheckMessages()
+
+        try:
+            self.system.CheckForUpdates()
+        except Exception as e:
+            print(f"Fresh: {e}")
     def GetRepository(self):
         
         if(self.system.packages["repository"] != "None"):
@@ -186,37 +199,40 @@ class GUI():
                 self.GetRepository()
                 return
             customlink = r
+            
+            self.system.GetPackages()
+            self.system.packages["repository"] = customlink
+            self.system.SetPackages()
             self.system.ConfirmLauncherData()
             #self.Message("Custom Repository", "Custom repositories are currently not supported","cancel",["Back","Exit"])
             #self.GetRepository()
-            #return
+            return
         self.system.GetPackages()
         self.system.packages["repository"] = customlink
         self.system.SetPackages()
         
 
     def RunMessage(self,message,ID):
-        print(ID)
+        
         logging.debug("MESSAGES - running message {" + str(ID) + "}")
         flags = self.GetMessageFlags(message)
-        print(flags)
+        
         self.system.GetPackages()
         if(flags[3]==1):
             return
-        print(34)
+        
         if(message.get("json-modify") != None):
             
             for key in message["json-modify"].keys():
                 logging.debug("MESSAGES - message {"+str(ID)+"}"+f" modifying json propery '{key}' to '{message["json-modify"][key]}")
                 self.system.packages[key]=message["json-modify"][key]
             self.system.SetPackages()
-        print(67)
+        
         i = self.Message(message["name"],message["content"],flags[0],flags[4])
 
         interactor = message["interactions"][i]
 
-        
-        
+    
         
         if(interactor["type"]=="accept"):
             pass
@@ -224,13 +240,12 @@ class GUI():
         elif(interactor["type"]=="url"):
             webbrowser.open_new(interactor["content"])
         elif(interactor["type"]=="messagebuilder"):
-            print("MB")
+            
             logging.debug("MESSAGES - message builder started")
-            print(interactor["content"])
+            
             
             self.RunMessage(interactor["content"],-1)
             
-            print("MB ended")
         
         if(not flags[2]==1):
             if(not ID ==-1):
@@ -287,15 +302,25 @@ class GUI():
     def RemoveAllMessages(self):
         logging.debug("MESSAGES - adding viewed flags to all previous messages")
         self.system.GetPackages()
-        for item in self.system.data["launcher"]["maintainer"]["messages"].keys():
-            viewed = False
-            for viewedItem in self.system.packages["messages"]:
-                if(item==viewedItem):
-                    viewed = True
-            if(not viewed):
-                self.system.packages["messages"].append(item)
+        try:
+            print(self.system.data)
+            for item in self.system.data["launcher"]["maintainer"]["messages"].keys():
+                viewed = False
+                for viewedItem in self.system.packages["messages"]:
+                    if(item==viewedItem):
+                        viewed = True
+                if(not viewed):
+                    self.system.packages["messages"].append(item)
+                    print(f"Append: {item}")
+        except Exception as e:
+            print(f"RM :{e}")
         self.system.SetPackages()
     def StartLauncher(self):
-        self.system.StartLauncher()
+        self.system.GetPackages()
+        if(self.system.packages.get("launcher").get("installed")==True):
+            self.system.StartLauncher()
+        else:
+            logging.debug("LAUNCHER - attempted to start launcher without installed, installing.")
+            self.system.InstallLauncher()
         
 GUI(False)
