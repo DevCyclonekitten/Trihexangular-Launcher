@@ -9,17 +9,17 @@ logging.basicConfig(filename='error.log', format='%(asctime)s - %(levelname)s - 
 class NetworkManager():
     def __init__(self):
         self.tempfolder = ""
-
-    def InstallFile(self,url,download_path,path,filename):
+    
+    def InstallFile(self,url,download_path,path,filename,processhook=None):
         logging.debug(f"NETWORK - downloading file '{url}'")
         try:
 
             os.makedirs(download_path, exist_ok=True)
             try:
-
-                urllib.request.urlretrieve(url,os.path.join(download_path,filename))
-                shutil.move(os.path.join(download_path,filename),os.path.join(path,filename))
                 
+                urllib.request.urlretrieve(url,os.path.join(download_path,filename),reporthook=t.update_to)
+                shutil.move(os.path.join(download_path,filename),os.path.join(path,filename))
+
             except Exception as a:
                 self.ErrorMessageBox(f"NetworkError: {a}")
                 return False
@@ -28,7 +28,7 @@ class NetworkManager():
             self.ErrorMessageBox(f"UnexpectedError: {e}")
             return False
         return True
-    def InstallZip(self,url,download_path,extract_path):
+    def InstallZip(self,url,download_path,extract_path,processhook=None):
         logging.debug(f"NETWORK - downloading zip '{url}'")
         try:
  
@@ -39,7 +39,8 @@ class NetworkManager():
                 except Exception as e:
                     self.ErrorMessageBox(f"141: Error deleting existing zip: {e}")
             try:
-                urllib.request.urlretrieve(url, download_path)
+                if(processhook != None):
+                    urllib.request.urlretrieve(url, download_path,reporthook=processhook)
             except Exception as e:
                 self.ErrorMessageBox(f"ERROR - download error: {e} {url}")
                 return False

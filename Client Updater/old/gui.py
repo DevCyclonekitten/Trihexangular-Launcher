@@ -15,6 +15,8 @@ logging.getLogger('PIL').setLevel(logging.WARNING)
 class GUI():
     def __init__(self,system):
         #os.remove(r"C:\Users\Administrator\AppData\Roaming\trihexangular-launcher")
+        
+        return
         logging.debug("############################################")
         if(system==False):
             
@@ -25,7 +27,25 @@ class GUI():
         else:
             logging.debug(f"loading forced-callback-system '{system}'")
             self.system = systems.GetForcedOperatingSystem(system)
-        
+    def StartProcess(self):
+        if(1==1): #all installed
+            self.system.GetLauncherData()
+    def progress_hook(count, block_size, total_size):
+        percent = int(count * block_size * 100 / total_size)
+        print(f"\rDownloading: {percent}% done", end="", flush=True)
+
+    
+    def GUIProgressBar(self):
+        root = ctk.CTk()
+        root.geometry("300x200")
+
+        bar = ctk.CTkProgressBar(root,width=200,height=30)
+        bar.pack()
+
+        bar.set(0.5)
+
+    def GetLauncherProgressUpdate(self):
+        pass
     def GetUserBoxInput(self,message):
         global runn
         runn = True
@@ -158,6 +178,7 @@ class GUI():
             self.system.packages["eula"] = "false"
             self.system.SetPackages()
             self.PollEULA()
+            
         
     
     def Message(self,title,message,icon,options):
@@ -303,7 +324,6 @@ class GUI():
         logging.debug("MESSAGES - adding viewed flags to all previous messages")
         self.system.GetPackages()
         try:
-            print(self.system.data)
             for item in self.system.data["launcher"]["maintainer"]["messages"].keys():
                 viewed = False
                 for viewedItem in self.system.packages["messages"]:

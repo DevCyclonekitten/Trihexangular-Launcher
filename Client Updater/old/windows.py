@@ -1,5 +1,5 @@
 import platform,os,network,json,subprocess,webbrowser
-
+import asyncio
 import logging
 logging.basicConfig(filename='error.log', format='%(asctime)s - %(levelname)s - %(message)s', level=logging.DEBUG)
 
@@ -135,6 +135,7 @@ class Windows():
         self.GetPackages()
         try:
             if(self.packages["launcher"]["version"]<self.data["launcher"]["version"]):
+                
                 logging.debug("LAUNCH - Updating launcher")
                 
                 self.InstallLauncher()
@@ -147,7 +148,10 @@ class Windows():
                 "version":-1
             }
             self.SetPackages()
+            logging.error("ERROR-DETECT - fault in update checking")
             self.CheckForUpdates()
+        except Exception as e:
+            print(e)
     def AddKey(self,dict,key,value):
         if dict.get(key) is not None:
             return
