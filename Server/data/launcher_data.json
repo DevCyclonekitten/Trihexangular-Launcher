@@ -45,12 +45,23 @@
                 "images": []
             }
         ],
+        "collections":[
+            {
+                "id":"1",
+                "name": "Square Adventure Collection",
+                "description": "All square adventure games",
+                "games": ["1","2","3","4","5"],
+                "images": []
+            }
+
+        ],
         "bundles":[
             {
-                "name": "",
-                "description": "",
-                "games": [],
-                "price": 0.75,
+                "name": "Square Adventure Pack",
+                "id":1,
+                "description": "A pack for all the square adventure games",
+                "games": ["1","2","3","4","5"],
+                "price": 0,
                 "images": []
             }
         ],
