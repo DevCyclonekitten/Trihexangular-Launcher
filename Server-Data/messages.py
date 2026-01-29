@@ -4,6 +4,10 @@ def GetMessages():
     path = "ServerFiles/data/messages"
     files = glob.glob(path+"/.json")
     print(files)
+
+def Get(string):
+    r = input(string + "\n>>> ")
+    return r
 def AddMessage():
     path = "ServerFiles/data/messages"
 
@@ -62,4 +66,4 @@ def AddMessage():
 
 
 
-AddMessage()
+AddGame()

@@ -1,0 +1,13 @@
+{
+    "id": "1",
+    "name": "Square Adventure Collection",
+    "description": "A collection of all square adventure universe games",
+    "games": [
+        "1",
+        "2",
+        "7",
+        "12",
+        "15"
+    ],
+    "sortby": "id"
+}

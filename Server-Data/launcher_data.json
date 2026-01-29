@@ -1,10 +1,7 @@
 {
     "manifest": 2,
     "launcher": {
-        "version": 0.96,
-        "maintainer": {
-            "messages": {}
-        }
+        "version": 0.96
     },
     "content": {
         "games": [
@@ -729,7 +726,7 @@
                 "images": ""
             }
         ],
-        "collections": [
+        "colelctions": [
             {
                 "id": "1",
                 "name": "Square Adventure Collection",
@@ -742,26 +739,6 @@
                     "15"
                 ],
                 "sortby": "id"
-            }
-        ],
-        "messages": [
-            {
-                "id": "1",
-                "name": "temp",
-                "content": "temp2",
-                "flags": "3000",
-                "images": [],
-                "json-modify": {},
-                "interactions": []
-            },
-            {
-                "id": "2",
-                "name": "temp",
-                "content": "temp2",
-                "flags": "3000",
-                "images": [],
-                "json-modify": {},
-                "interactions": []
             }
         ]
     }
