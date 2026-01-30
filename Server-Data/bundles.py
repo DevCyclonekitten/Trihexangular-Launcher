@@ -119,13 +119,16 @@ class Creator():
         self.CompileBundles()
         self.CompileCollections()
         self.CompileMessages()
+        print("L")
         with open("Server/data/launcher_data.json","w") as f:
             json.dump(self.filedata,f,indent=4)
     def AskLoop(self):
         while True:
             m = input(">>> ")
             if(m=="compile"):
+                print("- Compiling")
                 self.CompileFile()
+                
             if(m=="message"):
                 self.AddLauncherMessage()
             if(m=="bundle"):

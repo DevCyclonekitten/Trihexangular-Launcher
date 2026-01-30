@@ -1,7 +1,10 @@
 {
     "manifest": 2,
     "launcher": {
-        "version": 0.96
+        "version": 0.96,
+        "maintainer": {
+            "messages": {}
+        }
     },
     "content": {
         "games": [
@@ -24,7 +27,7 @@
                             "banner.png"
                         ],
                         "displayvideo": [
-                            "storevideosplit"
+                            "storevideo.webm"
                         ]
                     },
                     "store": {
@@ -71,7 +74,7 @@
                             "banner.png"
                         ],
                         "displayvideo": [
-                            "storevideosplit"
+                            "storevideo.webm"
                         ]
                     },
                     "store": {
@@ -118,7 +121,7 @@
                             "banner.png"
                         ],
                         "displayvideo": [
-                            "storevideosplit"
+                            "storevideo.webm"
                         ]
                     },
                     "store": {
@@ -165,7 +168,7 @@
                             "banner.png"
                         ],
                         "displayvideo": [
-                            "storevideosplit"
+                            "storevideo.webm"
                         ]
                     },
                     "store": {
@@ -212,7 +215,7 @@
                             "banner.png"
                         ],
                         "displayvideo": [
-                            "storevideosplit"
+                            "storevideo.webm"
                         ]
                     },
                     "store": {
@@ -259,7 +262,7 @@
                             "banner.png"
                         ],
                         "displayvideo": [
-                            "storevideosplit"
+                            "storevideo.webm"
                         ]
                     },
                     "store": {
@@ -306,7 +309,7 @@
                             "banner.png"
                         ],
                         "displayvideo": [
-                            "storevideosplit"
+                            "storevideo.webm"
                         ]
                     },
                     "store": {
@@ -353,7 +356,7 @@
                             "banner.png"
                         ],
                         "displayvideo": [
-                            "storevideosplit"
+                            "storevideo.webm"
                         ]
                     },
                     "store": {
@@ -400,7 +403,7 @@
                             "banner.png"
                         ],
                         "displayvideo": [
-                            "storevideosplit"
+                            "storevideo.webm"
                         ]
                     },
                     "store": {
@@ -447,7 +450,7 @@
                             "banner.png"
                         ],
                         "displayvideo": [
-                            "storevideosplit"
+                            "storevideo.webm"
                         ]
                     },
                     "store": {
@@ -494,7 +497,7 @@
                             "banner.png"
                         ],
                         "displayvideo": [
-                            "storevideosplit"
+                            "storevideo.webm"
                         ]
                     },
                     "store": {
@@ -541,7 +544,7 @@
                             "banner.png"
                         ],
                         "displayvideo": [
-                            "storevideosplit"
+                            "storevideo.webm"
                         ]
                     },
                     "store": {
@@ -588,7 +591,7 @@
                             "banner.png"
                         ],
                         "displayvideo": [
-                            "storevideosplit"
+                            "storevideo.webm"
                         ]
                     },
                     "store": {
@@ -635,7 +638,7 @@
                             "banner.png"
                         ],
                         "displayvideo": [
-                            "storevideosplit"
+                            "storevideo.webm"
                         ]
                     },
                     "store": {
@@ -682,7 +685,7 @@
                             "banner.png"
                         ],
                         "displayvideo": [
-                            "storevideosplit"
+                            "storevideo.webm"
                         ]
                     },
                     "store": {
@@ -726,7 +729,7 @@
                 "images": ""
             }
         ],
-        "colelctions": [
+        "collections": [
             {
                 "id": "1",
                 "name": "Square Adventure Collection",
@@ -739,6 +742,26 @@
                     "15"
                 ],
                 "sortby": "id"
+            }
+        ],
+        "messages": [
+            {
+                "id": "1",
+                "name": "temp",
+                "content": "temp2",
+                "flags": "3000",
+                "images": [],
+                "json-modify": {},
+                "interactions": []
+            },
+            {
+                "id": "2",
+                "name": "temp",
+                "content": "temp2",
+                "flags": "3000",
+                "images": [],
+                "json-modify": {},
+                "interactions": []
             }
         ]
     }
