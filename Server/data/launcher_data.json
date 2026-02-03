@@ -129,7 +129,7 @@
                             {
                                 "type": "text",
                                 "content": [
-                                    "e"
+                                    "Relic Hunter is a fast paced Rouge-like game where you either exit with a safe score, or gamble for more."
                                 ]
                             }
                         ],
@@ -223,7 +223,7 @@
                             {
                                 "type": "text",
                                 "content": [
-                                    "e"
+                                    "A simple game about a red square jumping over platforms."
                                 ]
                             }
                         ],
@@ -317,7 +317,7 @@
                             {
                                 "type": "text",
                                 "content": [
-                                    "e"
+                                    "A rogue like bullet hell game which loops around after you die, very bad adaption of theme, enemies just get harder but are the same looping enemies, there aren't many rooms, so you constantly loop through them. :facepalm:"
                                 ]
                             }
                         ],
@@ -411,7 +411,7 @@
                             {
                                 "type": "text",
                                 "content": [
-                                    "e"
+                                    "Castle loop is a game about fighting enemies which loop around your castle, growing stronger the more loops they do.\nFight ever increasing difficulty of waves, progressing as far as you can without dying.|"
                                 ]
                             }
                         ],
@@ -646,7 +646,7 @@
                             {
                                 "type": "text",
                                 "content": [
-                                    "e"
+                                    "'Not every room will be where it appears'"
                                 ]
                             }
                         ],
@@ -706,10 +706,11 @@
                 },
                 "builds": {
                     "linux": [
-                        ""
+                        "0.9"
                     ],
                     "windows": [
-                        "1.0"
+                        "0.1",
+                        "0.9"
                     ]
                 }
             }
