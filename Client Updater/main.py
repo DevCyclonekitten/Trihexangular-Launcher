@@ -1,9 +1,8 @@
 #import systems
 import customtkinter as ctk
-import asyncio,logging,os,shutil,zipfile,urllib.request,time,threading,subprocess,webbrowser,json
+import asyncio,logging,os,shutil,zipfile,urllib.request,time,threading,subprocess,webbrowser,json,requests,stat
 import systemmessages
-
-
+logging.basicConfig(filename='error.log', format='%(asctime)s - %(levelname)s - %(message)s', level=logging.DEBUG)
 
 class PackageManager():
     def __init__(self,m,a):
@@ -55,16 +54,17 @@ class PackageManager():
         
 
         print("DISPLAYERROR")
-        p = "\\packages.json"
+        p = "packages.json"
         if(self.alternate):
-            p="\\launcher_data.json"
+            p="launcher_data.json"
         try:
-            with open(self.master.system.paths["data"]+p,"r") as fs:
+            with open(os.path.join(self.master.system.paths["data"],p),"r") as fs:
                 self.data = json.load(fs)
             return True
         except Exception as e:
             if(self.alternate):
                 logging.error("ERROR - cannot get launcher data")
+                print(e)
                 m = systemmessages.systemerror
                 m["content"][1]["text"]="ERROR - cannot get launcher data, please make sure"
                 m["content"].append({"text":"you are connected to the internet.","position":50,"font":("Helvetica",10)})
@@ -76,7 +76,7 @@ class PackageManager():
             return False
     def SetPackages(self):
         try:
-            with open(self.master.system.paths["data"]+"\\packages.json","w") as fs:
+            with open(os.path.join(self.master.system.paths["data"],"packages.json"),"w") as fs:
                 json.dump(self.data,fs,indent=4)
         except Exception as e:
             os.makedirs(self.master.system.path)
@@ -87,6 +87,10 @@ class SystemManager():
     def WindowsDirectory(self):
         self.systemname = "Windows"
         self.path = os.path.expanduser("~")+"/AppData/roaming/trihexangular-launcher"
+        self.PathSetup()
+    def LinuxDirectory(self):
+        self.systemname = "Linux"
+        self.path = os.path.expanduser("~")+"/.trihexangular-launcher"
         self.PathSetup()
     def DisplayError(self):
         if(self.master.currenterror != {}):
@@ -103,16 +107,17 @@ class SystemManager():
         for key in self.paths.keys():
             if(not os.path.exists(self.paths[key])):
                 os.makedirs(self.paths[key])
-        logging.basicConfig(filename=self.paths["folder"]+"\\data.log", format='%(asctime)s - %(levelname)s - %(message)s', level=logging.DEBUG)
+
+        logging.basicConfig(filename=os.path.join(self.paths["folder"],"data.log"), format='%(asctime)s - %(levelname)s - %(message)s', level=logging.DEBUG)
         logging.getLogger('PIL').setLevel(logging.WARNING)
         logging.debug("############################################")
         logging.debug("DIRECTORY - setup user directory")
 
     def Start(self):
         self.DisplayError()
-        version = "0.96"
-        branch = "main"
-
+        version = self.master.pacman.data["launcher"]["version"]
+        branch = self.master.pacman.data["branch"]
+        
         self.master.window.IntermediateBarWindow(
             [
             {"text":"Starting Launcher","position":0,"font":("Helvetica",18)},
@@ -130,7 +135,11 @@ class SystemManager():
         clear.start()
         self.master.window.Start()
     def RunLauncher(self):
-        path = self.paths["bin"]+"\\launcher\\Trihexangular Launcher.exe"
+        ending = ".zip"
+        if(self.master.system.systemname=="Linux"):
+            ending = ".x86_64"
+
+        path = os.path.join(self.paths["bin"],"launcher","Trihexangular Launcher"+ending)
         
         subprocess.Popen([path])
         logging.debug("LAUNCH - starting game launcher exectuable")
@@ -152,29 +161,34 @@ class SystemManager():
         f_path = self.paths["data"]
         
         
-        
+        print(url)
         self.master.network.ThreadDownloadFile(url,d_path,f_path,"launcher_data.json",self.master.window.DataProgressHook)
         
         self.master.window.Start()
     def Install(self):
+        branch = self.master.pacman.data["branch"]
+        launcher_number = 0.96
+
         self.master.window.ProgressBarWindow(
             [
                 {"text":"Installing","font":("Helvetica",18),"position":0},
                 {"text":"Downloading neccesary launcher files and extracting","font":("Helvetica",10),"position":25},
-                {"text":"This may take some time","font":("Helvetica",10),"position":50}
+                {"text":f"Getting {branch} {launcher_number}","font":("Helvetica",10),"position":50}
             ],
             {"width":300,"height":30,"posx":0,"posy":90}
         )
-        
+        ending = ".zip"
+        if(self.master.system.systemname=="Linux"):
+            ending = ".x86_64"
    
-        branch = "main"
-        launcher_number = 0.96
-        launcher_os = self.master.pacman.data["os"]+".zip"
+        
+        launcher_os = (self.master.system.systemname.lower())+".zip"
+        print(launcher_os)
         url = self.master.pacman.data["repository"] + f"/releases/download/{branch}_{launcher_number}/launcher_{launcher_os}"
 
         
-        d_path = self.paths[".temp"]+"\\launcher.zip"
-        e_path = self.paths["bin"]+"\\launcher"
+        d_path = os.path.join(self.paths[".temp"],"launcher.zip")
+        e_path = os.path.join(self.paths["bin"],"launcher")
 
         
         self.master.network.ThreadDownloadZIP(url,d_path,e_path,self.master.window.DataProgressHook)
@@ -460,6 +474,17 @@ class NetworkManager():
             try:
                 with zipfile.ZipFile(d_path, 'r') as zip_ref:
                     zip_ref.extractall(e_path)
+                try:
+                    ending = ".exe"
+                    if(self.master.system.systemname=="Linux"):
+                        ending = ".x86_64"
+                    fp = os.path.join(e_path,"Trihexangular Launcher"+ending)
+                    st = os.stat(fp)
+                    os.chmod(fp, st.st_mode | stat.S_IEXEC)
+
+                except Exception as e:
+                    print(f"TAG - Could not give executable tag to file - {e}")
+                    #logging.log("TAG - Could not give executable tag to file")
 
             except zipfile.BadZipFile as e:
                 self.ErrorMessageBox(f"ERROR - extraction failed due to bad zip file - {e}",processhook)
@@ -477,13 +502,16 @@ class NetworkManager():
             self.ErrorMessageBox(f"ERROR - an unexpected error occured {e}",processhook)
     def DownloadFile(self,url,d_path,f_path,filename,processhook=None):
         logging.debug(f"NETWORK - downloading file '{url}'")
+        print("SAFE")
         try:
 
             os.makedirs(d_path, exist_ok=True)
             try:
-                urllib.request.urlretrieve(url,os.path.join(d_path,filename),reporthook=processhook)
-                shutil.move(os.path.join(d_path,filename),os.path.join(f_path,filename))
+                goodfp =os.path.join(d_path,filename)
+                urllib.request.urlretrieve(url,goodfp,reporthook=processhook)
+                shutil.move(goodfp,os.path.join(f_path,filename))
             except Exception as a:
+                print(a)
                 self.ErrorMessageBox(f"NETWORK - {a}",processhook)
             
             processhook("downloadsuccessful",0.1,0.1)
@@ -506,7 +534,7 @@ class Manager():
     def __init__(self):
         self.currenterror = {}
         self.system = SystemManager(self)
-        self.system.WindowsDirectory()
+        self.system.LinuxDirectory()
 
         self.pacman = PackageManager(self,False)
         self.datman = PackageManager(self,True)

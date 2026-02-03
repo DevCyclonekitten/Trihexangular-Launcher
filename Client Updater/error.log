@@ -1,0 +1,346 @@
+2026-02-03 21:34:11,110 - DEBUG - Starting new HTTPS connection (1): www.google.com:443
+2026-02-03 21:34:11,506 - DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+2026-02-03 21:34:11,537 - DEBUG - ############################################
+2026-02-03 21:34:11,537 - DEBUG - DIRECTORY - setup user directory
+2026-02-03 21:34:11,569 - DEBUG - PACKAGES - getting packages
+2026-02-03 21:34:11,569 - DEBUG - MESSAGE - asking message Welcome
+2026-02-03 21:34:12,589 - DEBUG - MESSAGE - asking message Select OS
+2026-02-03 21:34:12,892 - DEBUG - MESSAGE - asking message EULA
+2026-02-03 21:34:13,222 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-03 21:34:13,526 - DEBUG - MESSAGE - asking message Select branch
+2026-02-03 21:34:13,944 - DEBUG - NETWORK - downloading launcher data
+2026-02-03 21:34:13,951 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/launcher_data.json'
+2026-02-03 21:34:14,487 - DEBUG - PACKAGES - getting launcher data
+2026-02-03 21:34:14,487 - ERROR - ERROR - cannot get launcher data
+2026-02-03 21:34:14,487 - DEBUG - MESSAGE - asking message Error
+2026-02-03 21:35:33,392 - DEBUG - Starting new HTTPS connection (1): www.google.com:443
+2026-02-03 21:35:33,789 - DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+2026-02-03 21:35:33,795 - DEBUG - ############################################
+2026-02-03 21:35:33,795 - DEBUG - DIRECTORY - setup user directory
+2026-02-03 21:35:33,826 - DEBUG - PACKAGES - getting packages
+2026-02-03 21:35:33,826 - DEBUG - MESSAGE - asking message Welcome
+2026-02-03 21:35:44,915 - DEBUG - MESSAGE - asking message Select OS
+2026-02-03 21:35:45,166 - DEBUG - MESSAGE - asking message EULA
+2026-02-03 21:35:45,663 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-03 21:35:46,187 - DEBUG - MESSAGE - asking message Select branch
+2026-02-03 21:35:46,698 - DEBUG - NETWORK - downloading launcher data
+2026-02-03 21:35:46,704 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/launcher_data.json'
+2026-02-03 21:35:46,969 - DEBUG - PACKAGES - getting launcher data
+2026-02-03 21:35:46,970 - ERROR - ERROR - cannot get launcher data
+2026-02-03 21:35:46,970 - DEBUG - MESSAGE - asking message Error
+2026-02-03 21:36:06,430 - DEBUG - Starting new HTTPS connection (1): www.google.com:443
+2026-02-03 21:36:06,845 - DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+2026-02-03 21:36:06,847 - DEBUG - ############################################
+2026-02-03 21:36:06,847 - DEBUG - DIRECTORY - setup user directory
+2026-02-03 21:36:06,876 - DEBUG - PACKAGES - getting packages
+2026-02-03 21:36:06,876 - DEBUG - MESSAGE - asking message Welcome
+2026-02-03 21:36:07,394 - DEBUG - MESSAGE - asking message Select OS
+2026-02-03 21:36:07,674 - DEBUG - MESSAGE - asking message EULA
+2026-02-03 21:36:07,896 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-03 21:36:08,106 - DEBUG - MESSAGE - asking message Select branch
+2026-02-03 21:36:08,335 - DEBUG - NETWORK - downloading launcher data
+2026-02-03 21:36:08,341 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/launcher_data.json'
+2026-02-03 21:36:08,601 - DEBUG - PACKAGES - getting launcher data
+2026-02-03 21:36:08,601 - ERROR - ERROR - cannot get launcher data
+2026-02-03 21:36:08,601 - DEBUG - MESSAGE - asking message Error
+2026-02-03 21:36:40,571 - DEBUG - Starting new HTTPS connection (1): www.google.com:443
+2026-02-03 21:36:41,012 - DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+2026-02-03 21:36:41,032 - DEBUG - ############################################
+2026-02-03 21:36:41,033 - DEBUG - DIRECTORY - setup user directory
+2026-02-03 21:36:41,062 - DEBUG - PACKAGES - getting packages
+2026-02-03 21:36:41,062 - DEBUG - MESSAGE - asking message Welcome
+2026-02-03 21:36:41,706 - DEBUG - MESSAGE - asking message Select OS
+2026-02-03 21:36:41,982 - DEBUG - MESSAGE - asking message EULA
+2026-02-03 21:36:42,171 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-03 21:36:42,715 - DEBUG - MESSAGE - asking message Select branch
+2026-02-03 21:36:42,990 - DEBUG - NETWORK - downloading launcher data
+2026-02-03 21:36:42,997 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/launcher_data.json'
+2026-02-03 21:36:43,470 - DEBUG - PACKAGES - getting launcher data
+2026-02-03 21:36:43,478 - DEBUG - NETWORK - downloading zip 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.96/launcher_windows.zip'
+2026-02-03 21:38:42,732 - DEBUG - Starting new HTTPS connection (1): www.google.com:443
+2026-02-03 21:38:43,144 - DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+2026-02-03 21:38:43,150 - DEBUG - ############################################
+2026-02-03 21:38:43,150 - DEBUG - DIRECTORY - setup user directory
+2026-02-03 21:38:43,179 - DEBUG - PACKAGES - getting packages
+2026-02-03 21:38:43,179 - DEBUG - MESSAGE - asking message Welcome
+2026-02-03 21:38:44,775 - DEBUG - MESSAGE - asking message Select OS
+2026-02-03 21:42:21,754 - DEBUG - Starting new HTTPS connection (1): www.google.com:443
+2026-02-03 21:42:22,255 - DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+2026-02-03 21:42:22,265 - DEBUG - ############################################
+2026-02-03 21:42:22,265 - DEBUG - DIRECTORY - setup user directory
+2026-02-03 21:42:22,295 - DEBUG - PACKAGES - getting packages
+2026-02-03 21:42:22,295 - DEBUG - MESSAGE - asking message Welcome
+2026-02-03 21:42:22,925 - DEBUG - MESSAGE - asking message Select OS
+2026-02-03 21:42:23,380 - DEBUG - MESSAGE - asking message EULA
+2026-02-03 21:42:23,758 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-03 21:42:24,214 - DEBUG - MESSAGE - asking message Select branch
+2026-02-03 21:42:24,672 - DEBUG - NETWORK - downloading launcher data
+2026-02-03 21:42:24,679 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/launcher_data.json'
+2026-02-03 21:42:26,080 - DEBUG - PACKAGES - getting launcher data
+2026-02-03 21:42:26,090 - DEBUG - NETWORK - downloading zip 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/beta_0.96/launcher_windows.x86_64'
+2026-02-03 21:42:26,514 - ERROR - ERROR - download error: HTTP Error 404: Not Found https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/beta_0.96/launcher_windows.x86_64
+2026-02-03 21:42:26,515 - DEBUG - MESSAGE - asking message Error
+2026-02-03 21:43:24,969 - DEBUG - Starting new HTTPS connection (1): www.google.com:443
+2026-02-03 21:43:25,393 - DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+2026-02-03 21:43:25,410 - DEBUG - ############################################
+2026-02-03 21:43:25,410 - DEBUG - DIRECTORY - setup user directory
+2026-02-03 21:43:25,441 - DEBUG - PACKAGES - getting packages
+2026-02-03 21:43:25,441 - DEBUG - MESSAGE - asking message Welcome
+2026-02-03 21:43:26,432 - DEBUG - MESSAGE - asking message Select OS
+2026-02-03 21:43:26,761 - DEBUG - MESSAGE - asking message EULA
+2026-02-03 21:43:27,042 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-03 21:43:27,489 - DEBUG - MESSAGE - asking message Select branch
+2026-02-03 21:43:28,077 - DEBUG - NETWORK - downloading launcher data
+2026-02-03 21:43:28,084 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/launcher_data.json'
+2026-02-03 21:43:28,291 - DEBUG - PACKAGES - getting launcher data
+2026-02-03 21:43:56,046 - DEBUG - Starting new HTTPS connection (1): www.google.com:443
+2026-02-03 21:43:56,416 - DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+2026-02-03 21:43:56,435 - DEBUG - ############################################
+2026-02-03 21:43:56,435 - DEBUG - DIRECTORY - setup user directory
+2026-02-03 21:43:56,465 - DEBUG - PACKAGES - getting packages
+2026-02-03 21:43:56,466 - DEBUG - MESSAGE - asking message Welcome
+2026-02-03 21:43:58,570 - DEBUG - MESSAGE - asking message Select OS
+2026-02-03 21:43:58,814 - DEBUG - MESSAGE - asking message EULA
+2026-02-03 21:44:01,771 - DEBUG - Starting new HTTPS connection (1): www.google.com:443
+2026-02-03 21:44:02,161 - DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+2026-02-03 21:44:02,186 - DEBUG - ############################################
+2026-02-03 21:44:02,186 - DEBUG - DIRECTORY - setup user directory
+2026-02-03 21:44:02,217 - DEBUG - PACKAGES - getting packages
+2026-02-03 21:44:02,218 - DEBUG - MESSAGE - asking message Welcome
+2026-02-03 21:44:02,929 - DEBUG - MESSAGE - asking message Select OS
+2026-02-03 21:44:03,344 - DEBUG - MESSAGE - asking message EULA
+2026-02-03 21:44:03,879 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-03 21:44:05,110 - DEBUG - MESSAGE - asking message Select branch
+2026-02-03 21:44:05,713 - DEBUG - NETWORK - downloading launcher data
+2026-02-03 21:44:05,721 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/launcher_data.json'
+2026-02-03 21:44:05,984 - DEBUG - PACKAGES - getting launcher data
+2026-02-03 21:44:05,993 - DEBUG - NETWORK - downloading zip 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/beta_0.96/launcher_Linux.x86_64'
+2026-02-03 21:44:06,532 - ERROR - ERROR - download error: HTTP Error 404: Not Found https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/beta_0.96/launcher_Linux.x86_64
+2026-02-03 21:44:06,533 - DEBUG - MESSAGE - asking message Error
+2026-02-03 21:44:28,586 - DEBUG - Starting new HTTPS connection (1): www.google.com:443
+2026-02-03 21:44:28,953 - DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+2026-02-03 21:44:28,978 - DEBUG - ############################################
+2026-02-03 21:44:28,978 - DEBUG - DIRECTORY - setup user directory
+2026-02-03 21:44:29,010 - DEBUG - PACKAGES - getting packages
+2026-02-03 21:44:29,010 - DEBUG - MESSAGE - asking message Welcome
+2026-02-03 21:44:29,602 - DEBUG - MESSAGE - asking message Select OS
+2026-02-03 21:44:29,806 - DEBUG - MESSAGE - asking message EULA
+2026-02-03 21:44:30,136 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-03 21:44:30,459 - DEBUG - MESSAGE - asking message Select branch
+2026-02-03 21:44:30,991 - DEBUG - NETWORK - downloading launcher data
+2026-02-03 21:44:30,998 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/launcher_data.json'
+2026-02-03 21:44:31,238 - DEBUG - PACKAGES - getting launcher data
+2026-02-03 21:44:31,247 - DEBUG - NETWORK - downloading zip 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/beta_0.96/launcher_linux.x86_64'
+2026-02-03 21:44:31,720 - ERROR - ERROR - download error: HTTP Error 404: Not Found https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/beta_0.96/launcher_linux.x86_64
+2026-02-03 21:44:31,721 - DEBUG - MESSAGE - asking message Error
+2026-02-03 21:45:36,501 - DEBUG - Starting new HTTPS connection (1): www.google.com:443
+2026-02-03 21:45:36,894 - DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+2026-02-03 21:45:36,930 - DEBUG - ############################################
+2026-02-03 21:45:36,930 - DEBUG - DIRECTORY - setup user directory
+2026-02-03 21:45:36,960 - DEBUG - PACKAGES - getting packages
+2026-02-03 21:45:36,960 - DEBUG - MESSAGE - asking message Welcome
+2026-02-03 21:45:37,757 - DEBUG - MESSAGE - asking message Select OS
+2026-02-03 21:45:38,019 - DEBUG - MESSAGE - asking message EULA
+2026-02-03 21:45:38,355 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-03 21:45:39,319 - DEBUG - MESSAGE - asking message Select branch
+2026-02-03 21:45:39,644 - DEBUG - NETWORK - downloading launcher data
+2026-02-03 21:45:39,651 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/launcher_data.json'
+2026-02-03 21:45:39,839 - DEBUG - PACKAGES - getting launcher data
+2026-02-03 21:45:39,847 - DEBUG - NETWORK - downloading zip 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/beta_0.96/launcher_linux.x86_64'
+2026-02-03 21:45:39,947 - ERROR - ERROR - download error: HTTP Error 404: Not Found https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/beta_0.96/launcher_linux.x86_64
+2026-02-03 21:45:39,948 - DEBUG - MESSAGE - asking message Error
+2026-02-03 21:46:16,299 - DEBUG - Starting new HTTPS connection (1): www.google.com:443
+2026-02-03 21:46:16,701 - DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+2026-02-03 21:46:16,724 - DEBUG - ############################################
+2026-02-03 21:46:16,724 - DEBUG - DIRECTORY - setup user directory
+2026-02-03 21:46:16,753 - DEBUG - PACKAGES - getting packages
+2026-02-03 21:46:16,753 - DEBUG - MESSAGE - asking message Welcome
+2026-02-03 21:46:17,551 - DEBUG - MESSAGE - asking message Select OS
+2026-02-03 21:46:17,893 - DEBUG - MESSAGE - asking message EULA
+2026-02-03 21:46:18,241 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-03 21:46:19,096 - DEBUG - MESSAGE - asking message Select branch
+2026-02-03 21:46:19,632 - DEBUG - NETWORK - downloading launcher data
+2026-02-03 21:46:19,639 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/launcher_data.json'
+2026-02-03 21:46:19,824 - DEBUG - PACKAGES - getting launcher data
+2026-02-03 21:46:19,833 - DEBUG - NETWORK - downloading zip 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/beta_0.96/launcher_linux.zip'
+2026-02-03 21:46:20,265 - ERROR - ERROR - download error: HTTP Error 404: Not Found https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/beta_0.96/launcher_linux.zip
+2026-02-03 21:46:20,266 - DEBUG - MESSAGE - asking message Error
+2026-02-03 21:47:29,556 - DEBUG - Starting new HTTPS connection (1): www.google.com:443
+2026-02-03 21:47:29,926 - DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+2026-02-03 21:47:29,947 - DEBUG - ############################################
+2026-02-03 21:47:29,947 - DEBUG - DIRECTORY - setup user directory
+2026-02-03 21:47:29,989 - DEBUG - PACKAGES - getting packages
+2026-02-03 21:47:29,989 - DEBUG - MESSAGE - asking message Welcome
+2026-02-03 21:47:30,904 - DEBUG - MESSAGE - asking message Select OS
+2026-02-03 21:47:31,154 - DEBUG - MESSAGE - asking message EULA
+2026-02-03 21:47:31,410 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-03 21:47:31,844 - DEBUG - MESSAGE - asking message Select branch
+2026-02-03 21:47:32,216 - DEBUG - NETWORK - downloading launcher data
+2026-02-03 21:47:32,224 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/launcher_data.json'
+2026-02-03 21:47:33,001 - DEBUG - PACKAGES - getting launcher data
+2026-02-03 21:47:33,010 - DEBUG - NETWORK - downloading zip 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/beta_0.96/launcher_linux.zip'
+2026-02-03 21:49:56,146 - DEBUG - Starting new HTTPS connection (1): www.google.com:443
+2026-02-03 21:49:56,488 - DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+2026-02-03 21:49:56,515 - DEBUG - ############################################
+2026-02-03 21:49:56,515 - DEBUG - DIRECTORY - setup user directory
+2026-02-03 21:49:56,545 - DEBUG - PACKAGES - getting packages
+2026-02-03 21:49:56,545 - DEBUG - MESSAGE - asking message Welcome
+2026-02-03 21:49:57,262 - DEBUG - MESSAGE - asking message Select OS
+2026-02-03 21:49:57,561 - DEBUG - MESSAGE - asking message EULA
+2026-02-03 21:49:57,955 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-03 21:50:01,078 - DEBUG - Starting new HTTPS connection (1): www.google.com:443
+2026-02-03 21:50:01,474 - DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+2026-02-03 21:50:01,500 - DEBUG - ############################################
+2026-02-03 21:50:01,501 - DEBUG - DIRECTORY - setup user directory
+2026-02-03 21:50:01,532 - DEBUG - PACKAGES - getting packages
+2026-02-03 21:50:01,532 - DEBUG - MESSAGE - asking message Welcome
+2026-02-03 21:50:02,102 - DEBUG - MESSAGE - asking message Select OS
+2026-02-03 21:50:02,659 - DEBUG - MESSAGE - asking message EULA
+2026-02-03 21:50:03,184 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-03 21:50:11,146 - DEBUG - MESSAGE - asking message Select branch
+2026-02-03 21:50:12,028 - DEBUG - NETWORK - downloading launcher data
+2026-02-03 21:50:12,035 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/launcher_data.json'
+2026-02-03 21:50:12,592 - DEBUG - PACKAGES - getting launcher data
+2026-02-03 21:50:12,601 - DEBUG - NETWORK - downloading zip 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/beta_0.96/launcher_linux.zip'
+2026-02-03 21:54:00,336 - DEBUG - ############################################
+2026-02-03 21:54:00,337 - DEBUG - DIRECTORY - setup user directory
+2026-02-03 21:54:00,365 - DEBUG - PACKAGES - getting packages
+2026-02-03 21:54:00,365 - DEBUG - MESSAGE - asking message Welcome
+2026-02-03 21:54:01,178 - DEBUG - MESSAGE - asking message Select OS
+2026-02-03 21:54:01,472 - DEBUG - MESSAGE - asking message EULA
+2026-02-03 21:54:01,747 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-03 21:54:02,141 - DEBUG - MESSAGE - asking message Select branch
+2026-02-03 21:54:02,573 - DEBUG - NETWORK - downloading launcher data
+2026-02-03 21:54:02,580 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/launcher_data.json'
+2026-02-03 21:54:03,343 - DEBUG - PACKAGES - getting launcher data
+2026-02-03 21:54:03,352 - DEBUG - NETWORK - downloading zip 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/beta_0.96/launcher_linux.zip'
+2026-02-03 21:54:14,516 - ERROR - ERROR - extraction failed due to log() missing 1 required positional argument: 'msg'
+2026-02-03 21:54:14,516 - DEBUG - MESSAGE - asking message Error
+2026-02-03 21:55:03,438 - DEBUG - ############################################
+2026-02-03 21:55:03,438 - DEBUG - DIRECTORY - setup user directory
+2026-02-03 21:55:03,467 - DEBUG - PACKAGES - getting packages
+2026-02-03 21:55:03,467 - DEBUG - MESSAGE - asking message Welcome
+2026-02-03 21:55:04,499 - DEBUG - MESSAGE - asking message Select OS
+2026-02-03 21:55:05,479 - DEBUG - MESSAGE - asking message EULA
+2026-02-03 21:55:06,049 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-03 21:55:08,181 - DEBUG - MESSAGE - asking message Select branch
+2026-02-03 21:55:08,769 - DEBUG - NETWORK - downloading launcher data
+2026-02-03 21:55:08,776 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/launcher_data.json'
+2026-02-03 21:55:09,014 - DEBUG - PACKAGES - getting launcher data
+2026-02-03 21:55:09,022 - DEBUG - NETWORK - downloading zip 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/beta_0.96/launcher_linux.zip'
+2026-02-03 21:55:16,374 - ERROR - ERROR - extraction failed due to log() missing 1 required positional argument: 'msg'
+2026-02-03 21:55:16,375 - DEBUG - MESSAGE - asking message Error
+2026-02-03 21:56:47,658 - DEBUG - ############################################
+2026-02-03 21:56:47,658 - DEBUG - DIRECTORY - setup user directory
+2026-02-03 21:56:47,685 - DEBUG - PACKAGES - getting packages
+2026-02-03 21:56:47,685 - DEBUG - MESSAGE - asking message Welcome
+2026-02-03 21:56:48,448 - DEBUG - MESSAGE - asking message Select OS
+2026-02-03 21:56:48,728 - DEBUG - MESSAGE - asking message EULA
+2026-02-03 21:56:49,110 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-03 21:56:49,832 - DEBUG - MESSAGE - asking message Select branch
+2026-02-03 21:56:50,521 - DEBUG - NETWORK - downloading launcher data
+2026-02-03 21:56:50,528 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/launcher_data.json'
+2026-02-03 21:56:51,035 - DEBUG - PACKAGES - getting launcher data
+2026-02-03 21:56:51,044 - DEBUG - NETWORK - downloading zip 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/beta_0.96/launcher_linux.zip'
+2026-02-03 21:57:54,875 - DEBUG - ############################################
+2026-02-03 21:57:54,875 - DEBUG - DIRECTORY - setup user directory
+2026-02-03 21:57:54,910 - DEBUG - PACKAGES - getting packages
+2026-02-03 21:57:54,910 - DEBUG - NETWORK - downloading launcher data
+2026-02-03 21:57:54,926 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/launcher_data.json'
+2026-02-03 21:57:55,340 - DEBUG - PACKAGES - getting launcher data
+2026-02-03 21:57:55,340 - DEBUG - LAUNCH - checking for avaliable updates
+2026-02-03 21:57:55,849 - DEBUG - LAUNCH - already up to date
+2026-02-03 21:58:01,559 - DEBUG - ############################################
+2026-02-03 21:58:01,559 - DEBUG - DIRECTORY - setup user directory
+2026-02-03 21:58:01,588 - DEBUG - PACKAGES - getting packages
+2026-02-03 21:58:01,588 - DEBUG - NETWORK - downloading launcher data
+2026-02-03 21:58:01,605 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/launcher_data.json'
+2026-02-03 21:58:01,798 - DEBUG - PACKAGES - getting launcher data
+2026-02-03 21:58:01,798 - DEBUG - LAUNCH - checking for avaliable updates
+2026-02-03 21:58:02,307 - DEBUG - LAUNCH - already up to date
+2026-02-03 21:58:12,082 - DEBUG - ############################################
+2026-02-03 21:58:12,082 - DEBUG - DIRECTORY - setup user directory
+2026-02-03 21:58:12,110 - DEBUG - PACKAGES - getting packages
+2026-02-03 21:58:12,111 - DEBUG - MESSAGE - asking message Welcome
+2026-02-03 21:58:12,988 - DEBUG - MESSAGE - asking message Select OS
+2026-02-03 21:58:13,197 - DEBUG - MESSAGE - asking message EULA
+2026-02-03 21:58:13,520 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-03 21:58:13,845 - DEBUG - MESSAGE - asking message Select branch
+2026-02-03 21:58:14,376 - DEBUG - NETWORK - downloading launcher data
+2026-02-03 21:58:14,383 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/launcher_data.json'
+2026-02-03 21:58:14,585 - DEBUG - PACKAGES - getting launcher data
+2026-02-03 21:58:14,594 - DEBUG - NETWORK - downloading zip 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/beta_0.96/launcher_linux.zip'
+2026-02-03 21:59:09,606 - DEBUG - ############################################
+2026-02-03 21:59:09,606 - DEBUG - DIRECTORY - setup user directory
+2026-02-03 21:59:09,640 - DEBUG - PACKAGES - getting packages
+2026-02-03 21:59:09,641 - DEBUG - NETWORK - downloading launcher data
+2026-02-03 21:59:09,666 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/launcher_data.json'
+2026-02-03 21:59:10,465 - DEBUG - PACKAGES - getting launcher data
+2026-02-03 21:59:10,465 - DEBUG - LAUNCH - checking for avaliable updates
+2026-02-03 21:59:10,974 - DEBUG - LAUNCH - already up to date
+2026-02-03 22:00:04,454 - DEBUG - ############################################
+2026-02-03 22:00:04,454 - DEBUG - DIRECTORY - setup user directory
+2026-02-03 22:00:04,483 - DEBUG - PACKAGES - getting packages
+2026-02-03 22:00:04,483 - DEBUG - MESSAGE - asking message Welcome
+2026-02-03 22:00:05,484 - DEBUG - MESSAGE - asking message Select OS
+2026-02-03 22:00:05,752 - DEBUG - MESSAGE - asking message EULA
+2026-02-03 22:00:06,118 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-03 22:00:06,553 - DEBUG - MESSAGE - asking message Select branch
+2026-02-03 22:00:07,039 - DEBUG - NETWORK - downloading launcher data
+2026-02-03 22:00:07,047 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/launcher_data.json'
+2026-02-03 22:00:07,236 - DEBUG - PACKAGES - getting launcher data
+2026-02-03 22:00:07,244 - DEBUG - NETWORK - downloading zip 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/beta_0.96/launcher_linux.zip'
+2026-02-03 22:01:26,442 - DEBUG - ############################################
+2026-02-03 22:01:26,442 - DEBUG - DIRECTORY - setup user directory
+2026-02-03 22:01:26,470 - DEBUG - PACKAGES - getting packages
+2026-02-03 22:01:26,470 - DEBUG - NETWORK - downloading launcher data
+2026-02-03 22:01:26,486 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/launcher_data.json'
+2026-02-03 22:01:26,996 - DEBUG - PACKAGES - getting launcher data
+2026-02-03 22:01:26,997 - DEBUG - LAUNCH - checking for avaliable updates
+2026-02-03 22:01:27,506 - DEBUG - LAUNCH - already up to date
+2026-02-03 22:01:34,051 - DEBUG - ############################################
+2026-02-03 22:01:34,051 - DEBUG - DIRECTORY - setup user directory
+2026-02-03 22:01:34,080 - DEBUG - PACKAGES - getting packages
+2026-02-03 22:01:34,080 - DEBUG - MESSAGE - asking message Welcome
+2026-02-03 22:01:34,941 - DEBUG - MESSAGE - asking message Select OS
+2026-02-03 22:01:35,178 - DEBUG - MESSAGE - asking message EULA
+2026-02-03 22:01:35,372 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-03 22:01:37,768 - DEBUG - ############################################
+2026-02-03 22:01:37,768 - DEBUG - DIRECTORY - setup user directory
+2026-02-03 22:01:37,799 - DEBUG - PACKAGES - getting packages
+2026-02-03 22:01:37,799 - DEBUG - MESSAGE - asking message Welcome
+2026-02-03 22:01:38,658 - DEBUG - MESSAGE - asking message Select OS
+2026-02-03 22:01:39,277 - DEBUG - MESSAGE - asking message EULA
+2026-02-03 22:01:39,664 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-03 22:01:40,119 - DEBUG - MESSAGE - asking message Select branch
+2026-02-03 22:01:40,675 - DEBUG - NETWORK - downloading launcher data
+2026-02-03 22:01:40,682 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/launcher_data.json'
+2026-02-03 22:01:40,880 - DEBUG - PACKAGES - getting launcher data
+2026-02-03 22:01:40,890 - DEBUG - NETWORK - downloading zip 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/beta_0.96/launcher_linux.zip'
+2026-02-03 22:02:38,659 - DEBUG - ############################################
+2026-02-03 22:02:38,659 - DEBUG - DIRECTORY - setup user directory
+2026-02-03 22:02:38,689 - DEBUG - PACKAGES - getting packages
+2026-02-03 22:02:38,689 - DEBUG - NETWORK - downloading launcher data
+2026-02-03 22:02:38,711 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/launcher_data.json'
+2026-02-03 22:02:38,901 - DEBUG - PACKAGES - getting launcher data
+2026-02-03 22:02:38,902 - DEBUG - LAUNCH - checking for avaliable updates
+2026-02-03 22:02:39,411 - DEBUG - LAUNCH - already up to date
+2026-02-03 22:02:46,437 - DEBUG - ############################################
+2026-02-03 22:02:46,437 - DEBUG - DIRECTORY - setup user directory
+2026-02-03 22:02:46,467 - DEBUG - PACKAGES - getting packages
+2026-02-03 22:02:46,467 - DEBUG - MESSAGE - asking message Welcome
+2026-02-03 22:02:47,670 - DEBUG - MESSAGE - asking message Select OS
+2026-02-03 22:02:47,897 - DEBUG - MESSAGE - asking message EULA
+2026-02-03 22:02:50,585 - DEBUG - ############################################
+2026-02-03 22:02:50,585 - DEBUG - DIRECTORY - setup user directory
+2026-02-03 22:02:50,614 - DEBUG - PACKAGES - getting packages
+2026-02-03 22:02:50,615 - DEBUG - MESSAGE - asking message Welcome
+2026-02-03 22:02:51,571 - DEBUG - MESSAGE - asking message Select OS
+2026-02-03 22:02:51,947 - DEBUG - MESSAGE - asking message EULA
+2026-02-03 22:02:52,417 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-03 22:02:53,068 - DEBUG - MESSAGE - asking message Select branch
+2026-02-03 22:02:53,403 - DEBUG - NETWORK - downloading launcher data
+2026-02-03 22:02:53,410 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/launcher_data.json'
+2026-02-03 22:02:53,573 - DEBUG - PACKAGES - getting launcher data
+2026-02-03 22:02:53,582 - DEBUG - NETWORK - downloading zip 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/beta_0.96/launcher_linux.zip'
+2026-02-03 22:03:00,204 - DEBUG - LAUNCH - starting game launcher exectuable
