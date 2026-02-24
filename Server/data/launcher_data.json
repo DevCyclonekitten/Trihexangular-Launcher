@@ -747,8 +747,8 @@
                 "id":5,
                 "name":"Error",
                 "content":[
-                    {"text":"An error occured","position":0,"font":["Helvetica","15"]},
-                    {"text":"whatevertextyouneedtoreplaceputhere","position":25,"font":["Helvetica","10"]}
+                    {"type":"text","content":["textnametype","15","Helvetica"]},
+                    {"type":"text","content":["second","35","Helvetica"]}
                 ],
                 "icon":"cancel",
                 "flags":{
