@@ -139,7 +139,7 @@ systemos = {
 systemeula = {"name":"EULA",
     "content":[
         {"text":"End user licence agreement","position":0,"font":("Helvetica",15)},
-        {"text":"Have you read and do youagree to the eula?","position":25,"font":("Helvetica",10)}
+        {"text":"Have you read and do you agree to the eula?","position":25,"font":("Helvetica",10)}
     ],
     "icon":"cancel",
     "flags":{
@@ -162,7 +162,7 @@ systemeula = {"name":"EULA",
                 ]
             },
             {"text":"View","interactor":[
-                {"type":"url","content":{"target":"https:\\example.com"}},
+                {"type":"url","content":{"target":r"https://devcyclonekitten.github.io/Trihexangular-Launcher/eula.html"}},
                 {"type":"messagelink","content":{"target":"repeat"}}
             ]},
             {"text":"Deny","interactor":[

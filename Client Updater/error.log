@@ -344,3 +344,52 @@
 2026-02-03 22:02:53,573 - DEBUG - PACKAGES - getting launcher data
 2026-02-03 22:02:53,582 - DEBUG - NETWORK - downloading zip 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/beta_0.96/launcher_linux.zip'
 2026-02-03 22:03:00,204 - DEBUG - LAUNCH - starting game launcher exectuable
+2026-02-27 21:32:51,425 - DEBUG - ############################################
+2026-02-27 21:32:51,425 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 21:32:51,467 - DEBUG - PACKAGES - getting packages
+2026-02-27 21:32:51,468 - DEBUG - NETWORK - downloading launcher data
+2026-02-27 21:32:51,483 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/launcher_data.json'
+2026-02-27 21:32:52,409 - DEBUG - PACKAGES - getting launcher data
+2026-02-27 21:32:52,409 - DEBUG - LAUNCH - checking for avaliable updates
+2026-02-27 21:32:52,917 - DEBUG - LAUNCH - update avaliable
+2026-02-27 21:32:52,928 - DEBUG - NETWORK - downloading zip 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/beta_0.96/launcher_linux.zip'
+2026-02-27 21:34:10,883 - DEBUG - ############################################
+2026-02-27 21:34:10,883 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 21:34:10,911 - DEBUG - PACKAGES - getting packages
+2026-02-27 21:34:31,172 - DEBUG - ############################################
+2026-02-27 21:34:31,172 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 21:34:31,202 - DEBUG - PACKAGES - getting packages
+2026-02-27 21:35:09,951 - DEBUG - ############################################
+2026-02-27 21:35:09,951 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 21:35:09,980 - DEBUG - PACKAGES - getting packages
+2026-02-27 21:35:09,981 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 21:35:11,805 - DEBUG - MESSAGE - asking message EULA
+2026-02-27 21:36:18,259 - DEBUG - ############################################
+2026-02-27 21:36:18,259 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 21:36:18,288 - DEBUG - PACKAGES - getting packages
+2026-02-27 21:36:18,288 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 21:36:19,190 - DEBUG - MESSAGE - asking message EULA
+2026-02-27 21:37:48,843 - DEBUG - ############################################
+2026-02-27 21:37:48,843 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 21:37:48,871 - DEBUG - PACKAGES - getting packages
+2026-02-27 21:37:48,872 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 21:37:49,972 - DEBUG - MESSAGE - asking message EULA
+2026-02-27 21:37:56,690 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-27 21:38:39,874 - DEBUG - MESSAGE - asking message Select branch
+2026-02-27 21:38:40,915 - DEBUG - NETWORK - downloading launcher data
+2026-02-27 21:38:40,922 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/launcher_data.json'
+2026-02-27 21:38:41,697 - DEBUG - PACKAGES - getting launcher data
+2026-02-27 21:38:41,707 - DEBUG - NETWORK - downloading zip 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.96/launcher_linux.zip'
+2026-02-27 21:38:42,047 - ERROR - ERROR - download error: HTTP Error 404: Not Found https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.96/launcher_linux.zip
+2026-02-27 21:38:42,048 - DEBUG - MESSAGE - asking message Error
+2026-02-27 21:45:54,328 - DEBUG - ############################################
+2026-02-27 21:45:54,328 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 21:45:54,357 - DEBUG - PACKAGES - getting packages
+2026-02-27 21:45:54,357 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 21:45:56,909 - DEBUG - MESSAGE - asking message EULA
+2026-02-27 21:46:03,457 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-27 21:46:05,370 - DEBUG - MESSAGE - asking message Select branch
+2026-02-27 21:46:09,889 - DEBUG - NETWORK - downloading launcher data
+2026-02-27 21:46:09,896 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/launcher_data.json'
+2026-02-27 21:46:10,890 - DEBUG - PACKAGES - getting launcher data
+2026-02-27 21:46:10,900 - DEBUG - NETWORK - downloading zip 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/beta_0.96/launcher_linux.zip'

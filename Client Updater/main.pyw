@@ -53,7 +53,7 @@ class PackageManager():
 
         
 
-        print("DISPLAYERROR")
+        #print("DISPLAYERROR")
         p = "packages.json"
         if(self.alternate):
             p="launcher_data.json"
@@ -153,8 +153,8 @@ class SystemManager():
             {"width":300,"height":30,"posx":0,"posy":90}
         )
         
-        
-        url = str(self.master.pacman.data["repository"] + "/raw/main/Server/data/launcher_data.json")
+        branch = self.master.pacman.data["branch"]
+        url = str(self.master.pacman.data["repository"] + f"/raw/main/Server/data/{branch}_launcher_data.json")
         
         
         d_path = self.paths[".temp"]
@@ -162,12 +162,13 @@ class SystemManager():
         
         
         print(url)
+        
         self.master.network.ThreadDownloadFile(url,d_path,f_path,"launcher_data.json",self.master.window.DataProgressHook)
         
         self.master.window.Start()
     def Install(self):
         branch = self.master.pacman.data["branch"]
-        launcher_number = 0.96
+        launcher_number = self.master.pacman.data["launcher"]["version"]
 
         self.master.window.ProgressBarWindow(
             [
@@ -177,9 +178,12 @@ class SystemManager():
             ],
             {"width":300,"height":30,"posx":0,"posy":90}
         )
+
         ending = ".zip"
         if(self.master.system.systemname=="Linux"):
             ending = ".x86_64"
+        if(self.master.system.systemname=="Windos"):
+            ending = ".exe"
    
         
         launcher_os = (self.master.system.systemname.lower())+".zip"
@@ -551,7 +555,7 @@ class Manager():
         except Exception as e:
             print(f"isnt installed: {e}")
             isInstalled = False
-        
+        isInstalled=False
         if(isInstalled): 
             self.system.DownloadData()
             self.datman.GetPackages()
@@ -560,7 +564,7 @@ class Manager():
 
         else: 
             self.system.SystemMessage(systemmessages.systemwelcome)
-            self.system.SystemMessage(systemmessages.systemos)
+            #self.system.SystemMessage(systemmessages.systemos)
             self.system.SystemMessage(systemmessages.systemeula)
             self.system.SystemMessage(systemmessages.systemrepository)
             self.system.SystemMessage(systemmessages.systembranch)

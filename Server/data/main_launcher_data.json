@@ -1,0 +1,768 @@
+{
+    "manifest": 2,
+    "launcher": {
+        "version": 0.96,
+        "maintainer": {
+            "messages": {}
+        }
+    },
+    "content": {
+        "games": [
+            {
+                "id": "7",
+                "name": "Square Adventure World",
+                "programmingname": "SquareAdventureWorld",
+                "author": [
+                    "Trihexangular Studios"
+                ],
+                "content": {
+                    "general": {
+                        "iconimages": [
+                            "icon.png"
+                        ],
+                        "displayimages": [
+                            "store1.png",
+                            "store2.png",
+                            "store3.png",
+                            "banner.png"
+                        ],
+                        "displayvideo": [
+                            "storevideo.webm"
+                        ]
+                    },
+                    "store": {
+                        "storedescription": [
+                            {
+                                "type": "text",
+                                "content": [
+                                    "e"
+                                ]
+                            }
+                        ],
+                        "storecontent": [],
+                        "storefaq": []
+                    }
+                },
+                "purchasing": {
+                    "price": "0"
+                },
+                "builds": {
+                    "linux": [
+                        ""
+                    ],
+                    "windows": [
+                        "1.0"
+                    ]
+                }
+            },
+            {
+                "id": "10",
+                "name": "Up To Capacitor",
+                "programmingname": "UpToCapacitor",
+                "author": [
+                    "Trihexangular Studios"
+                ],
+                "content": {
+                    "general": {
+                        "iconimages": [
+                            "icon.png"
+                        ],
+                        "displayimages": [
+                            "store1.png",
+                            "store2.png",
+                            "store3.png",
+                            "banner.png"
+                        ],
+                        "displayvideo": [
+                            "storevideo.webm"
+                        ]
+                    },
+                    "store": {
+                        "storedescription": [
+                            {
+                                "type": "text",
+                                "content": [
+                                    "e"
+                                ]
+                            }
+                        ],
+                        "storecontent": [],
+                        "storefaq": []
+                    }
+                },
+                "purchasing": {
+                    "price": "0"
+                },
+                "builds": {
+                    "linux": [
+                        ""
+                    ],
+                    "windows": [
+                        "1.0"
+                    ]
+                }
+            },
+            {
+                "id": "9",
+                "name": "Relic Hunter",
+                "programmingname": "RelicHunter",
+                "author": [
+                    "Trihexangular Studios"
+                ],
+                "content": {
+                    "general": {
+                        "iconimages": [
+                            "icon.png"
+                        ],
+                        "displayimages": [
+                            "store1.png",
+                            "store2.png",
+                            "store3.png",
+                            "banner.png"
+                        ],
+                        "displayvideo": [
+                            "storevideo.webm"
+                        ]
+                    },
+                    "store": {
+                        "storedescription": [
+                            {
+                                "type": "text",
+                                "content": [
+                                    "Relic Hunter is a fast paced Rouge-like game where you either exit with a safe score, or gamble for more."
+                                ]
+                            }
+                        ],
+                        "storecontent": [],
+                        "storefaq": []
+                    }
+                },
+                "purchasing": {
+                    "price": "0"
+                },
+                "builds": {
+                    "linux": [
+                        ""
+                    ],
+                    "windows": [
+                        "1.0"
+                    ]
+                }
+            },
+            {
+                "id": "12",
+                "name": "Square Adventure Reverb",
+                "programmingname": "SquareAdventureReverb",
+                "author": [
+                    "Trihexangular Studios"
+                ],
+                "content": {
+                    "general": {
+                        "iconimages": [
+                            "icon.png"
+                        ],
+                        "displayimages": [
+                            "store1.png",
+                            "store2.png",
+                            "store3.png",
+                            "banner.png"
+                        ],
+                        "displayvideo": [
+                            "storevideo.webm"
+                        ]
+                    },
+                    "store": {
+                        "storedescription": [
+                            {
+                                "type": "text",
+                                "content": [
+                                    "e"
+                                ]
+                            }
+                        ],
+                        "storecontent": [],
+                        "storefaq": []
+                    }
+                },
+                "purchasing": {
+                    "price": "0"
+                },
+                "builds": {
+                    "linux": [
+                        ""
+                    ],
+                    "windows": [
+                        "1.0"
+                    ]
+                }
+            },
+            {
+                "id": "1",
+                "name": "Square Adventure",
+                "programmingname": "SquareAdventure",
+                "author": [
+                    "Trihexangular Studios"
+                ],
+                "content": {
+                    "general": {
+                        "iconimages": [
+                            "icon.png"
+                        ],
+                        "displayimages": [
+                            "store1.png",
+                            "store2.png",
+                            "store3.png",
+                            "banner.png"
+                        ],
+                        "displayvideo": [
+                            "storevideo.webm"
+                        ]
+                    },
+                    "store": {
+                        "storedescription": [
+                            {
+                                "type": "text",
+                                "content": [
+                                    "A simple game about a red square jumping over platforms."
+                                ]
+                            }
+                        ],
+                        "storecontent": [],
+                        "storefaq": []
+                    }
+                },
+                "purchasing": {
+                    "price": "0"
+                },
+                "builds": {
+                    "linux": [
+                        ""
+                    ],
+                    "windows": [
+                        "1.0"
+                    ]
+                }
+            },
+            {
+                "id": "2",
+                "name": "Square Adventure 2",
+                "programmingname": "SquareAdventure2",
+                "author": [
+                    "Trihexangular Studios"
+                ],
+                "content": {
+                    "general": {
+                        "iconimages": [
+                            "icon.png"
+                        ],
+                        "displayimages": [
+                            "store1.png",
+                            "store2.png",
+                            "store3.png",
+                            "banner.png"
+                        ],
+                        "displayvideo": [
+                            "storevideo.webm"
+                        ]
+                    },
+                    "store": {
+                        "storedescription": [
+                            {
+                                "type": "text",
+                                "content": [
+                                    "e"
+                                ]
+                            }
+                        ],
+                        "storecontent": [],
+                        "storefaq": []
+                    }
+                },
+                "purchasing": {
+                    "price": "0"
+                },
+                "builds": {
+                    "linux": [
+                        ""
+                    ],
+                    "windows": [
+                        "1.0"
+                    ]
+                }
+            },
+            {
+                "id": "13",
+                "name": "The Stronghold",
+                "programmingname": "TheStronghold",
+                "author": [
+                    "Trihexangular Studios"
+                ],
+                "content": {
+                    "general": {
+                        "iconimages": [
+                            "icon.png"
+                        ],
+                        "displayimages": [
+                            "store1.png",
+                            "store2.png",
+                            "store3.png",
+                            "banner.png"
+                        ],
+                        "displayvideo": [
+                            "storevideo.webm"
+                        ]
+                    },
+                    "store": {
+                        "storedescription": [
+                            {
+                                "type": "text",
+                                "content": [
+                                    "A rogue like bullet hell game which loops around after you die, very bad adaption of theme, enemies just get harder but are the same looping enemies, there aren't many rooms, so you constantly loop through them. :facepalm:"
+                                ]
+                            }
+                        ],
+                        "storecontent": [],
+                        "storefaq": []
+                    }
+                },
+                "purchasing": {
+                    "price": "0"
+                },
+                "builds": {
+                    "linux": [
+                        ""
+                    ],
+                    "windows": [
+                        "1.0"
+                    ]
+                }
+            },
+            {
+                "id": "5",
+                "name": "Fallen Slime",
+                "programmingname": "FallenSlime",
+                "author": [
+                    "Trihexangular Studios"
+                ],
+                "content": {
+                    "general": {
+                        "iconimages": [
+                            "icon.png"
+                        ],
+                        "displayimages": [
+                            "store1.png",
+                            "store2.png",
+                            "store3.png",
+                            "banner.png"
+                        ],
+                        "displayvideo": [
+                            "storevideo.webm"
+                        ]
+                    },
+                    "store": {
+                        "storedescription": [
+                            {
+                                "type": "text",
+                                "content": [
+                                    "e"
+                                ]
+                            }
+                        ],
+                        "storecontent": [],
+                        "storefaq": []
+                    }
+                },
+                "purchasing": {
+                    "price": "0"
+                },
+                "builds": {
+                    "linux": [
+                        ""
+                    ],
+                    "windows": [
+                        "1.0"
+                    ]
+                }
+            },
+            {
+                "id": "14",
+                "name": "Castle Loop",
+                "programmingname": "Castle Loop",
+                "author": [
+                    "Trihexangular Studios"
+                ],
+                "content": {
+                    "general": {
+                        "iconimages": [
+                            "icon.png"
+                        ],
+                        "displayimages": [
+                            "store1.png",
+                            "store2.png",
+                            "store3.png",
+                            "banner.png"
+                        ],
+                        "displayvideo": [
+                            "storevideo.webm"
+                        ]
+                    },
+                    "store": {
+                        "storedescription": [
+                            {
+                                "type": "text",
+                                "content": [
+                                    "Castle loop is a game about fighting enemies which loop around your castle, growing stronger the more loops they do.\nFight ever increasing difficulty of waves, progressing as far as you can without dying.|"
+                                ]
+                            }
+                        ],
+                        "storecontent": [],
+                        "storefaq": []
+                    }
+                },
+                "purchasing": {
+                    "price": "0"
+                },
+                "builds": {
+                    "linux": [
+                        ""
+                    ],
+                    "windows": [
+                        "1.0"
+                    ]
+                }
+            },
+            {
+                "id": "4",
+                "name": "AeronautAdrenaline",
+                "programmingname": "AeronautAdrenaline",
+                "author": [
+                    "Trihexangular Studios"
+                ],
+                "content": {
+                    "general": {
+                        "iconimages": [
+                            "icon.png"
+                        ],
+                        "displayimages": [
+                            "store1.png",
+                            "store2.png",
+                            "store3.png",
+                            "banner.png"
+                        ],
+                        "displayvideo": [
+                            "storevideo.webm"
+                        ]
+                    },
+                    "store": {
+                        "storedescription": [
+                            {
+                                "type": "text",
+                                "content": [
+                                    "e"
+                                ]
+                            }
+                        ],
+                        "storecontent": [],
+                        "storefaq": []
+                    }
+                },
+                "purchasing": {
+                    "price": "0"
+                },
+                "builds": {
+                    "linux": [
+                        ""
+                    ],
+                    "windows": [
+                        "1.0"
+                    ]
+                }
+            },
+            {
+                "id": "3",
+                "name": "The Game Of Cat And Mouse",
+                "programmingname": "TheGameOfCatAndMouse",
+                "author": [
+                    "Trihexangular Studios"
+                ],
+                "content": {
+                    "general": {
+                        "iconimages": [
+                            "icon.png"
+                        ],
+                        "displayimages": [
+                            "store1.png",
+                            "store2.png",
+                            "store3.png",
+                            "banner.png"
+                        ],
+                        "displayvideo": [
+                            "storevideo.webm"
+                        ]
+                    },
+                    "store": {
+                        "storedescription": [
+                            {
+                                "type": "text",
+                                "content": [
+                                    "e"
+                                ]
+                            }
+                        ],
+                        "storecontent": [],
+                        "storefaq": []
+                    }
+                },
+                "purchasing": {
+                    "price": "0"
+                },
+                "builds": {
+                    "linux": [
+                        ""
+                    ],
+                    "windows": [
+                        "1.0"
+                    ]
+                }
+            },
+            {
+                "id": "15",
+                "name": "Square Adventure Dimensions",
+                "programmingname": "SquareAdventureDimensions",
+                "author": [
+                    "Trihexangular Studios"
+                ],
+                "content": {
+                    "general": {
+                        "iconimages": [
+                            "icon.png"
+                        ],
+                        "displayimages": [
+                            "store1.png",
+                            "store2.png",
+                            "store3.png",
+                            "banner.png"
+                        ],
+                        "displayvideo": [
+                            "storevideo.webm"
+                        ]
+                    },
+                    "store": {
+                        "storedescription": [
+                            {
+                                "type": "text",
+                                "content": [
+                                    "e"
+                                ]
+                            }
+                        ],
+                        "storecontent": [],
+                        "storefaq": []
+                    }
+                },
+                "purchasing": {
+                    "price": "0"
+                },
+                "builds": {
+                    "linux": [
+                        "0.1"
+                    ],
+                    "windows": [
+                        "0.1"
+                    ]
+                }
+            },
+            {
+                "id": "11",
+                "name": "Fire OS",
+                "programmingname": "FireOS",
+                "author": [
+                    "Trihexangular Studios"
+                ],
+                "content": {
+                    "general": {
+                        "iconimages": [
+                            "icon.png"
+                        ],
+                        "displayimages": [
+                            "store1.png",
+                            "store2.png",
+                            "store3.png",
+                            "banner.png"
+                        ],
+                        "displayvideo": [
+                            "storevideo.webm"
+                        ]
+                    },
+                    "store": {
+                        "storedescription": [
+                            {
+                                "type": "text",
+                                "content": [
+                                    "e"
+                                ]
+                            }
+                        ],
+                        "storecontent": [],
+                        "storefaq": []
+                    }
+                },
+                "purchasing": {
+                    "price": "0"
+                },
+                "builds": {
+                    "linux": [
+                        ""
+                    ],
+                    "windows": [
+                        "1.0"
+                    ]
+                }
+            },
+            {
+                "id": "8",
+                "name": "Sanity Drain",
+                "programmingname": "SanityDrain",
+                "author": [
+                    "Trihexangular Studios"
+                ],
+                "content": {
+                    "general": {
+                        "iconimages": [
+                            "icon.png"
+                        ],
+                        "displayimages": [
+                            "store1.png",
+                            "store2.png",
+                            "store3.png",
+                            "banner.png"
+                        ],
+                        "displayvideo": [
+                            "storevideo.webm"
+                        ]
+                    },
+                    "store": {
+                        "storedescription": [
+                            {
+                                "type": "text",
+                                "content": [
+                                    "'Not every room will be where it appears'"
+                                ]
+                            }
+                        ],
+                        "storecontent": [],
+                        "storefaq": []
+                    }
+                },
+                "purchasing": {
+                    "price": "0"
+                },
+                "builds": {
+                    "linux": [
+                        ""
+                    ],
+                    "windows": [
+                        "1.0"
+                    ]
+                }
+            },
+            {
+                "id": "6",
+                "name": "Fallen Through",
+                "programmingname": "FallenThrough",
+                "author": [
+                    "Trihexangular Studios"
+                ],
+                "content": {
+                    "general": {
+                        "iconimages": [
+                            "icon.png"
+                        ],
+                        "displayimages": [
+                            "store1.png",
+                            "store2.png",
+                            "store3.png",
+                            "banner.png"
+                        ],
+                        "displayvideo": [
+                            "storevideo.webm"
+                        ]
+                    },
+                    "store": {
+                        "storedescription": [
+                            {
+                                "type": "text",
+                                "content": [
+                                    "e"
+                                ]
+                            }
+                        ],
+                        "storecontent": [],
+                        "storefaq": []
+                    }
+                },
+                "purchasing": {
+                    "price": "0"
+                },
+                "builds": {
+                    "linux": [
+                        "0.9"
+                    ],
+                    "windows": [
+                        "0.1",
+                        "0.9"
+                    ]
+                }
+            }
+        ],
+        "bundles": [
+            {
+                "id": "1",
+                "name": "OG Classics",
+                "description": "A collection of older classics from trihexangular studios",
+                "games": [
+                    "1",
+                    "3",
+                    "5",
+                    "6"
+                ],
+                "price": "0",
+                "images": ""
+            }
+        ],
+        "collections": [
+            {
+                "id": "1",
+                "name": "Square Adventure Collection",
+                "description": "A collection of all square adventure universe games",
+                "games": [
+                    "1",
+                    "15"
+                ],
+                "sortby": "id"
+            }
+        ],
+        "messages": [
+            {
+                "id":5,
+                "name":"Error",
+                "content":[
+                    {"type":"text","content":["textnametype","15","Helvetica"]},
+                    {"type":"text","content":["second","35","Helvetica"]}
+                ],
+                "icon":"cancel",
+                "flags":{
+                    "exit-after":0,
+                    "persistent":0,
+                    "invisible":0,
+                    "priority":1
+                },
+                "interactions":{
+                    "buttons":[
+                        {"text":"exit","interactor":[{"type":"dismiss"}]}
+                    ]
+                }
+            }
+        ]
+    }
+}
