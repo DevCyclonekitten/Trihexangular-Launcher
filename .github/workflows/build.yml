@@ -1,0 +1,33 @@
+name: Manual Windows Build
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build-windows:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pyinstaller
+          # Add any other libraries your script needs here, e.g., pip install requests
+
+      - name: Compile with PyInstaller
+        run: |
+          pyinstaller --onefile --icon="Client Updater/logo.ico" --distpath ./OUTPUT windows_build.exe
+
+      - name: Upload Build Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: windows-executable
+          path: OUTPUT/

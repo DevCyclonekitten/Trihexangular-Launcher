@@ -8,10 +8,10 @@ from PIL import ImageTk
 import base64,io,sys
 
 
-with open("logo.ico", "rb") as ico:
-    bytesimage = base64.b64encode(ico.read())
-    with open("base64logo.byteimage","wb") as fs:
-        fs.write(bytesimage)
+#with open("logo.ico", "rb") as ico:
+    #bytesimage = base64.b64encode(ico.read())
+    #with open("base64logo.byteimage","wb") as fs:
+        #fs.write(bytesimage)
 
 
 class PackageManager():
@@ -129,7 +129,11 @@ class SystemManager():
         logging.getLogger('PIL').setLevel(logging.WARNING)
         logging.debug("############################################")
         logging.debug("DIRECTORY - setup user directory")
-
+    def ExitWithNoRoot(self):
+        time.sleep(5)
+        exit()
+    def ClearCurrentRoot(self):
+        self.master.window.root.destroy()
     def Start(self):
         self.DisplayError()
         version = self.master.pacman.data["launcher"]["version"]
@@ -147,14 +151,15 @@ class SystemManager():
 
         run = threading.Thread(target=self.RunLauncher)
         run.start()
-        try:
-            self.master.window.root.after(5000,self.root.destroy)
-        except Exception as e:
-            print("No Root?")
+        
         #clear = threading.Thread(target=self.master.window.ClearAfterDuration,args=(5,))
         #clear.start()
-
+        try:
+            self.master.window.root.after(5000,self.ClearCurrentRoot)
+        except Exception as e:
+            print("No Root?")
         self.master.window.Start()
+        
     def RunLauncher(self):
         ending = ".zip"
         if(self.master.system.systemname=="Linux"):
@@ -404,7 +409,6 @@ class Window():
 
         self.root.geometry(f"{300}x{120}+{x}+{y}") #why does tkinter use string its painful,
     def Start(self):
-        
         self.root.mainloop()
     def Close(self):
         self.root.quit()
@@ -621,6 +625,7 @@ class NetworkManager():
 
 class Manager():
     def __init__(self):
+        self.nointernet=False
         self.currenterror = {}
         self.system = SystemManager(self)
         self.system.LinuxDirectory()
