@@ -393,3 +393,29 @@
 2026-02-27 21:46:09,896 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/launcher_data.json'
 2026-02-27 21:46:10,890 - DEBUG - PACKAGES - getting launcher data
 2026-02-27 21:46:10,900 - DEBUG - NETWORK - downloading zip 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/beta_0.96/launcher_linux.zip'
+2026-02-27 21:49:07,642 - DEBUG - ############################################
+2026-02-27 21:49:07,642 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 21:49:07,671 - DEBUG - PACKAGES - getting packages
+2026-02-27 21:49:07,671 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 21:49:08,757 - DEBUG - MESSAGE - asking message EULA
+2026-02-27 21:49:09,276 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-27 21:49:10,462 - DEBUG - MESSAGE - asking message Select branch
+2026-02-27 21:49:12,591 - DEBUG - NETWORK - downloading launcher data
+2026-02-27 21:49:12,598 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/main_launcher_data.json'
+2026-02-27 21:49:13,392 - DEBUG - PACKAGES - getting launcher data
+2026-02-27 21:49:13,402 - DEBUG - NETWORK - downloading zip 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.96/launcher_linux.zip'
+2026-02-27 21:49:13,758 - ERROR - ERROR - download error: HTTP Error 404: Not Found https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.96/launcher_linux.zip
+2026-02-27 21:49:13,759 - DEBUG - MESSAGE - asking message Error
+2026-02-27 21:51:30,641 - DEBUG - ############################################
+2026-02-27 21:51:30,641 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 21:51:30,670 - DEBUG - PACKAGES - getting packages
+2026-02-27 21:51:30,670 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 21:51:31,778 - DEBUG - MESSAGE - asking message EULA
+2026-02-27 21:51:32,213 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-27 21:51:32,482 - DEBUG - MESSAGE - asking message Select branch
+2026-02-27 21:51:32,755 - DEBUG - NETWORK - downloading launcher data
+2026-02-27 21:51:32,762 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/main_launcher_data.json'
+2026-02-27 21:51:33,373 - DEBUG - PACKAGES - getting launcher data
+2026-02-27 21:51:33,382 - DEBUG - NETWORK - downloading zip 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.96/launcher_linux.zip'
+2026-02-27 21:51:33,737 - ERROR - ERROR - download error: HTTP Error 404: Not Found https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.96/launcher_linux.zip
+2026-02-27 21:51:33,738 - DEBUG - MESSAGE - asking message Error

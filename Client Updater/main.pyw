@@ -169,7 +169,7 @@ class SystemManager():
     def Install(self):
         branch = self.master.pacman.data["branch"]
         launcher_number = self.master.pacman.data["launcher"]["version"]
-
+        print(launcher_number)
         self.master.window.ProgressBarWindow(
             [
                 {"text":"Installing","font":("Helvetica",18),"position":0},
