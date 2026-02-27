@@ -419,3 +419,702 @@
 2026-02-27 21:51:33,382 - DEBUG - NETWORK - downloading zip 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.96/launcher_linux.zip'
 2026-02-27 21:51:33,737 - ERROR - ERROR - download error: HTTP Error 404: Not Found https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.96/launcher_linux.zip
 2026-02-27 21:51:33,738 - DEBUG - MESSAGE - asking message Error
+2026-02-27 21:54:34,411 - DEBUG - ############################################
+2026-02-27 21:54:34,411 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 21:54:34,441 - DEBUG - PACKAGES - getting packages
+2026-02-27 21:54:34,441 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 21:54:36,598 - DEBUG - MESSAGE - asking message EULA
+2026-02-27 21:54:37,133 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-27 21:54:37,716 - DEBUG - MESSAGE - asking message Select branch
+2026-02-27 21:54:39,531 - DEBUG - NETWORK - downloading launcher data
+2026-02-27 21:54:39,538 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/beta_launcher_data.json'
+2026-02-27 21:54:40,496 - DEBUG - PACKAGES - getting launcher data
+2026-02-27 21:54:40,507 - DEBUG - NETWORK - downloading zip 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/beta_0.96/launcher_linux.zip'
+2026-02-27 21:55:30,176 - DEBUG - ############################################
+2026-02-27 21:55:30,176 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 21:55:30,205 - DEBUG - PACKAGES - getting packages
+2026-02-27 21:55:30,205 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 21:55:32,798 - DEBUG - MESSAGE - asking message EULA
+2026-02-27 21:55:33,440 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-27 21:55:34,075 - DEBUG - MESSAGE - asking message Select branch
+2026-02-27 21:55:35,368 - DEBUG - NETWORK - downloading launcher data
+2026-02-27 21:55:35,375 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/main_launcher_data.json'
+2026-02-27 21:55:36,161 - DEBUG - PACKAGES - getting launcher data
+2026-02-27 21:55:36,172 - DEBUG - NETWORK - downloading zip 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.96/launcher_linux.zip'
+2026-02-27 21:55:36,527 - ERROR - ERROR - download error: HTTP Error 404: Not Found https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.96/launcher_linux.zip
+2026-02-27 21:55:36,528 - DEBUG - MESSAGE - asking message Error
+2026-02-27 21:56:04,186 - DEBUG - ############################################
+2026-02-27 21:56:04,186 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 21:56:04,217 - DEBUG - PACKAGES - getting packages
+2026-02-27 21:56:04,217 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 21:56:05,265 - DEBUG - MESSAGE - asking message EULA
+2026-02-27 21:56:05,751 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-27 21:56:06,220 - DEBUG - MESSAGE - asking message Select branch
+2026-02-27 21:56:06,839 - DEBUG - NETWORK - downloading launcher data
+2026-02-27 21:56:06,847 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/main_launcher_data.json'
+2026-02-27 21:56:07,057 - DEBUG - PACKAGES - getting launcher data
+2026-02-27 21:57:41,247 - DEBUG - ############################################
+2026-02-27 21:57:41,247 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 21:57:41,276 - DEBUG - PACKAGES - getting packages
+2026-02-27 21:57:41,276 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 21:57:42,179 - DEBUG - MESSAGE - asking message EULA
+2026-02-27 21:57:42,420 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-27 21:57:42,616 - DEBUG - MESSAGE - asking message Select branch
+2026-02-27 21:57:42,911 - DEBUG - NETWORK - downloading launcher data
+2026-02-27 21:57:42,918 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/main_launcher_data.json'
+2026-02-27 21:57:43,499 - DEBUG - PACKAGES - getting launcher data
+2026-02-27 21:57:53,603 - DEBUG - ############################################
+2026-02-27 21:57:53,603 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 21:57:53,632 - DEBUG - PACKAGES - getting packages
+2026-02-27 21:57:53,632 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 21:57:54,577 - DEBUG - MESSAGE - asking message EULA
+2026-02-27 21:57:54,785 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-27 21:57:55,031 - DEBUG - MESSAGE - asking message Select branch
+2026-02-27 21:57:55,310 - DEBUG - NETWORK - downloading launcher data
+2026-02-27 21:57:55,317 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/main_launcher_data.json'
+2026-02-27 21:57:55,485 - DEBUG - PACKAGES - getting launcher data
+2026-02-27 21:57:55,496 - DEBUG - NETWORK - downloading zip 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.96/launcher_linux.zip'
+2026-02-27 21:57:55,906 - ERROR - ERROR - download error: HTTP Error 404: Not Found https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.96/launcher_linux.zip
+2026-02-27 21:57:55,907 - DEBUG - MESSAGE - asking message Error
+2026-02-27 21:58:16,189 - DEBUG - ############################################
+2026-02-27 21:58:16,189 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 21:58:16,219 - DEBUG - PACKAGES - getting packages
+2026-02-27 21:58:16,219 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 21:58:17,745 - DEBUG - MESSAGE - asking message EULA
+2026-02-27 21:58:18,239 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-27 21:58:32,374 - DEBUG - ############################################
+2026-02-27 21:58:32,374 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 21:58:32,403 - DEBUG - PACKAGES - getting packages
+2026-02-27 21:58:32,403 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 21:58:33,286 - DEBUG - MESSAGE - asking message EULA
+2026-02-27 21:58:33,456 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-27 21:58:33,649 - DEBUG - MESSAGE - asking message Select branch
+2026-02-27 21:58:33,952 - DEBUG - NETWORK - downloading launcher data
+2026-02-27 21:58:33,959 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/main_launcher_data.json'
+2026-02-27 21:58:34,113 - DEBUG - PACKAGES - getting launcher data
+2026-02-27 21:58:34,123 - DEBUG - NETWORK - downloading zip 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.97/launcher_linux.zip'
+2026-02-27 21:58:34,464 - ERROR - ERROR - download error: HTTP Error 404: Not Found https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.97/launcher_linux.zip
+2026-02-27 21:58:34,465 - DEBUG - MESSAGE - asking message Error
+2026-02-27 22:00:06,866 - DEBUG - ############################################
+2026-02-27 22:00:06,866 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 22:00:06,894 - DEBUG - PACKAGES - getting packages
+2026-02-27 22:00:06,894 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 22:02:53,880 - DEBUG - ############################################
+2026-02-27 22:02:53,880 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 22:02:53,910 - DEBUG - PACKAGES - getting packages
+2026-02-27 22:02:53,911 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 22:03:38,558 - DEBUG - ############################################
+2026-02-27 22:03:38,558 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 22:03:38,587 - DEBUG - PACKAGES - getting packages
+2026-02-27 22:03:38,587 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 22:04:29,838 - DEBUG - ############################################
+2026-02-27 22:04:29,838 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 22:04:29,866 - DEBUG - PACKAGES - getting packages
+2026-02-27 22:04:29,866 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 22:05:56,025 - DEBUG - ############################################
+2026-02-27 22:05:56,025 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 22:06:00,796 - DEBUG - ############################################
+2026-02-27 22:06:00,796 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 22:07:30,793 - DEBUG - ############################################
+2026-02-27 22:07:30,793 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 22:07:39,449 - DEBUG - ############################################
+2026-02-27 22:07:39,449 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 22:07:49,231 - DEBUG - ############################################
+2026-02-27 22:07:49,231 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 22:08:05,565 - DEBUG - ############################################
+2026-02-27 22:08:05,565 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 22:08:13,534 - DEBUG - ############################################
+2026-02-27 22:08:13,534 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 22:09:14,452 - DEBUG - ############################################
+2026-02-27 22:09:14,452 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 22:09:25,773 - DEBUG - ############################################
+2026-02-27 22:09:25,773 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 22:11:13,844 - DEBUG - ############################################
+2026-02-27 22:11:13,844 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 22:11:51,216 - DEBUG - ############################################
+2026-02-27 22:11:51,216 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 22:11:56,794 - DEBUG - ############################################
+2026-02-27 22:11:56,794 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 22:12:04,126 - DEBUG - ############################################
+2026-02-27 22:12:04,126 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 22:12:04,181 - DEBUG - PACKAGES - getting packages
+2026-02-27 22:12:04,181 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 22:13:32,366 - DEBUG - ############################################
+2026-02-27 22:13:32,366 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 22:13:32,423 - DEBUG - PACKAGES - getting packages
+2026-02-27 22:13:32,424 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 22:13:51,538 - DEBUG - ############################################
+2026-02-27 22:13:51,538 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 22:13:51,592 - DEBUG - PACKAGES - getting packages
+2026-02-27 22:13:51,592 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 22:13:53,026 - DEBUG - MESSAGE - asking message EULA
+2026-02-27 22:14:37,028 - DEBUG - ############################################
+2026-02-27 22:14:37,028 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 22:15:24,853 - DEBUG - ############################################
+2026-02-27 22:15:24,853 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 22:15:24,906 - DEBUG - PACKAGES - getting packages
+2026-02-27 22:15:24,906 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 22:15:59,596 - DEBUG - ############################################
+2026-02-27 22:15:59,597 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 22:15:59,650 - DEBUG - PACKAGES - getting packages
+2026-02-27 22:15:59,650 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 22:16:52,780 - DEBUG - ############################################
+2026-02-27 22:16:52,780 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 22:16:52,834 - DEBUG - PACKAGES - getting packages
+2026-02-27 22:16:52,834 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 22:18:48,160 - DEBUG - ############################################
+2026-02-27 22:18:48,160 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 22:18:48,214 - DEBUG - PACKAGES - getting packages
+2026-02-27 22:18:48,214 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 22:19:08,719 - DEBUG - ############################################
+2026-02-27 22:19:08,719 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 22:19:08,774 - DEBUG - PACKAGES - getting packages
+2026-02-27 22:19:08,774 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 22:19:16,270 - DEBUG - ############################################
+2026-02-27 22:19:16,270 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 22:19:16,324 - DEBUG - PACKAGES - getting packages
+2026-02-27 22:19:16,324 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 22:19:29,861 - DEBUG - ############################################
+2026-02-27 22:19:29,861 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 22:19:29,917 - DEBUG - PACKAGES - getting packages
+2026-02-27 22:19:29,917 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 22:19:39,896 - DEBUG - ############################################
+2026-02-27 22:19:39,897 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 22:19:39,951 - DEBUG - PACKAGES - getting packages
+2026-02-27 22:19:39,951 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 22:20:40,471 - DEBUG - ############################################
+2026-02-27 22:20:40,471 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 22:20:40,523 - DEBUG - PACKAGES - getting packages
+2026-02-27 22:20:40,523 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 22:21:20,078 - DEBUG - ############################################
+2026-02-27 22:21:20,078 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 22:21:20,132 - DEBUG - PACKAGES - getting packages
+2026-02-27 22:21:20,132 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 22:21:21,858 - DEBUG - MESSAGE - asking message EULA
+2026-02-27 22:23:15,775 - DEBUG - ############################################
+2026-02-27 22:23:15,775 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 22:23:24,311 - DEBUG - ############################################
+2026-02-27 22:23:24,311 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 22:23:24,365 - DEBUG - PACKAGES - getting packages
+2026-02-27 22:23:24,365 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 22:23:25,524 - DEBUG - MESSAGE - asking message EULA
+2026-02-27 22:23:28,317 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-27 22:23:30,111 - DEBUG - MESSAGE - asking message Select branch
+2026-02-27 22:23:31,202 - DEBUG - NETWORK - downloading launcher data
+2026-02-27 22:23:31,209 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/main_launcher_data.json'
+2026-02-27 22:23:32,053 - DEBUG - PACKAGES - getting launcher data
+2026-02-27 22:23:32,063 - DEBUG - NETWORK - downloading zip 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.97/launcher_linux.zip'
+2026-02-27 22:23:32,457 - ERROR - ERROR - download error: HTTP Error 404: Not Found https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.97/launcher_linux.zip
+2026-02-27 22:23:32,458 - DEBUG - MESSAGE - asking message Error
+2026-02-27 22:24:22,196 - DEBUG - ############################################
+2026-02-27 22:24:22,196 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 22:24:31,000 - DEBUG - ############################################
+2026-02-27 22:24:31,000 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 22:24:31,053 - DEBUG - PACKAGES - getting packages
+2026-02-27 22:24:31,053 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 22:24:31,894 - DEBUG - MESSAGE - asking message EULA
+2026-02-27 22:24:32,226 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-27 22:24:32,462 - DEBUG - MESSAGE - asking message Select branch
+2026-02-27 22:24:32,741 - DEBUG - NETWORK - downloading launcher data
+2026-02-27 22:24:32,747 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/main_launcher_data.json'
+2026-02-27 22:24:32,959 - DEBUG - PACKAGES - getting launcher data
+2026-02-27 22:24:32,968 - DEBUG - NETWORK - downloading zip 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.97/launcher_linux.zip'
+2026-02-27 22:24:33,063 - ERROR - ERROR - download error: HTTP Error 404: Not Found https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.97/launcher_linux.zip
+2026-02-27 22:24:33,063 - DEBUG - MESSAGE - asking message Error
+2026-02-27 22:24:34,183 - DEBUG - LAUNCH - starting game launcher exectuable
+2026-02-27 22:24:34,276 - ERROR - ERROR - an unexpected error occured main thread is not in main loop
+2026-02-27 22:26:22,093 - DEBUG - ############################################
+2026-02-27 22:26:22,093 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 22:26:22,146 - DEBUG - PACKAGES - getting packages
+2026-02-27 22:26:22,146 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 22:26:23,367 - DEBUG - MESSAGE - asking message EULA
+2026-02-27 22:26:23,556 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-27 22:26:23,735 - DEBUG - MESSAGE - asking message Select branch
+2026-02-27 22:26:24,017 - DEBUG - NETWORK - downloading launcher data
+2026-02-27 22:26:24,024 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/main_launcher_data.json'
+2026-02-27 22:26:24,868 - DEBUG - PACKAGES - getting launcher data
+2026-02-27 22:26:24,878 - DEBUG - NETWORK - downloading zip 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.97/launcher_linux.zip'
+2026-02-27 22:26:25,310 - ERROR - ERROR - download error: HTTP Error 404: Not Found https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.97/launcher_linux.zip
+2026-02-27 22:26:25,310 - DEBUG - MESSAGE - asking message Error
+2026-02-27 22:26:45,345 - DEBUG - ############################################
+2026-02-27 22:26:45,345 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 22:26:45,398 - DEBUG - PACKAGES - getting packages
+2026-02-27 22:26:45,398 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 22:26:46,304 - DEBUG - MESSAGE - asking message EULA
+2026-02-27 22:26:47,382 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-27 22:26:54,795 - DEBUG - MESSAGE - asking message Select branch
+2026-02-27 22:26:58,209 - DEBUG - NETWORK - downloading launcher data
+2026-02-27 22:26:58,216 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/beta_launcher_data.json'
+2026-02-27 22:26:58,960 - DEBUG - PACKAGES - getting launcher data
+2026-02-27 22:26:58,969 - DEBUG - NETWORK - downloading zip 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/beta_0.97/launcher_linux.zip'
+2026-02-27 22:26:59,318 - ERROR - ERROR - download error: HTTP Error 404: Not Found https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/beta_0.97/launcher_linux.zip
+2026-02-27 22:26:59,320 - DEBUG - MESSAGE - asking message Error
+2026-02-27 22:27:00,479 - DEBUG - LAUNCH - starting game launcher exectuable
+2026-02-27 22:27:00,531 - ERROR - ERROR - an unexpected error occured main thread is not in main loop
+2026-02-27 22:29:13,621 - DEBUG - ############################################
+2026-02-27 22:29:13,621 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 22:29:13,675 - DEBUG - PACKAGES - getting packages
+2026-02-27 22:29:13,675 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 22:29:14,777 - DEBUG - MESSAGE - asking message EULA
+2026-02-27 22:33:17,477 - DEBUG - ############################################
+2026-02-27 22:33:17,477 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 22:33:17,533 - DEBUG - PACKAGES - getting packages
+2026-02-27 22:33:17,533 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 22:33:19,005 - DEBUG - MESSAGE - asking message EULA
+2026-02-27 22:33:19,518 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-27 22:33:19,834 - DEBUG - MESSAGE - asking message Select branch
+2026-02-27 22:33:20,420 - DEBUG - NETWORK - downloading launcher data
+2026-02-27 22:33:20,427 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/main_launcher_data.json'
+2026-02-27 22:33:21,125 - DEBUG - PACKAGES - getting launcher data
+2026-02-27 22:33:21,133 - DEBUG - NETWORK - downloading zip 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.97/launcher_linux.zip'
+2026-02-27 22:33:21,477 - ERROR - ERROR - download error: HTTP Error 404: Not Found https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.97/launcher_linux.zip
+2026-02-27 22:33:21,478 - DEBUG - MESSAGE - asking message Error
+2026-02-27 22:33:24,879 - DEBUG - LAUNCH - starting game launcher exectuable
+2026-02-27 22:34:16,436 - DEBUG - ############################################
+2026-02-27 22:34:16,436 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 22:34:16,492 - DEBUG - PACKAGES - getting packages
+2026-02-27 22:34:16,492 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 22:34:17,629 - DEBUG - MESSAGE - asking message EULA
+2026-02-27 22:34:17,813 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-27 22:34:18,053 - DEBUG - MESSAGE - asking message Select branch
+2026-02-27 22:34:18,271 - DEBUG - NETWORK - downloading launcher data
+2026-02-27 22:34:18,279 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/main_launcher_data.json'
+2026-02-27 22:34:18,452 - DEBUG - PACKAGES - getting launcher data
+2026-02-27 22:34:18,462 - DEBUG - NETWORK - downloading zip 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.97/launcher_linux.zip'
+2026-02-27 22:34:18,573 - ERROR - ERROR - download error: HTTP Error 404: Not Found https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.97/launcher_linux.zip
+2026-02-27 22:34:18,574 - DEBUG - MESSAGE - asking message Error
+2026-02-27 22:34:19,288 - DEBUG - LAUNCH - starting game launcher exectuable
+2026-02-27 22:34:19,386 - ERROR - ERROR - extraction failed due to [Errno 2] No such file or directory: '/home/cyclone/.trihexangular-launcher/.temp/launcher.zip'
+2026-02-27 22:36:11,732 - DEBUG - ############################################
+2026-02-27 22:36:11,732 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 22:36:11,789 - DEBUG - PACKAGES - getting packages
+2026-02-27 22:36:11,789 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 22:36:12,593 - DEBUG - MESSAGE - asking message EULA
+2026-02-27 22:36:13,120 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-27 22:36:13,404 - DEBUG - MESSAGE - asking message Select branch
+2026-02-27 22:36:13,728 - DEBUG - NETWORK - downloading launcher data
+2026-02-27 22:36:13,735 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/main_launcher_data.json'
+2026-02-27 22:36:14,240 - DEBUG - PACKAGES - getting launcher data
+2026-02-27 22:36:14,249 - DEBUG - NETWORK - downloading zip 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.97/launcher_linux.zip'
+2026-02-27 22:36:14,598 - DEBUG - MESSAGE - asking message Error
+2026-02-27 22:36:16,990 - DEBUG - LAUNCH - starting game launcher exectuable
+2026-02-27 22:36:14,598 - ERROR - ERROR - download error: HTTP Error 404: Not Found https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.97/launcher_linux.zip
+2026-02-27 22:36:17,012 - ERROR - ERROR - extraction failed due to [Errno 2] No such file or directory: '/home/cyclone/.trihexangular-launcher/.temp/launcher.zip'
+2026-02-27 22:36:35,230 - DEBUG - ############################################
+2026-02-27 22:36:35,230 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 22:36:35,285 - DEBUG - PACKAGES - getting packages
+2026-02-27 22:36:35,286 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 22:36:36,056 - DEBUG - MESSAGE - asking message EULA
+2026-02-27 22:36:36,238 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-27 22:36:36,478 - DEBUG - MESSAGE - asking message Select branch
+2026-02-27 22:36:36,645 - DEBUG - NETWORK - downloading launcher data
+2026-02-27 22:36:36,652 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/main_launcher_data.json'
+2026-02-27 22:36:36,822 - DEBUG - PACKAGES - getting launcher data
+2026-02-27 22:36:36,831 - DEBUG - NETWORK - downloading zip 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.97/launcher_linux.zip'
+2026-02-27 22:36:36,916 - DEBUG - MESSAGE - asking message Error
+2026-02-27 22:36:37,962 - DEBUG - LAUNCH - starting game launcher exectuable
+2026-02-27 22:36:36,915 - ERROR - ERROR - download error: HTTP Error 404: Not Found https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.97/launcher_linux.zip
+2026-02-27 22:36:38,029 - ERROR - ERROR - extraction failed due to [Errno 2] No such file or directory: '/home/cyclone/.trihexangular-launcher/.temp/launcher.zip'
+2026-02-27 22:37:22,427 - DEBUG - ############################################
+2026-02-27 22:37:22,427 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 22:37:22,481 - DEBUG - PACKAGES - getting packages
+2026-02-27 22:37:22,481 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 22:37:23,171 - DEBUG - MESSAGE - asking message EULA
+2026-02-27 22:37:23,353 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-27 22:37:23,508 - DEBUG - MESSAGE - asking message Select branch
+2026-02-27 22:37:23,660 - DEBUG - NETWORK - downloading launcher data
+2026-02-27 22:37:23,669 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/main_launcher_data.json'
+2026-02-27 22:37:23,860 - DEBUG - PACKAGES - getting launcher data
+2026-02-27 22:37:23,869 - DEBUG - NETWORK - downloading zip 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.97/launcher_linux.zip'
+2026-02-27 22:37:23,955 - ERROR - ERROR - download error: HTTP Error 404: Not Found https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.97/launcher_linux.zip
+2026-02-27 22:37:23,956 - DEBUG - MESSAGE - asking message Error
+2026-02-27 22:37:24,587 - DEBUG - LAUNCH - starting game launcher exectuable
+2026-02-27 22:37:24,668 - ERROR - ERROR - extraction failed due to [Errno 2] No such file or directory: '/home/cyclone/.trihexangular-launcher/.temp/launcher.zip'
+2026-02-27 22:37:44,688 - DEBUG - ############################################
+2026-02-27 22:37:44,688 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 22:37:44,743 - DEBUG - PACKAGES - getting packages
+2026-02-27 22:37:44,744 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 22:37:45,504 - DEBUG - MESSAGE - asking message EULA
+2026-02-27 22:37:45,705 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-27 22:37:45,960 - DEBUG - MESSAGE - asking message Select branch
+2026-02-27 22:37:46,090 - DEBUG - NETWORK - downloading launcher data
+2026-02-27 22:37:46,098 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/main_launcher_data.json'
+2026-02-27 22:37:46,295 - DEBUG - PACKAGES - getting launcher data
+2026-02-27 22:37:46,305 - DEBUG - NETWORK - downloading zip 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.97/launcher_linux.zip'
+2026-02-27 22:37:46,395 - DEBUG - MESSAGE - asking message Error
+2026-02-27 22:37:47,029 - DEBUG - LAUNCH - starting game launcher exectuable
+2026-02-27 22:37:46,395 - ERROR - ERROR - download error: HTTP Error 404: Not Found https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.97/launcher_linux.zip
+2026-02-27 22:37:47,107 - ERROR - ERROR - extraction failed due to [Errno 2] No such file or directory: '/home/cyclone/.trihexangular-launcher/.temp/launcher.zip'
+2026-02-27 22:38:10,562 - DEBUG - ############################################
+2026-02-27 22:38:10,562 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 22:38:10,616 - DEBUG - PACKAGES - getting packages
+2026-02-27 22:38:10,616 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 22:38:11,354 - DEBUG - MESSAGE - asking message EULA
+2026-02-27 22:38:11,519 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-27 22:38:11,678 - DEBUG - MESSAGE - asking message Select branch
+2026-02-27 22:38:11,834 - DEBUG - NETWORK - downloading launcher data
+2026-02-27 22:38:11,842 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/main_launcher_data.json'
+2026-02-27 22:38:12,038 - DEBUG - PACKAGES - getting launcher data
+2026-02-27 22:38:12,047 - DEBUG - NETWORK - downloading zip 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.97/launcher_linux.zip'
+2026-02-27 22:38:12,136 - ERROR - ERROR - download error: HTTP Error 404: Not Found https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.97/launcher_linux.zip
+2026-02-27 22:38:12,137 - DEBUG - MESSAGE - asking message Error
+2026-02-27 22:38:12,668 - DEBUG - LAUNCH - starting game launcher exectuable
+2026-02-27 22:38:12,748 - ERROR - ERROR - extraction failed due to [Errno 2] No such file or directory: '/home/cyclone/.trihexangular-launcher/.temp/launcher.zip'
+2026-02-27 22:39:12,196 - DEBUG - ############################################
+2026-02-27 22:39:12,196 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 22:39:12,249 - DEBUG - PACKAGES - getting packages
+2026-02-27 22:39:12,250 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 22:39:13,077 - DEBUG - MESSAGE - asking message EULA
+2026-02-27 22:39:13,825 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-27 22:39:14,096 - DEBUG - MESSAGE - asking message Select branch
+2026-02-27 22:39:14,511 - DEBUG - NETWORK - downloading launcher data
+2026-02-27 22:39:14,518 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/main_launcher_data.json'
+2026-02-27 22:39:15,235 - DEBUG - PACKAGES - getting launcher data
+2026-02-27 22:39:15,244 - DEBUG - NETWORK - downloading zip 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.97/launcher_linux.zip'
+2026-02-27 22:39:15,594 - ERROR - ERROR - download error: HTTP Error 404: Not Found https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.97/launcher_linux.zip
+2026-02-27 22:39:15,595 - DEBUG - MESSAGE - asking message Error
+2026-02-27 22:39:16,174 - DEBUG - LAUNCH - starting game launcher exectuable
+2026-02-27 22:39:16,205 - ERROR - ERROR - extraction failed due to [Errno 2] No such file or directory: '/home/cyclone/.trihexangular-launcher/.temp/launcher.zip'
+2026-02-27 22:40:43,587 - DEBUG - ############################################
+2026-02-27 22:40:43,587 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 22:40:43,643 - DEBUG - PACKAGES - getting packages
+2026-02-27 22:40:43,644 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 22:40:46,880 - DEBUG - MESSAGE - asking message EULA
+2026-02-27 22:40:47,241 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-27 22:40:47,404 - DEBUG - MESSAGE - asking message Select branch
+2026-02-27 22:40:47,570 - DEBUG - NETWORK - downloading launcher data
+2026-02-27 22:40:47,577 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/main_launcher_data.json'
+2026-02-27 22:40:47,819 - DEBUG - PACKAGES - getting launcher data
+2026-02-27 22:40:47,828 - DEBUG - NETWORK - downloading zip 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.97/launcher_linux.zip'
+2026-02-27 22:40:48,340 - ERROR - ERROR - download error: HTTP Error 404: Not Found https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.97/launcher_linux.zip
+2026-02-27 22:40:48,340 - DEBUG - MESSAGE - asking message Error
+2026-02-27 22:40:48,939 - DEBUG - LAUNCH - starting game launcher exectuable
+2026-02-27 22:40:48,950 - ERROR - ERROR - extraction failed due to [Errno 2] No such file or directory: '/home/cyclone/.trihexangular-launcher/.temp/launcher.zip'
+2026-02-27 22:41:56,518 - DEBUG - ############################################
+2026-02-27 22:41:56,518 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 22:41:56,571 - DEBUG - PACKAGES - getting packages
+2026-02-27 22:41:56,572 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 22:41:57,455 - DEBUG - MESSAGE - asking message EULA
+2026-02-27 22:41:57,641 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-27 22:41:57,795 - DEBUG - MESSAGE - asking message Select branch
+2026-02-27 22:41:57,932 - DEBUG - NETWORK - downloading launcher data
+2026-02-27 22:41:57,939 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/main_launcher_data.json'
+2026-02-27 22:41:58,428 - DEBUG - PACKAGES - getting launcher data
+2026-02-27 22:41:58,438 - DEBUG - NETWORK - downloading zip 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.97/launcher_linux.zip'
+2026-02-27 22:41:58,786 - ERROR - ERROR - download error: HTTP Error 404: Not Found https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.97/launcher_linux.zip
+2026-02-27 22:41:58,787 - DEBUG - MESSAGE - asking message Error
+2026-02-27 22:41:59,392 - DEBUG - LAUNCH - starting game launcher exectuable
+2026-02-27 22:41:59,398 - ERROR - ERROR - extraction failed due to [Errno 2] No such file or directory: '/home/cyclone/.trihexangular-launcher/.temp/launcher.zip'
+2026-02-27 22:42:38,961 - DEBUG - ############################################
+2026-02-27 22:42:38,961 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 22:42:39,015 - DEBUG - PACKAGES - getting packages
+2026-02-27 22:42:39,015 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 22:42:40,004 - DEBUG - MESSAGE - asking message EULA
+2026-02-27 22:42:40,210 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-27 22:42:40,400 - DEBUG - MESSAGE - asking message Select branch
+2026-02-27 22:42:40,632 - DEBUG - NETWORK - downloading launcher data
+2026-02-27 22:42:40,638 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/main_launcher_data.json'
+2026-02-27 22:42:40,854 - DEBUG - PACKAGES - getting launcher data
+2026-02-27 22:42:40,864 - DEBUG - NETWORK - downloading zip 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.97/launcher_linux.zip'
+2026-02-27 22:47:27,281 - DEBUG - ############################################
+2026-02-27 22:47:27,282 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 22:47:27,338 - DEBUG - PACKAGES - getting packages
+2026-02-27 22:47:27,360 - DEBUG - LAUNCH - starting game launcher exectuable
+2026-02-27 22:47:32,361 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 22:48:34,121 - DEBUG - ############################################
+2026-02-27 22:48:34,121 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 22:48:34,175 - DEBUG - PACKAGES - getting packages
+2026-02-27 22:48:34,175 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 22:48:36,012 - DEBUG - MESSAGE - asking message EULA
+2026-02-27 22:48:36,173 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-27 22:48:36,323 - DEBUG - MESSAGE - asking message Select branch
+2026-02-27 22:48:36,476 - DEBUG - NETWORK - downloading launcher data
+2026-02-27 22:48:36,483 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/main_launcher_data.json'
+2026-02-27 22:48:37,207 - DEBUG - PACKAGES - getting launcher data
+2026-02-27 22:48:37,217 - DEBUG - NETWORK - downloading zip 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.97/launcher_linux.zip'
+2026-02-27 22:48:37,641 - ERROR - ERROR - download error: HTTP Error 404: Not Found https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.97/launcher_linux.zip
+2026-02-27 22:48:37,641 - DEBUG - MESSAGE - asking message Error
+2026-02-27 22:48:50,517 - DEBUG - LAUNCH - starting game launcher exectuable
+2026-02-27 22:52:29,011 - DEBUG - ############################################
+2026-02-27 22:52:29,011 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 22:52:29,067 - DEBUG - PACKAGES - getting packages
+2026-02-27 22:52:29,067 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 22:52:29,840 - DEBUG - MESSAGE - asking message EULA
+2026-02-27 22:52:30,015 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-27 22:52:30,309 - DEBUG - MESSAGE - asking message Select branch
+2026-02-27 22:52:30,577 - DEBUG - NETWORK - downloading launcher data
+2026-02-27 22:52:30,584 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/main_launcher_data.json'
+2026-02-27 22:52:31,086 - DEBUG - PACKAGES - getting launcher data
+2026-02-27 22:52:31,095 - DEBUG - NETWORK - downloading zip 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.97/launcher_linux.zip'
+2026-02-27 22:52:31,447 - ERROR - ERROR - download error: HTTP Error 404: Not Found https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.97/launcher_linux.zip
+2026-02-27 22:52:31,447 - DEBUG - MESSAGE - asking message Error
+2026-02-27 22:52:32,350 - DEBUG - LAUNCH - starting game launcher exectuable
+2026-02-27 22:52:32,359 - ERROR - ERROR - extraction failed due to [Errno 2] No such file or directory: '/home/cyclone/.trihexangular-launcher/.temp/launcher.zip'
+2026-02-27 22:54:16,983 - DEBUG - ############################################
+2026-02-27 22:54:16,983 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 22:54:17,036 - DEBUG - PACKAGES - getting packages
+2026-02-27 22:54:17,037 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 22:54:17,693 - DEBUG - MESSAGE - asking message EULA
+2026-02-27 22:54:17,843 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-27 22:54:17,988 - DEBUG - MESSAGE - asking message Select branch
+2026-02-27 22:54:18,140 - DEBUG - NETWORK - downloading launcher data
+2026-02-27 22:54:18,147 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/main_launcher_data.json'
+2026-02-27 22:54:18,640 - DEBUG - PACKAGES - getting launcher data
+2026-02-27 22:54:18,649 - DEBUG - NETWORK - downloading zip 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.97/launcher_linux.zip'
+2026-02-27 22:54:18,991 - ERROR - ERROR - download error: HTTP Error 404: Not Found https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.97/launcher_linux.zip
+2026-02-27 22:54:18,992 - DEBUG - MESSAGE - asking message Error
+2026-02-27 22:54:19,653 - DEBUG - LAUNCH - starting game launcher exectuable
+2026-02-27 22:54:19,703 - ERROR - ERROR - extraction failed due to [Errno 2] No such file or directory: '/home/cyclone/.trihexangular-launcher/.temp/launcher.zip'
+2026-02-27 22:56:39,989 - DEBUG - ############################################
+2026-02-27 22:56:39,989 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 22:56:40,043 - DEBUG - PACKAGES - getting packages
+2026-02-27 22:56:40,043 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 22:56:40,933 - DEBUG - MESSAGE - asking message EULA
+2026-02-27 22:56:41,107 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-27 22:56:41,276 - DEBUG - MESSAGE - asking message Select branch
+2026-02-27 22:56:41,436 - DEBUG - NETWORK - downloading launcher data
+2026-02-27 22:56:41,443 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/main_launcher_data.json'
+2026-02-27 22:56:42,075 - DEBUG - PACKAGES - getting launcher data
+2026-02-27 22:56:42,085 - DEBUG - NETWORK - downloading zip 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.97/launcher_linux.zip'
+2026-02-27 22:56:42,509 - ERROR - ERROR - download error: HTTP Error 404: Not Found https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.97/launcher_linux.zip
+2026-02-27 22:56:42,509 - DEBUG - MESSAGE - asking message Error
+2026-02-27 22:56:44,424 - DEBUG - LAUNCH - starting game launcher exectuable
+2026-02-27 22:57:00,053 - DEBUG - ############################################
+2026-02-27 22:57:00,053 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 22:57:00,106 - DEBUG - PACKAGES - getting packages
+2026-02-27 22:57:00,106 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 22:57:01,032 - DEBUG - MESSAGE - asking message EULA
+2026-02-27 22:57:01,196 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-27 22:57:01,386 - DEBUG - MESSAGE - asking message Select branch
+2026-02-27 22:57:01,589 - DEBUG - NETWORK - downloading launcher data
+2026-02-27 22:57:01,596 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/main_launcher_data.json'
+2026-02-27 22:57:01,816 - DEBUG - PACKAGES - getting launcher data
+2026-02-27 22:57:01,825 - DEBUG - NETWORK - downloading zip 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.97/launcher_linux.zip'
+2026-02-27 22:57:01,933 - ERROR - ERROR - download error: HTTP Error 404: Not Found https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.97/launcher_linux.zip
+2026-02-27 22:57:01,934 - DEBUG - MESSAGE - asking message Error
+2026-02-27 22:57:02,632 - DEBUG - LAUNCH - starting game launcher exectuable
+2026-02-27 22:58:01,213 - DEBUG - ############################################
+2026-02-27 22:58:01,213 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 22:58:01,267 - DEBUG - PACKAGES - getting packages
+2026-02-27 22:58:01,267 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 22:58:01,977 - DEBUG - MESSAGE - asking message EULA
+2026-02-27 22:58:02,222 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-27 22:58:06,053 - DEBUG - MESSAGE - asking message Select branch
+2026-02-27 22:58:09,068 - DEBUG - NETWORK - downloading launcher data
+2026-02-27 22:58:09,075 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/beta_launcher_data.json'
+2026-02-27 22:58:09,764 - DEBUG - PACKAGES - getting launcher data
+2026-02-27 22:58:09,775 - DEBUG - NETWORK - downloading zip 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/beta_0.97/launcher_linux.zip'
+2026-02-27 22:58:10,166 - ERROR - ERROR - download error: HTTP Error 404: Not Found https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/beta_0.97/launcher_linux.zip
+2026-02-27 22:58:10,167 - DEBUG - MESSAGE - asking message Error
+2026-02-27 22:58:12,130 - DEBUG - LAUNCH - starting game launcher exectuable
+2026-02-27 22:58:15,399 - DEBUG - ############################################
+2026-02-27 22:58:15,399 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 22:58:15,454 - DEBUG - PACKAGES - getting packages
+2026-02-27 22:58:15,454 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 22:58:16,239 - DEBUG - MESSAGE - asking message EULA
+2026-02-27 22:58:16,405 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-27 22:58:16,691 - DEBUG - MESSAGE - asking message Select branch
+2026-02-27 22:58:16,931 - DEBUG - NETWORK - downloading launcher data
+2026-02-27 22:58:16,939 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/main_launcher_data.json'
+2026-02-27 22:58:17,155 - DEBUG - PACKAGES - getting launcher data
+2026-02-27 22:58:17,166 - DEBUG - NETWORK - downloading zip 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.97/launcher_linux.zip'
+2026-02-27 22:58:17,534 - ERROR - ERROR - download error: HTTP Error 404: Not Found https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.97/launcher_linux.zip
+2026-02-27 22:58:17,534 - DEBUG - MESSAGE - asking message Error
+2026-02-27 22:58:19,272 - DEBUG - LAUNCH - starting game launcher exectuable
+2026-02-27 22:58:52,459 - DEBUG - ############################################
+2026-02-27 22:58:52,459 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 22:58:52,512 - DEBUG - PACKAGES - getting packages
+2026-02-27 22:58:52,512 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 22:58:53,326 - DEBUG - MESSAGE - asking message EULA
+2026-02-27 22:58:53,504 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-27 22:58:53,667 - DEBUG - MESSAGE - asking message Select branch
+2026-02-27 22:58:53,838 - DEBUG - NETWORK - downloading launcher data
+2026-02-27 22:58:53,845 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/main_launcher_data.json'
+2026-02-27 22:58:53,854 - ERROR - NETWORK - <urlopen error [Errno -3] Temporary failure in name resolution>
+2026-02-27 22:58:53,855 - DEBUG - MESSAGE - asking message Error
+2026-02-27 23:01:00,770 - DEBUG - ############################################
+2026-02-27 23:01:00,770 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 23:01:00,822 - DEBUG - PACKAGES - getting packages
+2026-02-27 23:01:00,823 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 23:01:01,455 - DEBUG - MESSAGE - asking message EULA
+2026-02-27 23:01:01,610 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-27 23:01:01,949 - DEBUG - MESSAGE - asking message Select branch
+2026-02-27 23:01:02,229 - DEBUG - NETWORK - downloading launcher data
+2026-02-27 23:01:02,236 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/main_launcher_data.json'
+2026-02-27 23:01:02,245 - ERROR - NETWORK - <urlopen error [Errno -3] Temporary failure in name resolution>
+2026-02-27 23:01:02,246 - DEBUG - MESSAGE - asking message Error
+2026-02-27 23:01:07,116 - DEBUG - PACKAGES - getting launcher data
+2026-02-27 23:01:07,125 - DEBUG - NETWORK - downloading zip 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.97/launcher_linux.zip'
+2026-02-27 23:01:07,127 - ERROR - ERROR - download error: <urlopen error [Errno -3] Temporary failure in name resolution> https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.97/launcher_linux.zip
+2026-02-27 23:01:07,127 - ERROR - ERROR - extraction failed due to [Errno 2] No such file or directory: '/home/cyclone/.trihexangular-launcher/.temp/launcher.zip'
+2026-02-27 23:01:07,128 - DEBUG - MESSAGE - asking message Error
+2026-02-27 23:01:15,513 - DEBUG - LAUNCH - starting game launcher exectuable
+2026-02-27 23:02:15,298 - DEBUG - ############################################
+2026-02-27 23:02:15,298 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 23:02:15,352 - DEBUG - PACKAGES - getting packages
+2026-02-27 23:02:15,352 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 23:02:16,686 - DEBUG - MESSAGE - asking message EULA
+2026-02-27 23:02:17,179 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-27 23:02:17,456 - DEBUG - MESSAGE - asking message Select branch
+2026-02-27 23:02:17,699 - DEBUG - NETWORK - downloading launcher data
+2026-02-27 23:02:17,706 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/main_launcher_data.json'
+2026-02-27 23:02:17,716 - ERROR - NETWORK - <urlopen error [Errno -3] Temporary failure in name resolution>
+2026-02-27 23:02:17,716 - DEBUG - MESSAGE - asking message Error
+2026-02-27 23:02:19,425 - DEBUG - PACKAGES - getting launcher data
+2026-02-27 23:02:19,433 - DEBUG - NETWORK - downloading zip 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.97/launcher_linux.zip'
+2026-02-27 23:02:19,435 - ERROR - ERROR - download error: <urlopen error [Errno -3] Temporary failure in name resolution> https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.97/launcher_linux.zip
+2026-02-27 23:02:19,435 - ERROR - ERROR - extraction failed due to [Errno 2] No such file or directory: '/home/cyclone/.trihexangular-launcher/.temp/launcher.zip'
+2026-02-27 23:02:19,435 - DEBUG - MESSAGE - asking message Error
+2026-02-27 23:02:56,674 - DEBUG - ############################################
+2026-02-27 23:02:56,674 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 23:02:56,728 - DEBUG - PACKAGES - getting packages
+2026-02-27 23:02:56,729 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 23:02:57,509 - DEBUG - MESSAGE - asking message EULA
+2026-02-27 23:02:57,655 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-27 23:02:57,837 - DEBUG - MESSAGE - asking message Select branch
+2026-02-27 23:02:58,145 - DEBUG - NETWORK - downloading launcher data
+2026-02-27 23:02:58,152 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/main_launcher_data.json'
+2026-02-27 23:02:58,161 - ERROR - NETWORK - <urlopen error [Errno -3] Temporary failure in name resolution>
+2026-02-27 23:02:58,161 - DEBUG - MESSAGE - asking message Error
+2026-02-27 23:02:58,566 - DEBUG - PACKAGES - getting launcher data
+2026-02-27 23:02:58,574 - DEBUG - NETWORK - downloading zip 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.97/launcher_linux.zip'
+2026-02-27 23:02:58,578 - ERROR - ERROR - download error: <urlopen error [Errno -3] Temporary failure in name resolution> https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.97/launcher_linux.zip
+2026-02-27 23:02:58,578 - ERROR - ERROR - extraction failed due to [Errno 2] No such file or directory: '/home/cyclone/.trihexangular-launcher/.temp/launcher.zip'
+2026-02-27 23:02:58,579 - DEBUG - MESSAGE - asking message Error
+2026-02-27 23:03:01,366 - DEBUG - LAUNCH - starting game launcher exectuable
+2026-02-27 23:04:01,372 - DEBUG - ############################################
+2026-02-27 23:04:01,372 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 23:04:01,426 - DEBUG - PACKAGES - getting packages
+2026-02-27 23:04:01,426 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 23:04:01,942 - DEBUG - MESSAGE - asking message EULA
+2026-02-27 23:04:02,110 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-27 23:04:02,256 - DEBUG - MESSAGE - asking message Select branch
+2026-02-27 23:04:02,412 - DEBUG - NETWORK - downloading launcher data
+2026-02-27 23:04:02,419 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/main_launcher_data.json'
+2026-02-27 23:04:02,428 - ERROR - NETWORK - <urlopen error [Errno -3] Temporary failure in name resolution>
+2026-02-27 23:04:02,429 - DEBUG - MESSAGE - asking message Error
+2026-02-27 23:04:02,934 - DEBUG - PACKAGES - getting launcher data
+2026-02-27 23:04:19,174 - DEBUG - ############################################
+2026-02-27 23:04:19,174 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 23:04:19,227 - DEBUG - PACKAGES - getting packages
+2026-02-27 23:04:19,227 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 23:04:20,038 - DEBUG - MESSAGE - asking message EULA
+2026-02-27 23:04:20,219 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-27 23:04:20,383 - DEBUG - MESSAGE - asking message Select branch
+2026-02-27 23:04:20,533 - DEBUG - NETWORK - downloading launcher data
+2026-02-27 23:04:20,540 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/main_launcher_data.json'
+2026-02-27 23:04:20,550 - ERROR - NETWORK - <urlopen error [Errno -3] Temporary failure in name resolution>
+2026-02-27 23:04:20,550 - DEBUG - MESSAGE - asking message Error
+2026-02-27 23:04:20,694 - DEBUG - PACKAGES - getting launcher data
+2026-02-27 23:04:20,702 - DEBUG - NETWORK - downloading zip 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.97/launcher_linux.zip'
+2026-02-27 23:04:20,706 - ERROR - ERROR - download error: <urlopen error [Errno -3] Temporary failure in name resolution> https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.97/launcher_linux.zip
+2026-02-27 23:04:20,706 - DEBUG - MESSAGE - asking message Error
+2026-02-27 23:04:21,183 - DEBUG - LAUNCH - starting game launcher exectuable
+2026-02-27 23:04:25,808 - DEBUG - ############################################
+2026-02-27 23:04:25,808 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 23:04:25,864 - DEBUG - PACKAGES - getting packages
+2026-02-27 23:04:25,864 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 23:04:26,434 - DEBUG - MESSAGE - asking message EULA
+2026-02-27 23:04:26,779 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-27 23:04:27,086 - DEBUG - MESSAGE - asking message Select branch
+2026-02-27 23:04:27,425 - DEBUG - NETWORK - downloading launcher data
+2026-02-27 23:04:27,432 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/main_launcher_data.json'
+2026-02-27 23:04:27,440 - ERROR - NETWORK - <urlopen error [Errno -3] Temporary failure in name resolution>
+2026-02-27 23:04:27,440 - DEBUG - MESSAGE - asking message Error
+2026-02-27 23:04:28,450 - DEBUG - PACKAGES - getting launcher data
+2026-02-27 23:04:28,459 - DEBUG - NETWORK - downloading zip 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.97/launcher_linux.zip'
+2026-02-27 23:04:28,463 - ERROR - ERROR - download error: <urlopen error [Errno -3] Temporary failure in name resolution> https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.97/launcher_linux.zip
+2026-02-27 23:04:28,464 - DEBUG - MESSAGE - asking message Error
+2026-02-27 23:06:06,503 - DEBUG - ############################################
+2026-02-27 23:06:06,503 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 23:06:06,557 - DEBUG - PACKAGES - getting packages
+2026-02-27 23:06:06,557 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 23:06:07,747 - DEBUG - MESSAGE - asking message EULA
+2026-02-27 23:06:08,014 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-27 23:06:08,229 - DEBUG - MESSAGE - asking message Select branch
+2026-02-27 23:06:08,583 - DEBUG - NETWORK - downloading launcher data
+2026-02-27 23:06:08,590 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/main_launcher_data.json'
+2026-02-27 23:06:08,598 - ERROR - NETWORK - <urlopen error [Errno -3] Temporary failure in name resolution>
+2026-02-27 23:06:08,599 - DEBUG - MESSAGE - asking message Error
+2026-02-27 23:06:10,299 - DEBUG - PACKAGES - getting launcher data
+2026-02-27 23:06:10,307 - DEBUG - NETWORK - downloading zip 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.97/launcher_linux.zip'
+2026-02-27 23:06:10,310 - ERROR - ERROR - download error: <urlopen error [Errno -3] Temporary failure in name resolution> https://github.com/DevCyclonekitten/Trihexangular-Launcher/releases/download/main_0.97/launcher_linux.zip
+2026-02-27 23:06:10,310 - ERROR - ERROR - extraction failed due to [Errno 2] No such file or directory: '/home/cyclone/.trihexangular-launcher/.temp/launcher.zip'
+2026-02-27 23:06:10,310 - DEBUG - MESSAGE - asking message Error
+2026-02-27 23:06:33,224 - DEBUG - ############################################
+2026-02-27 23:06:33,224 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 23:06:33,277 - DEBUG - PACKAGES - getting packages
+2026-02-27 23:06:33,277 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 23:06:33,963 - DEBUG - MESSAGE - asking message EULA
+2026-02-27 23:06:34,110 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-27 23:06:34,407 - DEBUG - MESSAGE - asking message Select branch
+2026-02-27 23:06:34,654 - DEBUG - NETWORK - downloading launcher data
+2026-02-27 23:06:34,661 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/main_launcher_data.json'
+2026-02-27 23:06:34,670 - ERROR - NETWORK - <urlopen error [Errno -3] Temporary failure in name resolution>
+2026-02-27 23:06:34,670 - DEBUG - MESSAGE - asking message Error
+2026-02-27 23:06:35,408 - DEBUG - PACKAGES - getting launcher data
+2026-02-27 23:06:45,430 - DEBUG - LAUNCH - starting game launcher exectuable
+2026-02-27 23:07:14,092 - DEBUG - ############################################
+2026-02-27 23:07:14,092 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 23:07:14,147 - DEBUG - PACKAGES - getting packages
+2026-02-27 23:07:14,147 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 23:07:14,793 - DEBUG - MESSAGE - asking message EULA
+2026-02-27 23:07:14,943 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-27 23:07:15,121 - DEBUG - MESSAGE - asking message Select branch
+2026-02-27 23:07:15,384 - DEBUG - NETWORK - downloading launcher data
+2026-02-27 23:07:15,391 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/main_launcher_data.json'
+2026-02-27 23:07:15,399 - ERROR - NETWORK - <urlopen error [Errno -3] Temporary failure in name resolution>
+2026-02-27 23:07:15,400 - DEBUG - MESSAGE - asking message Error
+2026-02-27 23:07:15,874 - DEBUG - PACKAGES - getting launcher data
+2026-02-27 23:07:25,895 - DEBUG - LAUNCH - starting game launcher exectuable
+2026-02-27 23:08:15,881 - DEBUG - ############################################
+2026-02-27 23:08:15,881 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 23:08:15,935 - DEBUG - PACKAGES - getting packages
+2026-02-27 23:08:15,935 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 23:08:16,826 - DEBUG - MESSAGE - asking message EULA
+2026-02-27 23:08:17,019 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-27 23:08:17,213 - DEBUG - MESSAGE - asking message Select branch
+2026-02-27 23:08:17,430 - DEBUG - NETWORK - downloading launcher data
+2026-02-27 23:08:17,437 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/main_launcher_data.json'
+2026-02-27 23:08:17,446 - ERROR - NETWORK - <urlopen error [Errno -3] Temporary failure in name resolution>
+2026-02-27 23:08:17,446 - DEBUG - MESSAGE - asking message Error
+2026-02-27 23:08:18,043 - DEBUG - PACKAGES - getting launcher data
+2026-02-27 23:08:28,066 - DEBUG - LAUNCH - starting game launcher exectuable
+2026-02-27 23:08:48,988 - DEBUG - ############################################
+2026-02-27 23:08:48,988 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 23:08:49,043 - DEBUG - PACKAGES - getting packages
+2026-02-27 23:08:49,043 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 23:08:49,690 - DEBUG - MESSAGE - asking message EULA
+2026-02-27 23:08:49,845 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-27 23:08:49,986 - DEBUG - MESSAGE - asking message Select branch
+2026-02-27 23:08:50,124 - DEBUG - NETWORK - downloading launcher data
+2026-02-27 23:08:50,132 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/main_launcher_data.json'
+2026-02-27 23:08:50,140 - ERROR - NETWORK - <urlopen error [Errno -3] Temporary failure in name resolution>
+2026-02-27 23:08:50,141 - DEBUG - MESSAGE - asking message Error
+2026-02-27 23:08:50,272 - DEBUG - PACKAGES - getting launcher data
+2026-02-27 23:08:50,282 - DEBUG - LAUNCH - starting game launcher exectuable
+2026-02-27 23:08:52,087 - DEBUG - ############################################
+2026-02-27 23:08:52,087 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 23:08:52,142 - DEBUG - PACKAGES - getting packages
+2026-02-27 23:08:52,142 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 23:08:52,866 - DEBUG - MESSAGE - asking message EULA
+2026-02-27 23:08:53,066 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-27 23:08:53,325 - DEBUG - MESSAGE - asking message Select branch
+2026-02-27 23:08:53,642 - DEBUG - NETWORK - downloading launcher data
+2026-02-27 23:08:53,650 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/main_launcher_data.json'
+2026-02-27 23:08:53,659 - ERROR - NETWORK - <urlopen error [Errno -3] Temporary failure in name resolution>
+2026-02-27 23:08:53,659 - DEBUG - MESSAGE - asking message Error
+2026-02-27 23:08:54,110 - DEBUG - PACKAGES - getting launcher data
+2026-02-27 23:09:02,461 - DEBUG - ############################################
+2026-02-27 23:09:02,461 - DEBUG - DIRECTORY - setup user directory
+2026-02-27 23:09:02,514 - DEBUG - PACKAGES - getting packages
+2026-02-27 23:09:02,514 - DEBUG - MESSAGE - asking message Welcome
+2026-02-27 23:09:03,187 - DEBUG - MESSAGE - asking message EULA
+2026-02-27 23:09:04,002 - DEBUG - MESSAGE - asking message Select Repository
+2026-02-27 23:09:04,184 - DEBUG - MESSAGE - asking message Select branch
+2026-02-27 23:09:04,410 - DEBUG - NETWORK - downloading launcher data
+2026-02-27 23:09:04,416 - DEBUG - NETWORK - downloading file 'https://github.com/DevCyclonekitten/Trihexangular-Launcher/raw/main/Server/data/main_launcher_data.json'
+2026-02-27 23:09:04,425 - ERROR - NETWORK - <urlopen error [Errno -3] Temporary failure in name resolution>
+2026-02-27 23:09:04,425 - DEBUG - MESSAGE - asking message Error
+2026-02-27 23:09:04,778 - DEBUG - PACKAGES - getting launcher data
+2026-02-27 23:09:04,787 - DEBUG - LAUNCH - starting game launcher exectuable

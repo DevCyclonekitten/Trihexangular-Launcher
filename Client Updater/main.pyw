@@ -3,6 +3,16 @@ import customtkinter as ctk
 import asyncio,logging,os,shutil,zipfile,urllib.request,time,threading,subprocess,webbrowser,json,requests,stat
 import systemmessages
 logging.basicConfig(filename='error.log', format='%(asctime)s - %(levelname)s - %(message)s', level=logging.DEBUG)
+from PIL import Image
+from PIL import ImageTk
+import base64,io,sys
+
+
+with open("logo.ico", "rb") as ico:
+    bytesimage = base64.b64encode(ico.read())
+    with open("base64logo.byteimage","wb") as fs:
+        fs.write(bytesimage)
+
 
 class PackageManager():
     def __init__(self,m,a):
@@ -93,8 +103,15 @@ class SystemManager():
         self.path = os.path.expanduser("~")+"/.trihexangular-launcher"
         self.PathSetup()
     def DisplayError(self):
-        if(self.master.currenterror != {}):
-            self.SystemMessage(self.master.currenterror)
+        e=self.master.currenterror
+        
+        if(e != {}):
+            print(e)
+            
+            if("urlopen" in e["content"][1]["text"]):
+                e = {'name': 'Error', 'content': [{'text': 'Network Error', 'position': 0, 'font': ('Helvetica', 15)}, {'text': 'Cannot connect to internet (Errno -3)', 'position': 25, 'font': ('Helvetica', 10)}], 'icon': 'cancel', 'flags': {'exit-after': 0, 'persistent': 0, 'invisible': 0, 'priority': 1}, 'interactions': {'buttons': [{'text': 'exit', 'interactor': [{'type': 'dismiss'}]}]}}
+                self.master.nointernet = True
+            self.SystemMessage(e)
             self.master.currenterror = {}
     def PathSetup(self):
         self.paths = {
@@ -130,9 +147,13 @@ class SystemManager():
 
         run = threading.Thread(target=self.RunLauncher)
         run.start()
+        try:
+            self.master.window.root.after(5000,self.root.destroy)
+        except Exception as e:
+            print("No Root?")
+        #clear = threading.Thread(target=self.master.window.ClearAfterDuration,args=(5,))
+        #clear.start()
 
-        clear = threading.Thread(target=self.master.window.ClearAfterDuration,args=(5,))
-        clear.start()
         self.master.window.Start()
     def RunLauncher(self):
         ending = ".zip"
@@ -160,16 +181,18 @@ class SystemManager():
         d_path = self.paths[".temp"]
         f_path = self.paths["data"]
         
-        
-        print(url)
+
         
         self.master.network.ThreadDownloadFile(url,d_path,f_path,"launcher_data.json",self.master.window.DataProgressHook)
         
         self.master.window.Start()
     def Install(self):
+        if(self.master.nointernet):
+            self.master.window.Close()
+            return
         branch = self.master.pacman.data["branch"]
-        launcher_number = self.master.pacman.data["launcher"]["version"]
-        print(launcher_number)
+
+        launcher_number = self.master.datman.data["launcher"]["version"]
         self.master.window.ProgressBarWindow(
             [
                 {"text":"Installing","font":("Helvetica",18),"position":0},
@@ -227,11 +250,12 @@ class SystemManager():
             updateV = True
         
 
-        clear = threading.Thread(target=self.master.window.ClearAfterDuration,args=(0.5,))
-        clear.start()
+
+        self.master.window.root.after(500,self.root.destroy)
+        #clear = threading.Thread(target=self.master.window.ClearAfterDuration,args=(0.5,))
+        #clear.start()
 
         self.master.window.Start()
-        
         if(updateV):
             logging.debug("LAUNCH - update avaliable")
             self.Install()
@@ -269,7 +293,7 @@ class PromptManager():
             names.append(button["text"])
 
         #user
-        self.master.window.root.title(title)
+        self.master.window.root.title(title), ImageTk
         
 
         result = self.master.window.Messagebox(content,icon,names)
@@ -308,15 +332,69 @@ class PromptManager():
                 print(f"Error, cant find interator type for {item}")
 
 class Window():
-    def __init__(self,m): 
+    def __init__(self,m):
+        theme = ctk.ThemeManager.theme
+        theme["CTkButton"]["fg_color"] = ["#00790e","#00790e"]
+        theme["CTkButton"]["hover_color"] =["#004508","#00ce18"]
+        theme["CTkProgressBar"]["progress_color"] = ["#00790e","#00790e"]
+        my_theme = {
+            "CTk": {"fg_color": ["#f2f2f2", "#1a1a1a"]},
+            "CTkButton": {
+                "fg_color": ["#2CC985","#2FA572"],
+                "hover_color": ["#27ae60","#219150"],
+                "text_color": ["#ffffff","#ffffff"],
+                "corner_radius":1,
+                "border_width":3,
+                "border_color": ["#ffffff","#ffffff"],
+                "text_color_disabled": ["#ffffff","#ffffff"],
+
+            },
+            "CTkLabel": {
+                "text_color": ["#1a1a1a","#eeeeee"],
+                "fg_color": ["#2CC985","#2FA572"],
+                "hover_color": ["#27ae60","#219150"],
+                "corner_radius":1
+            }
+        }
+
+        ctk.ThemeManager.theme = theme
+
+
         self.master=m
         self.root = ctk.CTk()
+        self.root.resizable(False, False)
         self.root.geometry("300x120")
+        self.root.title("Trihexangular Launcherc")
+
+
+
+
+
+
+        img_bytes = base64.b64decode(systemmessages.logobytes)
+        img_pil = Image.open(io.BytesIO(img_bytes))
+
+        # 3. Convert PIL to a Tkinter-compatible PhotoImage
+        # This is what root.iconphoto actually wants
+        tk_icon = ImageTk.PhotoImage(img_pil)
+
+        # 4. Set the icon
+        self.root.iconphoto(False, tk_icon)
+
+
         self.closeflag = False
         ctk.set_appearance_mode("Dark") 
     def ClearAfterDuration(self,duration):
-        time.sleep(duration)
-        self.root.after(0, lambda: self.Close())
+        
+        try:
+            self.root.after(duration*1000, lambda: self.Close())
+        
+        except Exception as e:
+            print(f"Cannot Exit: {e}")
+            self.root.quit()
+            self.root.destroy()
+            sys.exit()
+            os._exit(0)
     def Clear(self):
         for w in self.root.winfo_children():
             w.destroy()
@@ -439,7 +517,10 @@ class Window():
     def DataProgressHook(self, count, block, size):
         if(count == "downloadsuccessful"):
             print("Destroy")
-            self.root.after(0, lambda: self.Close())
+            try:
+                self.root.after(0, lambda: self.Close())
+            except Exception as e:
+                exit()
         else:
             if size > 0:
                 
@@ -449,7 +530,11 @@ class Window():
 
             else:
                 self.root.after(0, lambda: self.progress_bar.set(1.0))
-                self.root.after(0.1, lambda: self.Close())
+
+                try:
+                    self.root.after(0.1, lambda: self.Close())
+                except Exception as e:
+                    exit()
 class NetworkManager():
     def ThreadDownloadZIP(self,url,d_path,e_path,processhook):
         t=threading.Thread(target=self.DownloadZIP,args=(url,d_path,e_path,processhook))
