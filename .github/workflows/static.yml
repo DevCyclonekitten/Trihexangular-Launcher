@@ -1,9 +1,9 @@
 
-name: Deploy static content to Pages
+name: Compile Site and Deploy
 
 on:
   workflow_dispatch:
-  
+
 permissions:
   contents: read
   pages: write
