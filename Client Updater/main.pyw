@@ -231,7 +231,7 @@ class SystemManager():
         print(self.master.pacman.data["launcher"])
         self.master.pacman.data["launcher"]["installed"]=True
     def SystemMessage(self,message):
-        logging.debug(f"MESSAGE - asking message {message["name"]}")
+        logging.debug(f"MESSAGE - asking message {message['name']}")
         self.master.prompt.Message(message,-1)
     
     def CompareVersion(self):
