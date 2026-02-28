@@ -763,6 +763,26 @@
                         {"text":"exit","interactor":[{"type":"dismiss"}]}
                     ]
                 }
+            },
+            {
+                "id":6,
+                "name":"Otto Otto on the wall",
+                "content":[
+                    {"type":"text","content":["Who is the least skibidiest of them all","15","Helvetica"]},
+                    {"type":"text","content":["Fallen through update is a pain to make, i am also making tsgocamwasogasran","35","Helvetica"]}
+                ],
+                "icon":"cancel",
+                "flags":{
+                    "exit-after":0,
+                    "persistent":0,
+                    "invisible":0,
+                    "priority":1
+                },
+                "interactions":{
+                    "buttons":[
+                        {"text":"exit","interactor":[{"type":"dismiss"}]}
+                    ]
+                }
             }
         ]
     }
