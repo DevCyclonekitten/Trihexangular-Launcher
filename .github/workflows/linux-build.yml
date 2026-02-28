@@ -3,6 +3,11 @@ name: Compile Linux Build
 on:
   workflow_dispatch:
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   build-windows:
     runs-on: ubuntu-latest
@@ -20,13 +25,16 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install pyinstaller
+          pip install customtkinter
+          pip install requests
+          pip install Pillow
 
-      - name: Compile Linux File
+      - name: Compile Windows File
         run: |
-          pyinstaller --onefile --icon="Client Updater/logo.ico" --distpath ./OUTPUT "Client Updater/main.pyw"
+          pyinstaller --onefile --icon="Updater/logo.ico" --distpath ./OUTPUT "Updater/main.pyw"
 
       - name: Upload
         uses: actions/upload-artifact@v4
         with:
-          name: windows-executable
+          name: linux-maintainer.x86_64
           path: OUTPUT/
