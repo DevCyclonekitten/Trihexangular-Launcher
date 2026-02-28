@@ -29,7 +29,7 @@ jobs:
           pip install requests
           pip install Pillow
 
-      - name: Compile Windows File
+      - name: Compile Windows exe Executable
         run: |
           pyinstaller --onefile --icon="Updater/logo.ico" --distpath ./OUTPUT "Updater/main.pyw"
 
