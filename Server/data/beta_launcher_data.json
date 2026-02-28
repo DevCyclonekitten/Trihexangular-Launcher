@@ -1,7 +1,7 @@
 {
     "manifest": 2,
     "launcher": {
-        "version": 0.97,
+        "version": 0.971,
         "assetversion":0.01,
         "maintainer": {
             "messages": {}
