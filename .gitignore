@@ -1,5 +1,4 @@
-/Client Application/
-/trihexangulargamesrepo/
-/Beta_Files/
-/Client Updater/dist/
-/Client Updater/build/
+/Application/*
+!Application/Assets
+/Updater/dist/
+/Updater/build/
