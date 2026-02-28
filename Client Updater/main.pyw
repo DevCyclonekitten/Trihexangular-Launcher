@@ -57,7 +57,6 @@ class PackageManager():
     def GetPackages(self):
         self.master.system.DisplayError()
 
-        
         v = "packages"
         if(self.alternate):
             v ="launcher data"
@@ -91,25 +90,44 @@ class PackageManager():
             with open(os.path.join(self.master.system.paths["data"],"packages.json"),"w") as fs:
                 json.dump(self.data,fs,indent=4)
         except Exception as e:
-            os.makedirs(self.master.system.path)
+            os.makedirs(self.master.system.path,exist_ok=True)
             self.SetPackages()
 class SystemManager():
     def __init__(self,m):
         self.master=m
-        if sys.platform.startswith('win'):
-            self.WindowsDirectory()
-        elif sys.platform.startswith('linux'):
-            self.LinuxDirectory()
+        self.path = os.path.join(os.path.expanduser("~"),".trihexangular-launcher")
         
+    def Configure(self):
+        #self.master.pacman.GetPackages()
+        os = None#self.master.pacman.Get("os")
+        if(os==None):
+            if sys.platform.startswith('win'):
+                self.WindowsDirectory()
+            elif sys.platform.startswith('linux'):
+                self.LinuxDirectory()
+        else:
+            if os=="windows":
+                self.WindowsDirectory()
+            elif os=="linux":
+                self.LinuxDirectory()
     def WindowsDirectory(self):
+        
         self.systemname = "Windows"
-
-        self.path = os.path.expanduser("~")+"/AppData/roaming/trihexangular-launcher"
+        #self.path = os.path.expanduser("~")+"/.trihexangular-launcher"
         self.PathSetup()
+
+        self.awaitpackage="windows"
     def LinuxDirectory(self):
         self.systemname = "Linux"
-        self.path = os.path.expanduser("~")+"/.trihexangular-launcher"
+        
+
         self.PathSetup()
+
+        self.awaitpackage="windows"
+    def ApplyAwait(self):
+        self.master.pacman.GetPackages()
+        self.master.pacman.CheckAdd("os",self.awaitpackage)
+        self.master.pacman.SetPackages()
     def DisplayError(self):
         e=self.master.currenterror
         
@@ -122,6 +140,9 @@ class SystemManager():
             self.SystemMessage(e)
             self.master.currenterror = {}
     def PathSetup(self):
+        if(not os.path.exists(self.path)):
+            #os.makedirs(self.path)
+            pass
         logging.basicConfig(filename=os.path.join(self.path,'error.log'), format='%(asctime)s - %(levelname)s - %(message)s', level=logging.DEBUG)
         self.paths = {
             "folder":self.path,
@@ -131,8 +152,7 @@ class SystemManager():
             "games": os.path.join(self.path,"games"),
         }
         for key in self.paths.keys():
-            if(not os.path.exists(self.paths[key])):
-                os.makedirs(self.paths[key])
+           os.makedirs(self.paths[key], exist_ok=True)
         logging.getLogger('PIL').setLevel(logging.WARNING)
         logging.debug("############################################")
         logging.debug(f"DIRECTORY - setup user directory {self.systemname}")
@@ -169,9 +189,10 @@ class SystemManager():
         self.master.window.Start()
         
     def RunLauncher(self):
-        ending = ".zip"
+        ending = ".exe"
         if(self.master.system.systemname=="Linux"):
             ending = ".x86_64"
+        
 
         path = os.path.join(self.paths["bin"],"launcher","Trihexangular Launcher"+ending)
         
@@ -640,9 +661,14 @@ class Manager():
     def __init__(self):
         self.nointernet=False
         self.currenterror = {}
-        self.system = SystemManager(self)
+       
+        
 
+        
+        self.system = SystemManager(self)
+        self.system.Configure()
         self.pacman = PackageManager(self,False)
+        self.system.ApplyAwait()
         self.datman = PackageManager(self,True)
         self.network = NetworkManager(self)
         self.prompt = PromptManager(self)
@@ -655,8 +681,9 @@ class Manager():
             self.pacman.GetPackages()
             isInstalled = self.pacman.data["launcher"]["installed"]
         except Exception as e:
-            print(f"isnt installed: {e}")
             isInstalled = False
+
+        
         #isInstalled=False
         if(isInstalled): 
             self.system.DownloadData()
