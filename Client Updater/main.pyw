@@ -2,7 +2,7 @@
 import customtkinter as ctk
 import asyncio,logging,os,shutil,zipfile,urllib.request,time,threading,subprocess,webbrowser,json,requests,stat
 import systemmessages
-logging.basicConfig(filename='error.log', format='%(asctime)s - %(levelname)s - %(message)s', level=logging.DEBUG)
+
 from PIL import Image
 from PIL import ImageTk
 import base64,io,sys
@@ -94,6 +94,7 @@ class PackageManager():
 class SystemManager():
     def __init__(self,m):
         self.master=m
+        
     def WindowsDirectory(self):
         self.systemname = "Windows"
         self.path = os.path.expanduser("~")+"/AppData/roaming/trihexangular-launcher"
@@ -114,6 +115,7 @@ class SystemManager():
             self.SystemMessage(e)
             self.master.currenterror = {}
     def PathSetup(self):
+        logging.basicConfig(filename=os.path.join(self.path,'error.log'), format='%(asctime)s - %(levelname)s - %(message)s', level=logging.DEBUG)
         self.paths = {
             "folder":self.path,
             "bin": os.path.join(self.path,"bin"),
@@ -124,8 +126,6 @@ class SystemManager():
         for key in self.paths.keys():
             if(not os.path.exists(self.paths[key])):
                 os.makedirs(self.paths[key])
-
-        logging.basicConfig(filename=os.path.join(self.paths["folder"],"data.log"), format='%(asctime)s - %(levelname)s - %(message)s', level=logging.DEBUG)
         logging.getLogger('PIL').setLevel(logging.WARNING)
         logging.debug("############################################")
         logging.debug("DIRECTORY - setup user directory")
@@ -136,6 +136,7 @@ class SystemManager():
         self.master.window.root.destroy()
     def Start(self):
         self.DisplayError()
+        logging.debug("LAUNCH - starting launcher")
         version = self.master.pacman.data["launcher"]["version"]
         branch = self.master.pacman.data["branch"]
         
@@ -216,6 +217,7 @@ class SystemManager():
         
         launcher_os = (self.master.system.systemname.lower())+".zip"
         print(launcher_os)
+        logging.debug("OS - OSTYPE {launcher_os} install")
         url = self.master.pacman.data["repository"] + f"/releases/download/{branch}_{launcher_number}/launcher_{launcher_os}"
 
         
@@ -255,12 +257,14 @@ class SystemManager():
             updateV = True
         
 
-
-        self.master.window.root.after(500,self.root.destroy)
+        try:
+            self.master.window.root.after(500,self.master.window.ClearCurrentRoot)
+        except Exception as e:
+            pass
         #clear = threading.Thread(target=self.master.window.ClearAfterDuration,args=(0.5,))
         #clear.start()
 
-        self.master.window.Start()
+        #self.master.window.Start()
         if(updateV):
             logging.debug("LAUNCH - update avaliable")
             self.Install()
@@ -307,7 +311,8 @@ class PromptManager():
         #resolving
         for item in interactor:
             if(item["type"]=="dismiss"):
-                self.master.pacman.Append("messages",ID)
+                if(ID!=-1):
+                    self.master.pacman.Append("messages",ID)
             elif(item["type"]=="dismiss-silent"):
                 pass
             elif(item["type"]=="json"):
@@ -384,7 +389,8 @@ class Window():
         tk_icon = ImageTk.PhotoImage(img_pil)
 
         # 4. Set the icon
-        self.root.iconphoto(False, tk_icon)
+        self.root.update_idletasks()
+        self.root.iconphoto(True, tk_icon)
 
 
         self.closeflag = False
@@ -645,7 +651,7 @@ class Manager():
         except Exception as e:
             print(f"isnt installed: {e}")
             isInstalled = False
-        isInstalled=False
+        #isInstalled=False
         if(isInstalled): 
             self.system.DownloadData()
             self.datman.GetPackages()
