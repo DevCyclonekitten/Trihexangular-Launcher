@@ -1,1 +1,0 @@
-python -m PyInstaller --onefile --icon=logo.ico main.pyw 
