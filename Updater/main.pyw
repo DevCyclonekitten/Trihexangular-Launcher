@@ -140,9 +140,6 @@ class SystemManager():
             self.SystemMessage(e)
             self.master.currenterror = {}
     def PathSetup(self):
-        if(not os.path.exists(self.path)):
-            os.makedirs(self.path,exist_ok=True)
-        logging.basicConfig(filename=os.path.join(self.path,'error.log'), format='%(asctime)s - %(levelname)s - %(message)s', level=logging.DEBUG)
         self.paths = {
             "folder":self.path,
             "bin": os.path.join(self.path,"bin"),
@@ -152,6 +149,8 @@ class SystemManager():
         }
         for key in self.paths.keys():
            os.makedirs(self.paths[key], exist_ok=True)
+        if(os.path.exists(os.path.join(self.path,'error.log')) and 1==1):
+            logging.basicConfig(filename=os.path.join(self.path,'error.log'), format='%(asctime)s - %(levelname)s - %(message)s', level=logging.DEBUG)
         logging.getLogger('PIL').setLevel(logging.WARNING)
         logging.debug("############################################")
         logging.debug(f"DIRECTORY - setup user directory {self.systemname}")
