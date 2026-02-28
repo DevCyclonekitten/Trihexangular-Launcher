@@ -1,11 +1,13 @@
 #import systems
 import customtkinter as ctk
-import asyncio,logging,os,shutil,zipfile,urllib.request,time,threading,subprocess,webbrowser,json,requests,stat
+import asyncio,logging,os,shutil,zipfile,urllib.request,time,threading,subprocess,webbrowser,json,requests,stat,sys
 import systemmessages
 
 from PIL import Image
 from PIL import ImageTk
 import base64,io,sys
+import sys
+
 
 
 #with open("logo.ico", "rb") as ico:
@@ -94,9 +96,14 @@ class PackageManager():
 class SystemManager():
     def __init__(self,m):
         self.master=m
+        if sys.platform.startswith('win'):
+            self.WindowsDirectory()
+        elif sys.platform.startswith('linux'):
+            self.LinuxDirectory()
         
     def WindowsDirectory(self):
         self.systemname = "Windows"
+
         self.path = os.path.expanduser("~")+"/AppData/roaming/trihexangular-launcher"
         self.PathSetup()
     def LinuxDirectory(self):
@@ -128,7 +135,7 @@ class SystemManager():
                 os.makedirs(self.paths[key])
         logging.getLogger('PIL').setLevel(logging.WARNING)
         logging.debug("############################################")
-        logging.debug("DIRECTORY - setup user directory")
+        logging.debug(f"DIRECTORY - setup user directory {self.systemname}")
     def ExitWithNoRoot(self):
         time.sleep(5)
         exit()
@@ -634,7 +641,6 @@ class Manager():
         self.nointernet=False
         self.currenterror = {}
         self.system = SystemManager(self)
-        self.system.LinuxDirectory()
 
         self.pacman = PackageManager(self,False)
         self.datman = PackageManager(self,True)
