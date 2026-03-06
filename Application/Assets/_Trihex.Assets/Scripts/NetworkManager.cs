@@ -385,6 +385,7 @@ public class Content {
 [System.Serializable]
 public class Game {
     public string name;
+    public bool invisible;
     public string id;
     public string programmingname;
     public string[] author;

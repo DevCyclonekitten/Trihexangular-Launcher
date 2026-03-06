@@ -126,10 +126,13 @@ public class StoreManager : MonoBehaviour
     public void StoreLoadGames(){
         Game[] games = nm.dataObject.content.games;
         foreach(Game gm in games){
-            GameObject go = Instantiate(gamePrefab,gameContent);
-            GameHolder gh = go.GetComponent<GameHolder>();
+            if(!gm.invisible){
+                GameObject go = Instantiate(gamePrefab,gameContent);
+                GameHolder gh = go.GetComponent<GameHolder>();
 
-            gh.UpdateSprite(gm);
+                gh.UpdateSprite(gm);
+            }
+            
 
         }
     }
