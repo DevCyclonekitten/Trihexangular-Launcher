@@ -152,6 +152,7 @@
             },
             {
                 "id": "12",
+                "invisible":true,
                 "name": "Square Adventure Reverb",
                 "programmingname": "SquareAdventureReverb",
                 "author": [
@@ -246,6 +247,7 @@
             },
             {
                 "id": "2",
+                "invisible":true,
                 "name": "Square Adventure 2",
                 "programmingname": "SquareAdventure2",
                 "author": [

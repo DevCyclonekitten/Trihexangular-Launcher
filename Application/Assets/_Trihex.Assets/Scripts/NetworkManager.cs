@@ -284,7 +284,7 @@ public class NetworkManager : MonoBehaviour
 
             
 
-            if(true){//ap.sm.CheckGameValid(currentGame)==2){
+            if(ap.operatingSystem==OS.Linux&&ap.sm.CheckGameValid(gm.currentGame)==2){//ap.sm.CheckGameValid(currentGame)==2){
                 string p1 = Path.Combine(f_path,filename);
                 string[] dir = Directory.GetDirectories(p1);
                 LinuxDirectoryWineWindowsFolderPullout(dir[0]);
@@ -293,6 +293,9 @@ public class NetworkManager : MonoBehaviour
                 string exePath = Path.Combine(f_file, attachpath);
 
                 AttachLinuxXTag(exePath);
+            }
+            else{
+                UnityEngine.Debug.Log("Skipping pulling out file");
             }
 
             //UnityEngine.Debug.Log("Downloaded: "+url);

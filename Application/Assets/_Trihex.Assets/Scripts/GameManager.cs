@@ -157,6 +157,7 @@ public class GameManager : MonoBehaviour
         if(ap.operatingSystem != OS.Linux) return;
         string attachpath = currentGame.name+ap.sm.GetGameExeType(currentGame);
         string exePath = Path.Combine(currentGame.name, attachpath);
+        UnityEngine.Debug.Log(exePath);
         if(System.IO.File.Exists(exePath)){
             System.Diagnostics.Process process = new System.Diagnostics.Process();
             process.StartInfo.FileName = "chmod";

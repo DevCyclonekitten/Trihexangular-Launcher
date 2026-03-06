@@ -25,6 +25,9 @@ public class ApplicationPath : MonoBehaviour
     void Start(){
         
         UnityEngine.Debug.unityLogger.logHandler = new LogHandler();
+
+
+
         ConfigurePaths();
         if(PlayerPrefs.GetInt("ViewOS")==0){
             PlayerPrefs.SetInt("ViewOS",1);
@@ -34,7 +37,11 @@ public class ApplicationPath : MonoBehaviour
         ConfigurePaths();
         
     }
-    
+    void Update(){
+        if (Debug.unityLogger.logHandler is not LogHandler){
+            Debug.unityLogger.logHandler = new LogHandler();
+        }
+    }
     public string GetPath(){
         if(persistentDataPath==""){
             ConfigurePaths();

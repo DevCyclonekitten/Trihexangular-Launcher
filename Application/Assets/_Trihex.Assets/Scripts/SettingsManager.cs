@@ -44,7 +44,7 @@ public class SettingsManager : MonoBehaviour{
                         return "";
                     }
                 }
-                return "x86_64";
+                return ".x86_64";
             }
             
             
