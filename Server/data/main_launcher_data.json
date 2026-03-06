@@ -194,7 +194,7 @@
                         ""
                     ],
                     "windows": [
-                        "1.0"
+                        "0.1"
                     ]
                 }
             },
@@ -436,7 +436,7 @@
             },
             {
                 "id": "4",
-                "name": "AeronautAdrenaline",
+                "name": "Aeronaut Adrenaline",
                 "programmingname": "AeronautAdrenaline",
                 "author": [
                     "Trihexangular Studios"
