@@ -146,7 +146,7 @@ public class GameManager : MonoBehaviour
     public void InstallStartButton(){
         if(true){
             string p =Path.Combine(ap.persistentDataPath,"bin","games",currentGame.programmingname);
-            if(Directory.Exists(p)) Directory.Delete(p);
+            if(Directory.Exists(p)) Directory.Delete(p,true);
             
         }
         InstallGame(ap.sm.GetVersionOptions(currentGame)[dropdownField.value]);
@@ -157,14 +157,18 @@ public class GameManager : MonoBehaviour
         if(ap.operatingSystem != OS.Linux) return;
         string attachpath = currentGame.name+ap.sm.GetGameExeType(currentGame);
         string exePath = Path.Combine(currentGame.name, attachpath);
-        UnityEngine.Debug.Log(exePath);
-        if(System.IO.File.Exists(exePath)){
-            System.Diagnostics.Process process = new System.Diagnostics.Process();
-            process.StartInfo.FileName = "chmod";
-            process.StartInfo.Arguments = "+x \"" + exePath + "\"";
-            process.StartInfo.UseShellExecute = false;
-            process.Start();
-            process.WaitForExit();
+        if(System.IO.File.Exists(exePath)&&!ap.dm.settingsData.linuxUseWine){
+            ap.nm.AttachLinuxXTag(exePath);
+            
+        }
+        else{
+            if(ap.dm.settingsData.linuxUseWine){
+                string Wattachpath = currentGame.name+".exe";
+                string WexePath = Path.Combine(currentGame.name, attachpath);
+                if(System.IO.File.Exists(WexePath)){
+                    ap.nm.AttachLinuxXTag(WexePath);
+                }
+            }
         }
     }
     public void StartExecutable(string path)

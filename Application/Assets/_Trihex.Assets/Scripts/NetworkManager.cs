@@ -236,7 +236,11 @@ public class NetworkManager : MonoBehaviour
 
         if (File.Exists(d_zip)){
             try{File.Delete(d_zip);}
-            catch (System.Exception e){ ecc_yield_result = false; yield break;}
+            catch (System.Exception e){ ecc_yield_result = false; UnityEngine.Debug.LogError(e); yield break;}
+        }
+        if (Directory.Exists(Path.Combine(f_path,filename))){
+            try{Directory.Delete(Path.Combine(f_path,filename),true);}
+            catch (System.Exception e){ ecc_yield_result = false; UnityEngine.Debug.LogError(e); yield break;}
         }
         gm.downloading = true;
         gm.playButtonImage.color = new Color(0.4f,0f,0.4f);
@@ -298,7 +302,7 @@ public class NetworkManager : MonoBehaviour
                 UnityEngine.Debug.Log("Skipping pulling out file");
             }
 
-            //UnityEngine.Debug.Log("Downloaded: "+url);
+            UnityEngine.Debug.Log("Downloaded: "+url);
         }
     }
     public void AttachLinuxXTag(string exePath){

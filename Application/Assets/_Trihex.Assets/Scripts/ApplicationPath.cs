@@ -23,9 +23,9 @@ public class ApplicationPath : MonoBehaviour
     public SettingsManager sm;
     
     void Start(){
-        
-        UnityEngine.Debug.unityLogger.logHandler = new LogHandler();
-
+        if (Debug.unityLogger.logHandler is not LogHandler){
+            Debug.unityLogger.logHandler = new LogHandler();
+        }
 
 
         ConfigurePaths();
@@ -37,11 +37,7 @@ public class ApplicationPath : MonoBehaviour
         ConfigurePaths();
         
     }
-    void Update(){
-        if (Debug.unityLogger.logHandler is not LogHandler){
-            Debug.unityLogger.logHandler = new LogHandler();
-        }
-    }
+
     public string GetPath(){
         if(persistentDataPath==""){
             ConfigurePaths();
