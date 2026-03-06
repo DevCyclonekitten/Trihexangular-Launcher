@@ -8,7 +8,7 @@ public class LogHandler : ILogHandler
     public void LogFormat(LogType logType, UnityEngine.Object context, string format, params object[] args)
     {
 
-        string prefix = $"[{DateTime.Now:HH:mm:ss}] ";
+        string prefix = "[LAUNCHER] ";//$"[{DateTime.Now:HH:mm:ss}] ";
         m_DefaultHandler.LogFormat(logType, context, prefix + format, args);
     }
 

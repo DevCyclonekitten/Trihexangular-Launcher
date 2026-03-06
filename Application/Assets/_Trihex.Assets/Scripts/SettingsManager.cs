@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using System.IO;
 public class SettingsManager : MonoBehaviour{
     public ApplicationPath ap;
 
@@ -11,12 +11,12 @@ public class SettingsManager : MonoBehaviour{
     public string[] GetVersionOptions(Game currentGame){
             if(ap.operatingSystem == OS.Linux){
                 int r = CheckGameValid(currentGame);
-                Debug.Log("CheckGameValidity: "+r.ToString());
+                //Debug.Log("CheckGameValidity: "+r.ToString());
                 if(r==1){
                     return (string[])currentGame.builds.linux.Clone();
                 }
                 if(r==2){
-                    Debug.Log("ValidityReturned: "+currentGame.builds.windows[0]);
+                    //Debug.Log("ValidityReturned: "+currentGame.builds.windows[0]);
                     return (string[])currentGame.builds.windows.Clone();
                 }
             }
@@ -52,7 +52,32 @@ public class SettingsManager : MonoBehaviour{
         }
         return ".exe";
     }
+    public string GetGamesPath(Game currentGame){
+        string gamesPath = "";
+        string dlp = Path.Combine(ap.GetPath(), "bin","games",currentGame.programmingname,currentGame.name+".x86_64");
+        string dwp = Path.Combine(ap.GetPath(), "bin","games",currentGame.programmingname,currentGame.name+".exe");
+        if(ap.operatingSystem==OS.Linux){
 
+            if(File.Exists(dlp)){
+                return dlp;
+            }
+            else{
+                if(File.Exists(dwp)&&ap.dm.settingsData.linuxUseWine){
+                    //Debug.Log("FOUND WINDOWS PATH");
+                    return dwp;
+                }
+                else{
+                    return dlp;
+                }
+            }
+        }
+        if(ap.operatingSystem==OS.Windows){
+            return dwp;
+        }
+
+
+        return "";
+    }
     public int CheckGameValid(Game currentGame){
         if(ap.operatingSystem == OS.Linux){
             if(currentGame.builds.linux.Length == 0){
@@ -60,7 +85,7 @@ public class SettingsManager : MonoBehaviour{
                     return 0;
                 }
                 else{
-                    Debug.Log("Return Wine");
+                    //Debug.Log("Return Wine");
                     return 2;
                 }
             }

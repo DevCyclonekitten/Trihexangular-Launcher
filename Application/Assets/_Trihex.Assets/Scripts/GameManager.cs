@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour
     }
 
     public void DeleteGame(){
-        string path = Path.GetDirectoryName(GetGamesPath());
+        string path = Path.GetDirectoryName(ap.sm.GetGamesPath(currentGame));
         try{
             Directory.Delete(path, true);
         }
@@ -41,22 +41,11 @@ public class GameManager : MonoBehaviour
     }
     public void ViewGameFiles()
     {   
-        string path = Path.GetDirectoryName(GetGamesPath());
+        string path = Path.GetDirectoryName(ap.sm.GetGamesPath(currentGame));
 
         Process.Start("xdg-open", path);
     }
-    public string GetGamesPath(){
-        string gamesPath = "";
-        if(ap.operatingSystem==OS.Linux){
-            gamesPath = Path.Combine(ap.GetPath(), "bin","games",currentGame.programmingname,currentGame.name+ap.sm.GetGameExeType(currentGame));
-        }
-        if(ap.operatingSystem==OS.Windows){
-            gamesPath = Path.Combine(ap.GetPath(), "bin","games",currentGame.programmingname,currentGame.name+ap.sm.GetGameExeType(currentGame));
-        }
-
-
-        return gamesPath;
-    }
+    
     public bool validityThroughWine;
     public void UpdateGameButton(){
         
@@ -80,9 +69,9 @@ public class GameManager : MonoBehaviour
             settingsObject.SetActive(false);
             return;
         }
-        if(File.Exists(GetGamesPath())){
+        if(File.Exists(ap.sm.GetGamesPath(currentGame))){
             if(validityThroughWine){
-                playButtonImage.color = new Color(0.20f,0.8f,0.8f);
+                playButtonImage.color = new Color(0.125f,0.5f,0.5f);
                 playButtonText.SetText("PLAY WINE");
                 settingsObject.SetActive(true);
             }
@@ -122,8 +111,8 @@ public class GameManager : MonoBehaviour
         if(downloading){return;}
         currentGame = ap.lm.currentGame;
 
-        if(File.Exists(GetGamesPath())){
-            StartExecutable(GetGamesPath());
+        if(File.Exists(ap.sm.GetGamesPath(currentGame))){
+            StartExecutable(ap.sm.GetGamesPath(currentGame));
         }
         else{
             PopulateVersionOptions();
@@ -155,6 +144,11 @@ public class GameManager : MonoBehaviour
     }
     
     public void InstallStartButton(){
+        if(true){
+            string p =Path.Combine(ap.persistentDataPath,"bin","games",currentGame.programmingname);
+            if(Directory.Exists(p)) Directory.Delete(p);
+            
+        }
         InstallGame(ap.sm.GetVersionOptions(currentGame)[dropdownField.value]);
         
     }
