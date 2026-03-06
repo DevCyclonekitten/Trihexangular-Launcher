@@ -266,7 +266,7 @@ public class NetworkManager : MonoBehaviour
 
                 //EXTRACT
                 ZipFile.ExtractToDirectory(d_zip, f_file);
-                string attachpath = gm.currentGame.name+gm.GetGameExeType();
+                string attachpath = gm.currentGame.name+ap.sm.GetGameExeType(gm.currentGame);
                 string exePath = Path.Combine(f_file, attachpath);
                 if(System.IO.File.Exists(exePath) && ap.operatingSystem==OS.Linux){
                     var process = new System.Diagnostics.Process();

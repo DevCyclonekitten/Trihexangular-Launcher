@@ -19,9 +19,12 @@ public class ApplicationPath : MonoBehaviour
     public DataManager dm;
     public AssetManager am;
     public LibraryManager lm;
-
+    public GameManager gm;
+    public SettingsManager sm;
     
     void Start(){
+        
+        UnityEngine.Debug.unityLogger.logHandler = new LogHandler();
         ConfigurePaths();
         if(PlayerPrefs.GetInt("ViewOS")==0){
             PlayerPrefs.SetInt("ViewOS",1);

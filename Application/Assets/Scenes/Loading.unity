@@ -648,10 +648,12 @@ MonoBehaviour:
   persistentDataPath: 
   repository: https://github.com/DevCyclonekitten/Trihexangular-Launcher
   operatingSystem: 0
-  nm: {fileID: 0}
+  nm: {fileID: 754723293}
   dm: {fileID: 1082584750}
   am: {fileID: 0}
   lm: {fileID: 0}
+  gm: {fileID: 0}
+  sm: {fileID: 0}
 --- !u!4 &1082584749
 Transform:
   m_ObjectHideFlags: 0
