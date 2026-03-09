@@ -21,44 +21,16 @@ public class GameManager : MonoBehaviour
     public bool invalidOS;
     public GameObject settingsObject;
     void Start(){Invoke("DelayedStart",0.01f);installButtonVersionSelect.SetActive(false);} void DelayedStart(){
+        InvokeRepeating("InfrequentUpdate",0.1f,0.1f);
         //InstallGame("0.1");
         
     }
-    void Update(){
+    void InfrequentUpdate(){
         UpdateGameButton();
     }
-    public void CheckGameValid(){
-        if(ap.operatingSystem == OS.Linux){
-            if(currentGame.builds.linux.Length == 0){
-                invalidOS= true;
-            }
-            else{
-                if(currentGame.builds.linux[0]==""){
-                    invalidOS=true;
-                }
-                else{
-                    invalidOS= false;
-                }
 
-            }
-        }
-        if(ap.operatingSystem == OS.Windows){
-            if(currentGame.builds.windows.Length == 0){
-                invalidOS= true;
-            }
-            else{
-                if(currentGame.builds.windows[0]==""){
-                    invalidOS=true;
-                }
-                else{
-                    invalidOS= false;
-                }
-
-            }
-        }
-    }
     public void DeleteGame(){
-        string path = Path.GetDirectoryName(GetGamesPath());
+        string path = Path.GetDirectoryName(ap.sm.GetGamesPath(currentGame));
         try{
             Directory.Delete(path, true);
         }
@@ -69,45 +41,67 @@ public class GameManager : MonoBehaviour
     }
     public void ViewGameFiles()
     {   
-        string path = Path.GetDirectoryName(GetGamesPath());
+        string path = Path.GetDirectoryName(ap.sm.GetGamesPath(currentGame));
 
         Process.Start("xdg-open", path);
     }
-    public string GetGamesPath(){
-        string gamesPath = "";
-        if(ap.operatingSystem==OS.Linux){
-            gamesPath = Path.Combine(ap.GetPath(), "bin","games",currentGame.programmingname,currentGame.name+GetGameExeType());
-        }
-        if(ap.operatingSystem==OS.Windows){
-            gamesPath = Path.Combine(ap.GetPath(), "bin","games",currentGame.programmingname,currentGame.name+GetGameExeType());
-        }
-
-
-        return gamesPath;
-    }
+    
+    public bool validityThroughWine;
     public void UpdateGameButton(){
-        CheckGameValid();
+        
         currentGame = ap.lm.currentGame;
+        int resultMap = ap.sm.CheckGameValid(currentGame);
+
+        validityThroughWine=false;
+        //UnityEngine.Debug.Log(resultMap);
+        if(resultMap==2){
+            invalidOS=false;
+            validityThroughWine=true;
+        }
+        if(resultMap==1){
+            invalidOS=false;
+        }
+        if(resultMap==0){
+            invalidOS=true;
+        }
 
         if(downloading){
             settingsObject.SetActive(false);
             return;
         }
-        if(invalidOS){
-            playButtonImage.color = new Color(0.2f,0.2f,0.2f);
-            playButtonText.SetText("NOT COMPATIBLE");
-            settingsObject.SetActive(false);
-            return;
-        }
-        if(File.Exists(GetGamesPath())){
-            playButtonImage.color = new Color(0.25f,1f,1f);
-            playButtonText.SetText("PLAY");
-            settingsObject.SetActive(true);
+        if(File.Exists(ap.sm.GetGamesPath(currentGame))){
+            if(validityThroughWine){
+                playButtonImage.color = new Color(0.125f,0.5f,0.5f);
+                playButtonText.SetText("PLAY WINE");
+                settingsObject.SetActive(true);
+            }
+            else{
+                playButtonImage.color = new Color(0.25f,1f,1f);
+                playButtonText.SetText("PLAY");
+                settingsObject.SetActive(true);
+            }
+            
         }
         else{
-            playButtonImage.color = new Color(1f,0.5f,0.25f);
-            playButtonText.SetText("INSTALL");
-            settingsObject.SetActive(false);
+            if(validityThroughWine&&!invalidOS){
+                playButtonImage.color = new Color(0.8f,0.4f,0.20f);
+                playButtonText.SetText("INSTALL WINE");
+                settingsObject.SetActive(false);
+                return;
+            }
+            else if(!invalidOS){
+                playButtonImage.color = new Color(1f,0.5f,0.25f);
+                playButtonText.SetText("INSTALL");
+                settingsObject.SetActive(false);
+                return;
+            }
+            if(invalidOS){
+                playButtonImage.color = new Color(0.2f,0.2f,0.2f);
+                playButtonText.SetText("NOT COMPATIBLE");
+                settingsObject.SetActive(false);
+                return;
+            }
+            
         }
     }
     public GameObject installButtonVersionSelect;
@@ -117,8 +111,8 @@ public class GameManager : MonoBehaviour
         if(downloading){return;}
         currentGame = ap.lm.currentGame;
 
-        if(File.Exists(GetGamesPath())){
-            StartExecutable(GetGamesPath());
+        if(File.Exists(ap.sm.GetGamesPath(currentGame))){
+            StartExecutable(ap.sm.GetGamesPath(currentGame));
         }
         else{
             PopulateVersionOptions();
@@ -126,7 +120,10 @@ public class GameManager : MonoBehaviour
         }
     }
     public void PopulateVersionOptions(){
-        string[] array = GetVersionOptions();
+        string[] array = ap.sm.GetVersionOptions(currentGame);
+        foreach(string s in array){
+            UnityEngine.Debug.Log("Filled: "+s);
+        }
         array[array.Length-1] = "Latest - "+array[array.Length-1];
         List<string> lr = new List<string>();
         foreach(string a in array){
@@ -145,37 +142,33 @@ public class GameManager : MonoBehaviour
         dropdownField.ClearOptions();
         dropdownField.AddOptions(lr);
     }
-    public string[] GetVersionOptions(){
-        if(invalidOS==false){
-            if(ap.operatingSystem == OS.Linux) return (string[])currentGame.builds.linux.Clone();
-            if(ap.operatingSystem == OS.Windows) return (string[])currentGame.builds.windows.Clone();
-        }
-        return null;
-    }
+    
     public void InstallStartButton(){
-        InstallGame(GetVersionOptions()[dropdownField.value]);
+        if(true){
+            string p =Path.Combine(ap.persistentDataPath,"bin","games",currentGame.programmingname);
+            if(Directory.Exists(p)) Directory.Delete(p,true);
+            
+        }
+        InstallGame(ap.sm.GetVersionOptions(currentGame)[dropdownField.value]);
         
     }
-    public string GetGameExeType(){
-        if(ap.operatingSystem==OS.Linux){
-            return ".x86_64";
-        }
-        if(ap.operatingSystem==OS.Windows){
-            return ".exe";
-        }
-        return ".exe";
-    }
+    
     public void LinuxGiveGameExecutableTag(){
         if(ap.operatingSystem != OS.Linux) return;
-        string attachpath = currentGame.name+GetGameExeType();
+        string attachpath = currentGame.name+ap.sm.GetGameExeType(currentGame);
         string exePath = Path.Combine(currentGame.name, attachpath);
-        if(System.IO.File.Exists(exePath)){
-            System.Diagnostics.Process process = new System.Diagnostics.Process();
-            process.StartInfo.FileName = "chmod";
-            process.StartInfo.Arguments = "+x \"" + exePath + "\"";
-            process.StartInfo.UseShellExecute = false;
-            process.Start();
-            process.WaitForExit();
+        if(System.IO.File.Exists(exePath)&&!ap.dm.settingsData.linuxUseWine){
+            ap.nm.AttachLinuxXTag(exePath);
+            
+        }
+        else{
+            if(ap.dm.settingsData.linuxUseWine){
+                string Wattachpath = currentGame.name+".exe";
+                string WexePath = Path.Combine(currentGame.name, attachpath);
+                if(System.IO.File.Exists(WexePath)){
+                    ap.nm.AttachLinuxXTag(WexePath);
+                }
+            }
         }
     }
     public void StartExecutable(string path)
@@ -197,12 +190,26 @@ public class GameManager : MonoBehaviour
 
 
         if(ap.operatingSystem == OS.Linux){
-            foreach(string build in currentGame.builds.linux){
-                if(build == version){
-                    validversion=true;
-                    url = "linux/"+version+".zip";
+            if(ap.dm.settingsData.linuxUseWine){
+                foreach(string build in currentGame.builds.linux){
+                    if(build == version){
+                        validversion=true;
+                        url = "linux/"+version+".zip";
+                    }
                 }
+                if(validversion==false){
+                    foreach(string build in currentGame.builds.windows){
+                        if(build == version){
+                            validversion=true;
+                            url = "windows/"+version+".zip";
+                        }
+                    }
+                }
+            }   
+            else{
+
             }
+            
         }
         if(ap.operatingSystem == OS.Windows){
             foreach(string build in currentGame.builds.windows){
@@ -212,6 +219,7 @@ public class GameManager : MonoBehaviour
                 }
             }
         }
+        UnityEngine.Debug.Log(url);
         
         if(!validversion){
             return;

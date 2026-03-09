@@ -19,6 +19,10 @@ public class PackageData {
     public bool eula;
     
 }
+[System.Serializable]
+public class SettingsData {
+    public bool linuxUseWine;
+}
 
 public class DataManager : MonoBehaviour
 {
@@ -29,8 +33,10 @@ public class DataManager : MonoBehaviour
     public ApplicationPath ap;
     private string packagepath;
     private string librarypath;
+    private string settingspath;
     public PackageData packageData;
     public LibraryData libraryData;
+    public SettingsData settingsData;
 
     [Header("Display Mesage: ")]
     public Message currentMessage;
@@ -39,6 +45,14 @@ public class DataManager : MonoBehaviour
     public GameObject messageWindow;
     public List<string> laterMessageIDs = new List<string>();
     
+    void Update(){
+        if(Input.GetKeyDown("b")){
+            Debug.Log("Saving: ");
+            SavePackage();
+            SaveLibrary();
+            SaveSettings();
+        }
+    }
     public void RemindLaterNextMessage(){
         laterMessageIDs.Add(currentMessage.id);
         DisplayNextMessage();
@@ -93,9 +107,11 @@ public class DataManager : MonoBehaviour
     void DelayedStart(){
         packagepath = Path.Combine(ap.GetPath(), "data","packages.json");
         librarypath = Path.Combine(ap.GetPath(), "data","library_data.json");
-
+        settingspath = Path.Combine(ap.GetPath(),"data","settings.json");
+        
         LoadPackage();
         LoadLibrary();
+        LoadSettings();
 
         if(justloaddata) return;
         DisplayNextMessage();
@@ -112,7 +128,20 @@ public class DataManager : MonoBehaviour
             string fs = File.ReadAllText(packagepath);
             packageData = JsonUtility.FromJson<PackageData>(fs);
         }
-        else{SaveLibrary();}
+        else{SavePackage();}
+    }
+    public void SaveSettings(){
+        
+        string fs = JsonUtility.ToJson(settingsData, true);
+        File.WriteAllText(settingspath, fs);
+
+    }
+    public void LoadSettings(){
+        if (File.Exists(settingspath)){
+            string fs = File.ReadAllText(settingspath);
+            settingsData = JsonUtility.FromJson<SettingsData>(fs);
+        }
+        else{SaveSettings();}
     }
     public void SaveLibrary(){
         string fs = JsonUtility.ToJson(libraryData, true);

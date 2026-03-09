@@ -236,7 +236,11 @@ public class NetworkManager : MonoBehaviour
 
         if (File.Exists(d_zip)){
             try{File.Delete(d_zip);}
-            catch (System.Exception e){ ecc_yield_result = false; yield break;}
+            catch (System.Exception e){ ecc_yield_result = false; UnityEngine.Debug.LogError(e); yield break;}
+        }
+        if (Directory.Exists(Path.Combine(f_path,filename))){
+            try{Directory.Delete(Path.Combine(f_path,filename),true);}
+            catch (System.Exception e){ ecc_yield_result = false; UnityEngine.Debug.LogError(e); yield break;}
         }
         gm.downloading = true;
         gm.playButtonImage.color = new Color(0.4f,0f,0.4f);
@@ -266,15 +270,10 @@ public class NetworkManager : MonoBehaviour
 
                 //EXTRACT
                 ZipFile.ExtractToDirectory(d_zip, f_file);
-                string attachpath = gm.currentGame.name+gm.GetGameExeType();
+                string attachpath = gm.currentGame.name+ap.sm.GetGameExeType(gm.currentGame);
                 string exePath = Path.Combine(f_file, attachpath);
                 if(System.IO.File.Exists(exePath) && ap.operatingSystem==OS.Linux){
-                    var process = new System.Diagnostics.Process();
-                    process.StartInfo.FileName = "chmod";
-                    process.StartInfo.Arguments = "+x \"" + exePath + "\"";
-                    process.StartInfo.UseShellExecute = false;
-                    process.Start();
-                    process.WaitForExit();
+                    AttachLinuxXTag(exePath);
                 }
 
                 // SET BUTTON TO PREPARING
@@ -282,12 +281,61 @@ public class NetworkManager : MonoBehaviour
                 gm.playButtonText.SetText("PREPARING");
                 gm.downloading=false;
             }
-            catch (System.Exception){UnityEngine.Debug.Log("Extraction failed: ");yield break;}
+            catch (System.Exception e){UnityEngine.Debug.Log("Extraction failed: " + e.Message);yield break;}
             //Delete
             try{File.Delete(d_zip);}
             catch (System.Exception e){UnityEngine.Debug.Log("Error deleting zip after extraction: " + e.Message);}
 
+            
+
+            if(ap.operatingSystem==OS.Linux&&ap.sm.CheckGameValid(gm.currentGame)==2){//ap.sm.CheckGameValid(currentGame)==2){
+                string p1 = Path.Combine(f_path,filename);
+                string[] dir = Directory.GetDirectories(p1);
+                LinuxDirectoryWineWindowsFolderPullout(dir[0]);
+
+                string attachpath = gm.currentGame.name+"."+"exe"; //ap.sm.GetGameExeType(gm.currentGame);
+                string exePath = Path.Combine(f_file, attachpath);
+
+                AttachLinuxXTag(exePath);
+            }
+            else{
+                UnityEngine.Debug.Log("Skipping pulling out file");
+            }
+
             UnityEngine.Debug.Log("Downloaded: "+url);
+        }
+    }
+    public void AttachLinuxXTag(string exePath){
+        var process = new System.Diagnostics.Process();
+        process.StartInfo.FileName = "chmod";
+        process.StartInfo.Arguments = "+x \"" + exePath + "\"";
+        process.StartInfo.UseShellExecute = false;
+        process.Start();
+        process.WaitForExit();
+
+    }
+    public void LinuxDirectoryWineWindowsFolderPullout(string p2)
+    {
+
+        string p = Directory.GetParent(p2).FullName;
+
+
+        string[] files = Directory.GetFiles(p2);
+        foreach (string file in files)
+        {
+            string fileName = Path.GetFileName(file);
+            string destPath = Path.Combine(p, fileName);
+
+            File.Move(file, destPath);
+        }
+
+        string[] dirs = Directory.GetDirectories(p2);
+        foreach (string dir in dirs)
+        {
+            string dirName = new DirectoryInfo(dir).Name;
+            string destPath = Path.Combine(p, dirName);
+            
+            Directory.Move(dir, destPath);
         }
     }
     [System.Serializable]
@@ -337,6 +385,7 @@ public class Content {
 [System.Serializable]
 public class Game {
     public string name;
+    public bool invisible;
     public string id;
     public string programmingname;
     public string[] author;
