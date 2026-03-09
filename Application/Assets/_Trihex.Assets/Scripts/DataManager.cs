@@ -22,6 +22,9 @@ public class PackageData {
 [System.Serializable]
 public class SettingsData {
     public bool linuxUseWine;
+    public bool showDebugLog;
+    public bool dontUpdateLauncher;
+    public string branch;
 }
 
 public class DataManager : MonoBehaviour
@@ -45,14 +48,88 @@ public class DataManager : MonoBehaviour
     public GameObject messageWindow;
     public List<string> laterMessageIDs = new List<string>();
     
-    void Update(){
-        if(Input.GetKeyDown("b")){
-            Debug.Log("Saving: ");
-            SavePackage();
-            SaveLibrary();
-            SaveSettings();
+
+    //MonobehaviourStuff
+    void Start() {
+        if(!justloaddata){
+            messageWindow.SetActive(false);
+        }
+        if(delayedStartTime==0f){
+            DelayedStart();
+            return;
+        }
+        Invoke("DelayedStart",delayedStartTime);
+    } 
+    void DelayedStart(){
+        packagepath = Path.Combine(ap.GetPath(), "data","packages.json");
+        librarypath = Path.Combine(ap.GetPath(), "data","library_data.json");
+        settingspath = Path.Combine(ap.GetPath(),"data","settings.json");
+        
+        LoadPackage();
+        LoadLibrary();
+        LoadSettings();
+
+        if(justloaddata) return;
+        DisplayNextMessage();
+    }
+
+    //SETTINGS ///////////////////////////
+    public void SaveSettings(){
+        
+        string fs = JsonUtility.ToJson(settingsData, true);
+        File.WriteAllText(settingspath, fs);
+
+    }
+    public void LoadSettings(){
+        if (File.Exists(settingspath)){
+            string fs = File.ReadAllText(settingspath);
+            settingsData = JsonUtility.FromJson<SettingsData>(fs);
+        }
+        else{SaveSettings();}
+    }
+    //PACKAGES /////////////////////////
+    public void SavePackage(){
+        
+        string fs = JsonUtility.ToJson(packageData, true);
+        File.WriteAllText(packagepath, fs);
+
+    }
+    public void LoadPackage(){
+        if (File.Exists(packagepath)){
+            string fs = File.ReadAllText(packagepath);
+            packageData = JsonUtility.FromJson<PackageData>(fs);
+        }
+        else{SavePackage();}
+    }
+
+    //LIBRARY /////////////////////////
+    public void SaveLibrary(){
+        string fs = JsonUtility.ToJson(libraryData, true);
+        File.WriteAllText(librarypath, fs);
+    }
+
+    public void LoadLibrary(){
+        if (File.Exists(librarypath)){
+            string fs = File.ReadAllText(librarypath);
+            libraryData = JsonUtility.FromJson<LibraryData>(fs);
+        }
+        else{
+            ResetLibrary();
         }
     }
+    public void ResetLibrary(){
+        if(File.Exists(librarypath)){
+            File.Delete(librarypath);
+        }
+        libraryData = new LibraryData();
+        libraryData.messageIDs = new List<string>();
+            foreach(Message m in ap.nm.dataObject.content.messages){
+                libraryData.messageIDs.Add(m.id);
+            }
+        SaveLibrary();
+        UnityEngine.SceneManagement.SceneManager.LoadSceneAsync("Loading");
+    }
+    // MESSAGES ////////////////////////
     public void RemindLaterNextMessage(){
         laterMessageIDs.Add(currentMessage.id);
         DisplayNextMessage();
@@ -94,70 +171,9 @@ public class DataManager : MonoBehaviour
         messageDescription.SetText(m.content[0].content[0]);
     }
 
-    void Start() {
-        if(!justloaddata){
-            messageWindow.SetActive(false);
-        }
-        if(delayedStartTime==0f){
-            DelayedStart();
-            return;
-        }
-        Invoke("DelayedStart",delayedStartTime);
-    } 
-    void DelayedStart(){
-        packagepath = Path.Combine(ap.GetPath(), "data","packages.json");
-        librarypath = Path.Combine(ap.GetPath(), "data","library_data.json");
-        settingspath = Path.Combine(ap.GetPath(),"data","settings.json");
-        
-        LoadPackage();
-        LoadLibrary();
-        LoadSettings();
 
-        if(justloaddata) return;
-        DisplayNextMessage();
-    }
     
-    public void SavePackage(){
-        
-        string fs = JsonUtility.ToJson(packageData, true);
-        File.WriteAllText(packagepath, fs);
-
-    }
-    public void LoadPackage(){
-        if (File.Exists(packagepath)){
-            string fs = File.ReadAllText(packagepath);
-            packageData = JsonUtility.FromJson<PackageData>(fs);
-        }
-        else{SavePackage();}
-    }
-    public void SaveSettings(){
-        
-        string fs = JsonUtility.ToJson(settingsData, true);
-        File.WriteAllText(settingspath, fs);
-
-    }
-    public void LoadSettings(){
-        if (File.Exists(settingspath)){
-            string fs = File.ReadAllText(settingspath);
-            settingsData = JsonUtility.FromJson<SettingsData>(fs);
-        }
-        else{SaveSettings();}
-    }
-    public void SaveLibrary(){
-        string fs = JsonUtility.ToJson(libraryData, true);
-        File.WriteAllText(librarypath, fs);
-    }
-
-    public void LoadLibrary(){
-        if (File.Exists(librarypath)){
-            string fs = File.ReadAllText(librarypath);
-            libraryData = JsonUtility.FromJson<LibraryData>(fs);
-        }
-        else{SaveLibrary();}
-    }
-    public void ResetLibrary(){
-        libraryData = new LibraryData();
-        SaveLibrary();
-        UnityEngine.SceneManagement.SceneManager.LoadSceneAsync("Loading");
-    }
+    
+    
+    
 }

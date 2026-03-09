@@ -22,7 +22,7 @@ public class GameHolder : MonoBehaviour
             GameObject.Find("LibraryManager").GetComponent<LibraryManager>().DisplayCurrentGame(game);
         }
         if(clickType==2){
-            GameObject.Find("StoreManager").GetComponent<StoreManager>().StoreShowContentGame(game);
+            GameObject.Find("StoreManager").GetComponent<StoreManager>().LoadStoreShowContentGame(game);
         }
     }
     public void UpdateSprite(Game g){

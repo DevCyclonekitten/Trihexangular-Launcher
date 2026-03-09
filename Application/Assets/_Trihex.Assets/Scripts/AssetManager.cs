@@ -11,15 +11,22 @@ public class AssetManager : MonoBehaviour {
     public ApplicationPath ap;
     public NetworkManager nm;
 
+    // SETTING GAMES
     public Game GetGameFromName(string name){
         
         foreach(Game g in nm.dataObject.content.games){
-            if(g.name ==name){
+            if(g.programmingname ==name){
                 return g;
             }
         }
-        Debug.LogError("Could not find game with name "+name);
+        Debug.LogError("[ASSET] Could not find game with name "+name);
         return null;
+    }
+    public void SetGameFromName(string name){
+        
+        Game g = GetGameFromName(name);
+        ap.gm.currentGame=g;
+        ap.lm.currentGame=g;
     }
 
 
@@ -33,7 +40,7 @@ public class AssetManager : MonoBehaviour {
             return Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f));
         }
         else{
-            Debug.Log("Could not find :"+imagePath);
+            Debug.LogWarning("[ASSET] Could not find "+imagePath);
         }
         return null;
     }

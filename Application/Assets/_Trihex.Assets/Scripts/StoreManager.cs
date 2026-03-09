@@ -8,39 +8,54 @@ public class StoreManager : MonoBehaviour
 {
     public NetworkManager nm;
     public ApplicationPath ap;
+    public Game currentGame;
 
     [Header("Content Creator: ")]
     public Transform collectionsContent;
-    public GameObject collectionPrefab;
     public Transform gameContent;
+    public GameObject collectionPrefab;
     public GameObject gamePrefab;
 
     [Header("Store View Page: ")]
     public GameObject browsePanel;
     public GameObject gamePanel;
-    public Game currentGame;
     public Image gameIcon;
+    public Image videoImageFallback;
+    public VideoPlayer videoPlayer;
     public TextMeshProUGUI gameTitle;
     public TextMeshProUGUI gameDescription;
     public TextMeshProUGUI gameAuthor;
-    public VideoPlayer videoPlayer;
-    public Image videoImageFallback;
-    public GameObject storeImagePrefab;
-    public Transform storeImageContent;
     public TextMeshProUGUI windowsOSType;
     public TextMeshProUGUI linuxOSType;
+    
+    
+    public GameObject storeImagePrefab;
+    public Transform storeImageContent;
+    public ScrollRect scrollView;
+    public ScrollRect scrollView2;
 
+    [Header("APP: ")]
+    public GameObject[] windows;
+
+    [Header("Filtering: ")]
+    public List<GameHolder> gameHolders;
+    public List<CollectionHolder> collectionHolders;
+    public TMP_InputField gameFilter;
+
+    // MONOBEHAVIOUR STUFF ////////////
     void Start(){Invoke("DelayedStart",0.02f);} void DelayedStart(){
         gamePanel.SetActive(false);
         browsePanel.SetActive(true);
-        StoreLoadCollections();
-        StoreLoadGames();
+        LoadStoreCollections();
+        LoadStoreGames();
     }
 
-    public void StoreShowContentGame(Game g){
+    // LOADING CONTENT ///////////
+    public void LoadStoreShowContentGame(Game g){
         
         if(g==null){return;}
         if(g.id==""){return;}
+        scrollView2.verticalNormalizedPosition = 1f;
         currentGame = g;
         SetAppWindow(0);
         gamePanel.SetActive(true);
@@ -97,11 +112,69 @@ public class StoreManager : MonoBehaviour
             gameIcon.sprite = ap.am.GetImage(g,g.content.general.iconimages[0]);
         }
         
-
-
+        windowsOSType.color = new Color(1f,1f,1f);
+        if(ap.sm.GetGameExeTypeFilteredOS(g,OS.Windows)==".exe"){
+            windowsOSType.SetText("Windows 64 bit");
+        }
+        else{
+            windowsOSType.SetText("Windows Unavailiable");
+            windowsOSType.color = new Color(0.5f,0.5f,0.5f);
+        }
+        linuxOSType.color = new Color(1f,1f,1f);
+        UnityEngine.Debug.Log("[STORE] Linux os detected "+ap.sm.GetGameExeTypeFilteredOS(g,OS.Linux));
+        if(ap.sm.GetGameExeTypeFilteredOS(g,OS.Linux)==".exe"&&ap.dm.settingsData.linuxUseWine){
+            linuxOSType.SetText("Linux through wine");
+            linuxOSType.color = new Color(1f,1f,1f);
+        }
+        else if(ap.sm.GetGameExeTypeFilteredOS(g,OS.Linux)==".x86_64"){
+            linuxOSType.SetText("Linux 64 bit");
+            
+        }
+        else{
+            linuxOSType.SetText("Linux Unavaliable");
+            linuxOSType.color = new Color(0.5f,0.5f,0.5f);
+        }
+        
 
     }
-    public void GetGame(){
+    public void LoadStoreGames(){
+        Game[] games = nm.dataObject.content.games;
+        foreach(Game gm in games){
+            if(!gm.invisible){
+                GameObject go = Instantiate(gamePrefab,gameContent);
+                GameHolder gh = go.GetComponent<GameHolder>();
+
+                gh.UpdateSprite(gm);
+                gameHolders.Add(gh);
+            }
+            
+
+        }
+    }
+    public void FilterWord(string w){
+        foreach(GameHolder gh in gameHolders){
+            bool val = gh.game.programmingname.Replace(" ", "").StartsWith(w.Replace(" ", ""), System.StringComparison.OrdinalIgnoreCase);
+            gh.gameObject.SetActive(val);
+        }
+        foreach(CollectionHolder ch in collectionHolders){
+            bool val2 = ch.name.Replace(" ", "").StartsWith(w.Replace(" ", ""), System.StringComparison.OrdinalIgnoreCase);
+            ch.gameObject.SetActive(val2);
+        }
+    }
+    public void LoadStoreCollections(){
+        Container[] collections = nm.dataObject.content.collections;
+
+        foreach(Container c in collections){
+            GameObject g = Instantiate(collectionPrefab,collectionsContent);
+            CollectionHolder ch = g.GetComponent<CollectionHolder>();
+            ch.UpdateSprite(c);
+            collectionHolders.Add(ch);
+        }
+    }
+    public void LoadStoresBundles(){} // EMPTY
+
+    // ADDING CONTENT //////////////////
+    public void GetCurrentGame(){
         bool cid = ap.dm.libraryData.currentLibraryGames.ContainsKey(currentGame.id);
         if(!cid){
             Debug.Log("Attempting to buy: "+currentGame.name);
@@ -113,31 +186,19 @@ public class StoreManager : MonoBehaviour
         ap.dm.SaveLibrary();
         ap.lm.UpdateLibrary();
     }
-    public void StoreLoadCollections(){
-        Container[] collections = nm.dataObject.content.collections;
-
-        foreach(Container c in collections){
-            GameObject g = Instantiate(collectionPrefab,collectionsContent);
-            CollectionHolder ch = g.GetComponent<CollectionHolder>();
-            ch.UpdateSprite(c);
+    public void GetGameFromString(string s){
+        Game cg = ap.am.GetGameFromName(s);
+        if(cg.name!=null){
+            currentGame=cg;
+            GetCurrentGame();
         }
+        else{
+            Debug.LogWarning("[STORE] Game doesn't exist");
+        }
+        
     }
 
-    public void StoreLoadGames(){
-        Game[] games = nm.dataObject.content.games;
-        foreach(Game gm in games){
-            if(!gm.invisible){
-                GameObject go = Instantiate(gamePrefab,gameContent);
-                GameHolder gh = go.GetComponent<GameHolder>();
-
-                gh.UpdateSprite(gm);
-            }
-            
-
-        }
-    }
-    [Header("APP: ")]
-    public GameObject[] windows;
+    // MENU CONTENT ///////////////////
     public void SetAppWindow(int v){
         for(int i=0; i<windows.Length;i++){
             if(i==v){
