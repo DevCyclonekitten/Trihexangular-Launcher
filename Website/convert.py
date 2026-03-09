@@ -10,12 +10,12 @@ baseindex.close()
 
 for file in files:
     print(f"\nConverting: {file}")
-    if(file!="Sources\\base.html"):
+    if(file!="Sources/base.html"):
         fs = open(file)
         insertion = fs.read()
         fs.close()
 
-        PATH = file.replace("Sources\\","")
+        PATH = file.replace("Sources/","")
         fs2 = open(PATH,"w")
         fs2.write(content.replace("<p>{CONTENT_INSERTION}</p>",insertion))
         fs2.close()

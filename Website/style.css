@@ -2,6 +2,17 @@
     width:100%;
     height:50px;
     background-color: #0b8700;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+#bottombar{
+    width:100%;
+    height:50px;
+    background-color: #0b8700;
+    position: fixed;
+    bottom:0;
+    left: 0;
 }
 
 .table-header-1{
@@ -58,9 +69,7 @@ body{
     color: white;
     text-decoration: none;
 }
-.insertion{
-    padding:50px;
-}
+
 #build-content{
     background-color:#5f5457;
     padding:10px;
@@ -70,4 +79,9 @@ body{
 }
 .build-package{
     padding:10px;
+}
+#insertion {
+    padding-top:150px;
+    padding:50px;
+    height:2000px;
 }
