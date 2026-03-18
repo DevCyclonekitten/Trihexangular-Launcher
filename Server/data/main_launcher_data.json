@@ -794,7 +794,7 @@
             {
                 "id": "7",
                 "name": "Launcher 0.972",
-                "content": "Changenotes,\nAdded a debug tab\nAdded a settings tab\nAdded ability to download windows files on linux for wine\nAdded a more robust messaging system\nCleaned up code\nAdded search filter for storepage\n",
+                "content": {"type": "text","content":["Changenotes,\nAdded a debug tab\nAdded a settings tab\nAdded ability to download windows files on linux for wine\nAdded a more robust messaging system\nCleaned up code\nAdded search filter for storepage\n"]},
                 "flags": "3000",
                 "images": [],
                 "json-modify": {
