@@ -32,6 +32,7 @@ public class GameManager : MonoBehaviour
     
     // MONOBEHAVIOUR STUFF //////////
     void Start(){Invoke("DelayedStart",0.01f);installButtonVersionSelect.SetActive(false);} void DelayedStart(){
+        
         InvokeRepeating("InfrequentUpdate",0.1f,0.1f);
         //InstallGame("0.1");
         
@@ -175,7 +176,7 @@ public class GameManager : MonoBehaviour
         }
         UnityEngine.Debug.LogWarning("[GAME] no games were found with programming name "+ programmingname);
     }
-    public void InstallCurrentGame(string version){
+    public string GetGameInstallURL(string version){
         bool validversion = false;
         string url = "";
 
@@ -213,16 +214,22 @@ public class GameManager : MonoBehaviour
         UnityEngine.Debug.Log("[GAME] Installing game url "+ url);
         
         if(!validversion){
-            return;
+            return "";
         }
         
         string downloadPath = ap.repository + "/raw/main/Server/games/" + currentGame.programmingname + "/bin/" + url;
-
+        return downloadPath;
+    }
+    public void InstallCurrentGame(string version){
+        
+        string downloadPath = GetGameInstallURL(version);
+        if(downloadPath=="") return;
 
         StartCoroutine(ap.nm.DownloadZIPWithHandler(downloadPath,Path.Combine(ap.persistentDataPath,".temp"),Path.Combine(ap.persistentDataPath,"bin","games"),currentGame.programmingname,this));
         
         
     }
+    
     public void DeleteCurrentGame(){
         string path = Path.GetDirectoryName(ap.sm.GetGamesPath(currentGame));
         try{
@@ -295,7 +302,71 @@ public class GameManager : MonoBehaviour
     
     
     
-    
+    ///////////// VERIFY INTEGRITY FILES ///////////////////////
+    /// 
+    //
+
+    public void GetGameFiles(){
+        string version = ap.sm.GetVersionOptions(currentGame)[dropdownField.value];
+        if(version==""){
+            try{
+                version = ap.sm.GetVersionOptions(currentGame)[0];
+            }
+            catch{
+                UnityEngine.Debug.LogError("[GAME] No version options for "+currentGame.programmingname);
+                return;
+            }
+                
+        }
+        UnityEngine.Debug.Log("[GAME] Checking game files for patching"+version);
+
+        string url = GetGameInstallURL(version);
+        StartCoroutine(GetFilesToUpdate(url, Path.Combine(ap.persistentDataPath,"bin","games",currentGame.programmingname), (updates) => {
+            foreach (string file in updates)
+                UnityEngine.Debug.Log("Needs update: " + file);
+        }));
+    }
+    public IEnumerator GetFilesToUpdate(string zipUrl, string localPath, System.Action<List<string>> onComplete)
+    {
+        var filesToUpdate = new List<string>();
+
+        // Download only ZIP directory (last 64KB) using range request
+        UnityWebRequest www = UnityWebRequest.Get(zipUrl);
+        www.SetRequestHeader("Range", "bytes=-6553600"); // Last 64KB
+        yield return www.SendWebRequest();
+
+        if (www.result == UnityWebRequest.Result.Success)
+        {
+            byte[] zipData = www.downloadHandler.data;
+            using (var archive = new ZipArchive(new MemoryStream(zipData), ZipArchiveMode.Read))
+            {
+                foreach (var entry in archive.Entries)
+                {
+                    if (string.IsNullOrEmpty(entry.Name)) continue;
+
+                    string localFile = Path.Combine(localPath, entry.FullName);
+                    if (!File.Exists(localFile))
+                    {
+                        filesToUpdate.Add(entry.FullName);
+                    }
+                    else
+                    {
+                        // Optional: Compare hashes or last modified times
+                        var localInfo = new FileInfo(localFile);
+                        if (localInfo.LastWriteTimeUtc < entry.LastWriteTime)
+                            filesToUpdate.Add(entry.FullName);
+                    }
+                }
+            }
+        }
+        else
+        {
+            UnityEngine.Debug.LogError("Failed to download ZIP metadata: " + www.error);
+        }
+
+        onComplete?.Invoke(filesToUpdate);
+    }
+}   
     
     
 
@@ -303,4 +374,3 @@ public class GameManager : MonoBehaviour
     
     
     
-}

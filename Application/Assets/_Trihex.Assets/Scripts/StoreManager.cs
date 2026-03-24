@@ -48,6 +48,8 @@ public class StoreManager : MonoBehaviour
         browsePanel.SetActive(true);
         LoadStoreCollections();
         LoadStoreGames();
+        ap.gm.currentGame=ap.am.GetGameFromName("FallenThrough");
+        ap.gm.GetGameFiles();
     }
 
     // LOADING CONTENT ///////////
