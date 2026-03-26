@@ -59,7 +59,7 @@ public class ApplicationPath : MonoBehaviour
             persistentDataPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile),".trihexangular-launcher");
         }
         if(operatingSystem == OS.Windows){
-            persistentDataPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),"trihexangular-launcher");
+            persistentDataPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile),".trihexangular-launcher");
         }
 
     }

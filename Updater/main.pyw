@@ -265,12 +265,13 @@ class SystemManager():
     def CompareVersion(self):
         self.DisplayError()
         logging.debug("LAUNCH - checking for avaliable updates")
-        version = 0.96
-        branch = "main"
+        version = self.master.pacman.data["launcher"]["version"]
+        branch = self.master.pacman.data["branch"]
+        
         self.master.window.IntermediateBarWindow(
             [
             {"text":"Checking for updates","position":0,"font":("Helvetica",18)},
-            {"text":f"running {branch} {version}","position":25,"font":("Helvetica",10)}
+            {"text":f"running {self.master.pacman.data["branch"]} {self.master.pacman.data["launcher"]["version"]}","position":25,"font":("Helvetica",10)}
             ],
             {"width":300,"height":30,"posx":0,"posy":90}
         )
