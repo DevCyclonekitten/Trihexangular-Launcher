@@ -2,7 +2,7 @@
     "manifest": 2,
     "launcher": {
         "version": 0.973,
-        "assetversion": 0.02,
+        "assetversion": 0.03,
         "maintainer": {
             "messages": {}
         }
@@ -725,9 +725,8 @@
             },
             {
                 "id": "16",
-                "name": "Music PY",
-                "invisible": true,
-                "programmingname": "MusicPY",
+                "name": "Corporate Negligence",
+                "programmingname": "CorporateNegligence",
                 "author": [
                     "Trihexangular Studios"
                 ],
@@ -736,8 +735,15 @@
                         "iconimages": [
                             "icon.png"
                         ],
-                        "displayimages": [],
-                        "displayvideo": []
+                        "displayimages": [
+                            "store1.png",
+                            "store2.png",
+                            "store3.png",
+                            "banner.png"
+                        ],
+                        "displayvideo": [
+                            "storevideo.webm"
+                        ]
                     },
                     "store": {
                         "storedescription": [
@@ -757,9 +763,13 @@
                 },
                 "builds": {
                     "linux": [
-                        "0.9"
+                        "1.0"
                     ],
-                    "windows": []
+                    "windows": [
+                        "1.0"
+                    ],
+                    "web": [],
+                    "mac": []
                 }
             }
         ],
