@@ -762,8 +762,12 @@
                     "price": "0"
                 },
                 "builds": {
-                    "linux": [],
-                    "windows": [],
+                    "linux": [
+                        "1.0"
+                    ],
+                    "windows": [
+                        "1.0"
+                    ],
                     "web": [],
                     "mac": []
                 }
