@@ -44,6 +44,7 @@ public class StoreManager : MonoBehaviour
 
     // MONOBEHAVIOUR STUFF ////////////
     void Start(){Invoke("DelayedStart",0.02f);} void DelayedStart(){
+        SetAppWindow(1);
         gamePanel.SetActive(false);
         browsePanel.SetActive(true);
         LoadStoreCollections();
