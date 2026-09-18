@@ -11,7 +11,7 @@ using UnityEditor;
 
 public class LogHandler : ILogHandler
 {
-    private ILogHandler m_DefaultHandler = Debug.unityLogger.logHandler;
+    private ILogHandler m_DefaultHandler = Debug.unitylogging.logHandler;
     private LoggingManager lm;
 
     void Awake(){

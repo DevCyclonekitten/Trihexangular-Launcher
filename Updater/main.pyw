@@ -151,7 +151,7 @@ class SystemManager():
            os.makedirs(self.paths[key], exist_ok=True)
         if(os.path.exists(os.path.join(self.path,'error.log')) and 1==1):
             logging.basicConfig(filename=os.path.join(self.path,'error.log'), format='%(asctime)s - %(levelname)s - %(message)s', level=logging.DEBUG)
-        logging.getLogger('PIL').setLevel(logging.WARNING)
+        logging.getlogging('PIL').setLevel(logging.WARNING)
         logging.debug("############################################")
         logging.debug(f"DIRECTORY - setup user directory {self.systemname}")
     def ExitWithNoRoot(self):

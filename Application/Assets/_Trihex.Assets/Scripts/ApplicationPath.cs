@@ -23,8 +23,8 @@ public class ApplicationPath : MonoBehaviour
     public SettingsManager sm;
     
     void Start(){
-        if (Debug.unityLogger.logHandler is not LogHandler){
-            Debug.unityLogger.logHandler = new LogHandler();
+        if (Debug.unitylogging.logHandler is not LogHandler){
+            Debug.unitylogging.logHandler = new LogHandler();
         }
 
 
